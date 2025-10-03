@@ -5,7 +5,7 @@ import Zap1 from "../assets/zap1.webp"
 import Eduardo from "../assets/dr.webp"
 import Zap2 from "../assets/zap2.webp"
 
-import Eduardo2 from "../assets/imagens/gastroplatia/DrEduardo2.png"
+import Eduardo2 from "../assets/imagens/gastroplatia/DrEduardo2.webp"
 import Fundo2 from "../assets/imagens/gastroplatia/RETANGULO.webp"
 import Seta2 from "../assets/imagens/gastroplatia/array2.svg"
 import Icon from "../assets/imagens/gastroplatia/icon.png"
