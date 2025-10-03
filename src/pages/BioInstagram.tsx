@@ -39,7 +39,7 @@ function BioInstagram() {
 
     return (
         <section className="container m-auto p-5">
-            <img className="m-auto mb-8" src={Logo} alt="Duas letras simbolizando a logo do Dr. Eduardo Amui, as letras EA" />
+            <img className="m-auto mb-8 w-[12em]" src={Logo} alt="Duas letras simbolizando a logo do Dr. Eduardo Amui, as letras EA" />
 
             <div className="m-auto flex flex-col items-center sm:max-w-[849px]">
                 <div className="card relative isolate w-full h-[135px] sm:h-[339px] rounded-[10px] sm:rounded-[20px] mb-3 sm:mb-11" 
