@@ -64,7 +64,7 @@ function BioInstagram() {
                         <img src={Zap1} alt="logo do whatsapp" className="absolute top-3 w-5 sm:w-15 sm:top-6 left-3 sm:left-6 bg-[#519742] p-1.5 sm:p-4 rounded-full border border-white/50 " />
                         <img src={Eduardo} className="absolute right-2 sm:right-12 bottom-0  w-[137px] sm:w-fit" alt="Foto do Dr. Eduardo" />
                         <img src={Zap2} alt="logo do whatsapp 3d" className="absolute right-[-1.04vh] top-5 w-10 sm:w-24 animate-float"  />
-                        <img src={Zap2} alt="Imagem da logo do aplicativo whatsapp (telefone)" className="absolute right-26  sm:right-76 w-7 bottom-[-0.538rem] z-50 sm:w-19 animate-float" width={89}/>
+                        <img src={Zap2} alt="Imagem da logo do aplicativo whatsapp (telefone)" className="absolute right-32  sm:right-76 w-7 bottom-[-0.538rem] z-50 sm:w-19 animate-float" width={89}/>
                         
                         <div className="h-full flex flex-col justify-center items-start">
                             <h1 className="text-white font-bold text-[13.5px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 z-9 leading-tight">
@@ -201,12 +201,12 @@ function BioInstagram() {
                         
                         <img src={Icon5} alt="icone gastroplatia" className="absolute top-3 w-4 sm:w-18 sm:top-6 left-[7px] sm:left-6 sm:p-4  " />
                         <img src={Eduardo6} className="absolute right-2 sm:right-19 bottom-0  w-[120px] sm:w-[250px] z-99" alt="Foto do Dr. Eduardo " />
-                        <img src={Pino} alt="Pino de localização" className="absolute sm:w-[166px] w-[50px] sm:right-[-15px] right-[-7px] rotate-10 blur-[1.5px] z-9"  />
+                        <img src={Pino} alt="Pino de localização" className="animate-float absolute sm:w-[166px] w-[50px] sm:right-[-15px] right-[-7px] rotate-10 blur-[1.5px] z-9"  />
 
-                        <img src={Pino} alt="Pino de localização" className="absolute sm:w-[116px] w-[50px]  sm:right-[230px] bottom-[80px] sm:bottom-[160px] right-[80px] rotate-10 blur-[3.5px] "  />
+                        <img src={Pino} alt="Pino de localização" className="animate-float absolute sm:w-[116px] w-[50px]  sm:right-[230px] bottom-[80px] sm:bottom-[160px] right-[80px] rotate-10 blur-[3.5px] "  />
 
 
-                        <img src={Pino} alt="Pino de localização" className="absolute sm:w-[116px] w-[50px] sm:right-[260px] bottom-[-5px] right-[100px] rotate-350 blur-[1.7px] z-99"  />
+                        <img src={Pino} alt="Pino de localização" className="animate-float absolute sm:w-[116px] w-[50px] sm:right-[260px] bottom-[-5px] right-[100px] rotate-350 blur-[1.7px] z-99"  />
 
 
 
