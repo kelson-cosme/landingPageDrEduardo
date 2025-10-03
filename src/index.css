@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+#root {
+  font-family: 'arial'; /* Dê um nome para a sua fonte */
+  src: url('./assets/fonts/futura.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
+}
