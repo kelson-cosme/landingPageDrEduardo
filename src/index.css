@@ -4,3 +4,23 @@
   font-family: 'arial'; /* Dê um nome para a sua fonte */
   src: url('./assets/fonts/futura.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
 }
+
+@layer utilities {
+  /* Definição da animação de keyframes "float" */
+  @keyframes float {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px); /* Move 10px para cima */
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+  /* Classe utilitária para aplicar a animação */
+  .animate-float {
+    animation: float 3s ease-in-out infinite; /* Duração de 3s, suave e infinita */
+  }
+}

@@ -29,6 +29,9 @@ import Eduardo6 from "../assets/imagens/localizacao/dr Eduardo.webp"
 import Pino from "../assets/imagens/localizacao/pino.webp"
 
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import {useEffect} from "react";
 
 
 function BioInstagram() {
@@ -37,14 +40,16 @@ function BioInstagram() {
     const cardBackgroundGradient2 = 'linear-gradient(0deg, rgba(70, 179, 60, 1) 23%, rgba(78, 234, 64, 1) 65%)'
     const cardBackgroundGradient3 = 'linear-gradient(0deg,rgba(42, 50, 74, 1) 23%, rgba(65, 77, 114, 1) 65%)'
 
-    
+    useEffect( () => {
+        AOS.init();
+    }, [])
 
     return (
-        <section className="container m-auto p-5">
+        <section className="container m-auto p-5 overflow-hidden">
             <img className="m-auto mb-8 w-[12em]" src={Logo} alt="Duas letras simbolizando a logo do Dr. Eduardo Amui, as letras EA" />
 
-            <div className="m-auto flex flex-col items-center sm:max-w-[849px]">
-                <div className="card relative isolate w-full h-[165px] sm:h-[339px]  rounded-[10px] sm:rounded-[20px] mb-3 sm:mb-11" 
+            <div className="m-auto flex flex-col items-center sm:max-w-[849px] ">
+                <div data-aos="fade-right" className="card relative isolate w-full h-[165px] sm:h-[339px]  rounded-[10px] sm:rounded-[20px] mb-3 sm:mb-11" 
                     style={{ backgroundImage: cardBackgroundGradient }}
                 >
                     <div 
@@ -56,10 +61,10 @@ function BioInstagram() {
 
                     <div className="relative z-20 w-full h-full p-3 sm:p-10">
                         
-                        <img src={Zap1} alt="logo do whatsapp" className="absolute top-3 w-5 sm:w-15 sm:top-6 left-3 sm:left-6 bg-[#519742] p-1.5 sm:p-4 rounded-full border border-white/50" />
+                        <img src={Zap1} alt="logo do whatsapp" className="absolute top-3 w-5 sm:w-15 sm:top-6 left-3 sm:left-6 bg-[#519742] p-1.5 sm:p-4 rounded-full border border-white/50 " />
                         <img src={Eduardo} className="absolute right-2 sm:right-12 bottom-0  w-[137px] sm:w-fit" alt="Foto do Dr. Eduardo" />
-                        <img src={Zap2} alt="logo do whatsapp 3d" className="absolute right-[-1.04vh] top-5 w-10 sm:w-24" />
-                        <img src={Zap2} alt="Imagem da logo do aplicativo whatsapp (telefone)" className="absolute right-26  sm:right-76 w-7 bottom-[-0.538rem] z-50 sm:w-19" width={89}/>
+                        <img src={Zap2} alt="logo do whatsapp 3d" className="absolute right-[-1.04vh] top-5 w-10 sm:w-24 animate-float"  />
+                        <img src={Zap2} alt="Imagem da logo do aplicativo whatsapp (telefone)" className="absolute right-26  sm:right-76 w-7 bottom-[-0.538rem] z-50 sm:w-19 animate-float" width={89}/>
                         
                         <div className="h-full flex flex-col justify-center items-start">
                             <h1 className="text-white font-bold text-[13.5px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 z-9 leading-tight">
@@ -76,9 +81,7 @@ function BioInstagram() {
 
 
 
-                <div className="card relative isolate w-full h-[165px] sm:h-[339px] rounded-[10px] sm:rounded-[20px] mb-3 sm:mb-11" 
-                   
-                >
+                <div data-aos="fade-left" className="card relative isolate w-full h-[165px] sm:h-[339px] rounded-[10px] sm:rounded-[20px] mb-3 sm:mb-11" >
                     <div 
                         className="absolute inset-0 bg-cover bg-center opacity-100 rounded-[10px] sm:rounded-[20px]" 
                         style={{ backgroundImage: `url(${Fundo2})` }}
@@ -106,7 +109,7 @@ function BioInstagram() {
 
 
 
-                <div className="card relative isolate w-full h-[165px] sm:h-[339px] rounded-[10px] sm:rounded-[20px] mb-3 sm:mb-11" 
+                <div data-aos="fade-right" className="card relative isolate w-full h-[165px] sm:h-[339px] rounded-[10px] sm:rounded-[20px] mb-3 sm:mb-11" 
                 >
                     <div 
                         className="absolute inset-0 bg-cover bg-center opacity-100 rounded-[10px] sm:rounded-[20px]" 
@@ -133,7 +136,7 @@ function BioInstagram() {
                 </div>
 
                 
-                <div className="card relative isolate w-full h-[165px] sm:h-[339px] rounded-[10px] sm:rounded-[20px] mb-3 sm:mb-11" >
+                <div data-aos="fade-left" className="card relative isolate w-full h-[165px] sm:h-[339px] rounded-[10px] sm:rounded-[20px] mb-3 sm:mb-11" >
                     <div 
                         className="absolute inset-0 bg-cover bg-center opacity-100 rounded-[10px] sm:rounded-[20px]" 
                         style={{ backgroundImage: `url(${Fundo4})`, backgroundSize: "cover" }}
@@ -159,7 +162,7 @@ function BioInstagram() {
                     </div>
                 </div>
 
-                <div className="card relative isolate w-full h-[165px] sm:h-[339px] rounded-[10px] sm:rounded-[20px] mb-3 sm:mb-11" >
+                <div data-aos="fade-right" className="card relative isolate w-full h-[165px] sm:h-[339px] rounded-[10px] sm:rounded-[20px] mb-3 sm:mb-11" >
                     <div 
                         className="absolute inset-0 bg-cover bg-center opacity-100 rounded-[10px] sm:rounded-[20px]" 
                         style={{ backgroundImage: `url(${Fundo5})`, backgroundSize: "cover" }}
@@ -186,7 +189,7 @@ function BioInstagram() {
                     </div>
                 </div>
 
-                <div className="card relative isolate w-full h-[165px] sm:h-[339px] rounded-[10px] sm:rounded-[20px] mb-3 sm:mb-11" >
+                <div data-aos="fade-left" className="card relative isolate w-full h-[165px] sm:h-[339px] rounded-[10px] sm:rounded-[20px] mb-3 sm:mb-11" >
                     <div 
                         className="absolute inset-0 bg-cover bg-center opacity-100 rounded-[10px] sm:rounded-[20px]" 
                         style={{ backgroundImage: `url(${Fundo6})`, backgroundSize: "cover" }}
