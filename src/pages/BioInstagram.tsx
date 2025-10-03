@@ -62,7 +62,7 @@ function BioInstagram() {
                         <img src={Zap2} alt="Imagem da logo do aplicativo whatsapp (telefone)" className="absolute right-26  sm:right-76 w-7 bottom-[-0.538rem] z-50 sm:w-19" width={89}/>
                         
                         <div className="h-full flex flex-col justify-center items-start">
-                            <h1 className="text-white font-bold text-[10px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 z-9 leading-tight">
+                            <h1 className="text-white font-bold text-[13px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 z-9 leading-tight">
                                 O PRIMEIRO PASSO PARA <br /> TRANSFORMAR SUA SAÚDE <br /> COMEÇA COM UMA CONVERSA.
                             </h1>
 
@@ -92,7 +92,7 @@ function BioInstagram() {
                         <img src={Eduardo2} className="absolute right-2 sm:right-12 bottom-0  w-[154px] sm:w-fit" alt="Foto do Dr. Eduardo" />
                         
                         <div className="h-full flex flex-col justify-center items-start ">
-                            <h1 className="text-white font-bold text-[10px] sm:text-[25px] z-9 mb-3 sm:mb-8 mt-7 sm:mt-15 text-justify leading-tight" >
+                            <h1 className="text-white font-bold text-[13px] sm:text-[25px] z-9 mb-3 sm:mb-8 mt-7 sm:mt-15 text-justify leading-tight" >
                                 GASTROPLASTIA <br /> ENDOSCÓPICA, REDUÇÃO DO <br /> ESTÔMAGO SEM CIRURGIA EM <br /> CUIABÁ | DR. EDUARDO AMUI
                             </h1>
 
@@ -121,7 +121,7 @@ function BioInstagram() {
                         <img src={Eduardo3} className="absolute right-2 sm:right-12 bottom-0  w-[115px] sm:w-[299px]" alt="Foto do Dr. Eduardo" />
                         
                         <div className="h-full flex flex-col justify-center items-start">
-                            <h1 className="text-white font-bold text-[10px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 leading-tight">
+                            <h1 className="text-white font-bold text-[13px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 leading-tight">
                                 EMAGRECIMENTO <span className="bg-[#E40000]">SEM CORTES</span> <br /> COM O BALÃO GÁSTRICO</h1>
 
                             <button className="bg-background: #46B33C; pl-4 pt-1 sm:pt-1.5 pb-1 sm:pb-1.5 pr-1 rounded-[2rem] flex items-center text-[8px] sm:text-[23px] font-semibold text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
@@ -147,7 +147,7 @@ function BioInstagram() {
                         <img src={Eduardo4} className="absolute right-2 sm:right-12 bottom-0  w-[105px] sm:w-[269px]" alt="Foto do Dr. Eduardo" />
                         
                         <div className="h-full flex flex-col justify-center items-start">
-                            <h1 className="text-white font-bold text-[10px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 leading-tight text-justify">
+                            <h1 className="text-white font-bold text-[13px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 leading-tight text-justify">
                                 PLASMA DE ARGÔNIO: <br /> TRATAMENTO PARA REGANHO DE <br /> PESO PÓS-BARIÁTRICA EM CUIABÁ
                                 </h1>
 
@@ -174,7 +174,7 @@ function BioInstagram() {
                         <img src={Reveiw} alt="Avaliação 5 estrelas no google" className="absolute right-3 bottom-3 w-17 sm:w-50"/>
 
                         <div className="h-full flex flex-col justify-center items-start">
-                            <h1 className="text-white font-bold text-[10px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 leading-tight text-justify">
+                            <h1 className="text-white font-bold text-[13px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 leading-tight text-justify">
                                 TRANSFORMANDO VIDAS COM <br /> MÉTODOS NÃO INVASIVOS <br /> PARA O CONTROLE DO PESO.                            
                             </h1>
 
