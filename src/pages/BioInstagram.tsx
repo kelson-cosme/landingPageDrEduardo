@@ -171,7 +171,7 @@ function BioInstagram() {
                         
                         <img src={Icon4} alt="icone gastroplatia" className="absolute top-3 w-4 sm:w-18 sm:top-6 left-[7px] sm:left-6 sm:p-4  " />
                         <img src={Eduardo5} className="absolute right-2 sm:right-12 bottom-0  w-[170px] sm:w-[350px]" alt="Foto do Dr. Eduardo" />
-                        <img src={Reveiw} alt="Avaliação 5 estrelas no google" className="absolute right-3 bottom-3 w-17 sm:w-50"/>
+                        <img src={Reveiw} alt="Avaliação 5 estrelas no google" className="absolute right-3 bottom-3 w-20 sm:w-50"/>
 
                         <div className="h-full flex flex-col justify-center items-start">
                             <h1 className="text-white font-bold text-[13.5px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 leading-tight text-justify">
