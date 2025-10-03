@@ -35,6 +35,8 @@ function BioInstagram() {
     // Gradiente principal do card
     const cardBackgroundGradient = 'linear-gradient(110deg, #44B93C 0%, #4EEA40 100%)';
     const cardBackgroundGradient2 = 'linear-gradient(0deg, rgba(70, 179, 60, 1) 23%, rgba(78, 234, 64, 1) 65%)'
+    const cardBackgroundGradient3 = 'linear-gradient(0deg,rgba(42, 50, 74, 1) 23%, rgba(65, 77, 114, 1) 65%)'
+
     
 
     return (
@@ -208,9 +210,9 @@ function BioInstagram() {
                         <div className="h-full flex flex-col justify-center items-start">
 
 
-                            <button className="bg-white z-9 pl-4 pt-1 sm:pt-1.5 pb-1 sm:pb-1.5 pr-1 rounded-[2rem] flex items-center text-[8px] sm:text-[23px] font-semibold text-[#2E3750] mt-19">
-                                CONHEÇA O DOUTOR
-                                <img className=" ml-2 sm:ml-5 w-5  sm:w-auto" src={Seta} alt="Flexa"/>
+                            <button className="bg-white z-9 pl-4 pt-1 sm:pt-1.5 pb-1 sm:pb-1.5 pr-1 rounded-[2rem] flex items-center text-[8px] sm:text-[23px] font-semibold text-white mt-11 sm:mt-19" style={{ backgroundImage: cardBackgroundGradient3 }}>
+                                VER LOCAL DE ATENDIMENTO
+                                <img className=" ml-2 sm:ml-5 w-5  sm:w-auto" src={Seta2} alt="Flexa"/>
                             </button>
                         </div>
                     </div>
