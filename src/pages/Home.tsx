@@ -16,13 +16,11 @@ import Tecnologia1 from "../assets/imagens/tecnologia1.svg"
 import Tecnologia2 from "../assets/imagens/tecnologia2.svg"
 import Tecnologia3 from "../assets/imagens/tecnologia3.svg"
 
-
-
-const Avatar1= "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-avatar-ou-perfil-humano_23-2150671142.jpg?semt=ais_hybrid&w=740&q=80"; // Crie ou adicione as imagens de avatar
-const Avatar2= "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-avatar-ou-perfil-humano_23-2150671142.jpg?semt=ais_hybrid&w=740&q=80";
-const Avatar3= "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-avatar-ou-perfil-humano_23-2150671142.jpg?semt=ais_hybrid&w=740&q=80";
-const Avatar4= "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-avatar-ou-perfil-humano_23-2150671142.jpg?semt=ais_hybrid&w=740&q=80";
-const Avatar5= "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-avatar-ou-perfil-humano_23-2150671142.jpg?semt=ais_hybrid&w=740&q=80";
+import Avatar1 from "../assets/imagens/avatar1.webp"
+import Avatar2 from "../assets/imagens/avatar2.webp"
+import Avatar3 from "../assets/imagens/avatar3.webp"
+import Avatar4 from "../assets/imagens/avatar4.webp"
+import Avatar5 from "../assets/imagens/avatar5.webp"
 
 function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -276,33 +274,35 @@ function Home() {
 
 
                 {/* NOVA SEÇÃO: Depoimentos */}
-                <section id="depoimentos" ref={sectionRefs.depoimentos} className="py-20 px-4">
-            <div className="max-w-[1980px] mx-auto ">
+                <section id="depoimentos" ref={sectionRefs.depoimentos} className="py-20 bg-[#262E46]">
+                  <div className="max-w-[1200px] mx-auto text-center text-white">
+                      <p className="text-sm font-semibold text-gray-400 mb-2">DEPOIMENTOS</p>
+                      <h2 className="text-3xl md:text-4xl font-bold mb-12">O que dizem nossos pacientes</h2>
+                  </div>
 
-                <p className="text-sm font-semibold text-gray-400 mb-2 text-center">DEPOIMENTOS</p>
-                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-white text-center">O que dizem nossos pacientes</h2>
+                  {/* Container do carrossel infinito */}
+                  <div className="marquee">
+                      <div className="marquee-content">
+                          {/* Renderiza a lista de cards duas vezes em um único array */}
+                          {[...testimonials, ...testimonials].map((testimonial, index) => (
+                              <TestimonialCard 
+                                  key={index}
+                                  avatar={testimonial.avatar}
+                                  name={testimonial.name}
+                                  time={testimonial.time}
+                                  text={testimonial.text}
+                              />
+                          ))}
+                      </div>
+                  </div>
 
-                {/* Container dos Cards com Scroll Horizontal */}
-                <div className="flex space-x-8 pb-8 overflow-x-auto">
-                    {testimonials.map((testimonial, index) => (
-                        <TestimonialCard 
-                            key={index}
-                            avatar={testimonial.avatar}
-                            name={testimonial.name}
-                            time={testimonial.time}
-                            text={testimonial.text}
-                        />
-                    ))}
-                </div>
-
-                <div className="mt-12">
-                    <button className="bg-background: #46B33C; pl-6 p-3 rounded-[2rem] flex items-center justify-center lg:text-base font-[500] text-white z-9 mx-auto" style={{ backgroundImage: cardBackgroundGradient2 }}>
-                        QUERO AGENDAR MINHA AVALIAÇÃO
-                        <img src={Seta2} alt="Seta apontado para cima" className="w-10 ml-4" />
-                    </button>
-                </div>
-            </div>
-        </section>
+                  <div className="mt-12 text-center">
+                      <button className="bg-background: #46B33C; pl-6 p-3 rounded-[2rem] flex items-center justify-center lg:text-base font-[500] text-white z-9 mx-auto" style={{ backgroundImage: cardBackgroundGradient2 }}>
+                          QUERO AGENDAR MINHA AVALIAÇÃO
+                          <img src={Seta2} alt="Seta apontado para cima" className="w-10 ml-4" />
+                      </button>
+                  </div>
+              </section>
 
 
         

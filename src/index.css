@@ -29,3 +29,57 @@
     animation: float 3s ease-in-out infinite;
   }
 }
+
+/* src/Carousel.css */
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+  /* Váriavel para o espaçamento, corresponde ao `gap-8` no JSX */
+  --gap: 2rem; 
+}
+
+.marquee-content {
+  display: flex;
+  gap: var(--gap); /* Usa a váriavel para o espaçamento */
+  /* Duração aumentada para 80 segundos para deixar bem lento */
+  animation: scroll 80s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    /* Move o conteúdo exatamente pela metade do seu comprimento. 
+      Isso garante que a "emenda" seja perfeita.
+    */
+    transform: translateX(calc(-50% - (var(--gap) / 2)));
+  }
+}
+
+/* Pausa a animação ao passar o mouse */
+.marquee:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+/* Efeito de fade nas laterais para um acabamento mais profissional */
+.marquee::before,
+.marquee::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10rem;
+  z-index: 2;
+}
+
+.marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #262E46, transparent);
+}
+
+.marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #262E46, transparent);
+}

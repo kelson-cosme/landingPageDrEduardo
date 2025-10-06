@@ -1,7 +1,7 @@
 // src/components/ServicesSection.tsx
 
 import { useState } from 'react';
-import ImagemBalao from '../assets/imagens/balao/dr Eduardo.png'; // Adicione as imagens corretas
+import ImagemBalao from '../assets/imagens/balaoga.webp'; // Adicione as imagens corretas
 import ImagemGastro from '../assets/imagens/gastroplatia/DrEduardo2.png';
 import ImagemPlasma from '../assets/imagens/plasma/dr. Eduardp.png';
 import Seta from '../assets/imagens/gastroplatia/array2.svg';
@@ -17,7 +17,7 @@ const servicesData = {
   },
   balao: {
     title: 'O que é Balão Gástrico?',
-    description: 'O balão gástrico é um dispositivo de silicone inserido no estômago por via endoscópica e preenchido com líquido à base de soro fisiológico. Seu objetivo é ocupar parte do estômago, promovendo saciedade.',
+    description: 'O balão gástrico é um dispositivo de silicone inserido no estômago por via endoscópica e preenchido com líquido à base de soro fisiológico. Seu objetivo é ocupar parte do estômago, promovendo saciedade, auxiliando na perda de peso e na reeducação alimentar.',
     indications: 'Indicado para pessoas com IMC (Índice de Massa Corporal) acima de 27 (sobrepeso) ou acima de 30 (obesidade), para quem já tentou emagrecer de outras formas e não conseguiu.',
     benefits: 'Minimamente invasivo, reversível, com rápida recuperação. Reduz o apetite, promove saciedade, auxilia na perda de peso e reeducação alimentar.',
     image: ImagemBalao,
