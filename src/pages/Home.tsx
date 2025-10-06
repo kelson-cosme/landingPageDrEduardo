@@ -4,22 +4,77 @@ import Fundo from "../assets/imagens/home/DR.webp";
 import Seta2 from "../assets/imagens/gastroplatia/array2.svg";
 import Review from "../assets/imagens/controle/review.svg";
 import Black from "../assets/imagens/Black.png";
-import DrEduardoSobre from "../assets/imagens/balao/dr Eduardo.webp"; // Imagem para a seção "Sobre"
+import DrEduardoSobre from "../assets/imagens/card.webp"; // Imagem para a seção "Sobre"
+import { TestimonialCard } from "../components/TestimonialCard";
+import { ServicesSection } from "../components/ServicesSection"; // Importe a nova seção
+import { LocationSection } from "../components/LocationSection"; // 1. IMPORTE AQUI
+import { ContentSection } from "../components/ContentSection"; // 1. IMPORTE AQUI
+import { FaqSection } from "../components/FaqSection"; // 1. IMPORTE AQUI
+import { Footer } from "../components/Footer"; // 1. IMPORTE AQUI
+import { AboutSection } from "../components/AboutSection"; // 1. IMPORTE AQUI
+
+
+const Avatar1= "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-avatar-ou-perfil-humano_23-2150671142.jpg?semt=ais_hybrid&w=740&q=80"; // Crie ou adicione as imagens de avatar
+const Avatar2= "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-avatar-ou-perfil-humano_23-2150671142.jpg?semt=ais_hybrid&w=740&q=80";
+const Avatar3= "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-avatar-ou-perfil-humano_23-2150671142.jpg?semt=ais_hybrid&w=740&q=80";
+const Avatar4= "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-avatar-ou-perfil-humano_23-2150671142.jpg?semt=ais_hybrid&w=740&q=80";
+const Avatar5= "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-avatar-ou-perfil-humano_23-2150671142.jpg?semt=ais_hybrid&w=740&q=80";
 
 function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("inicio");
+
+
+    // Dados dos depoimentos
+    const testimonials = [
+      {
+        avatar: Avatar1,
+        name: "Ana Beatriz Lemos",
+        time: "Há 2 semanas",
+        text: (
+          <>
+            <span className="bg-blue-100 p-1 rounded">Coloquei o balão gástrico com o Dr. Eduardo</span> e só posso dizer que foi a melhor decisão da minha vida! Atendimento impecável, seguro e cheio de empatia. Me senti cuidada em cada detalhe. 💙
+          </>
+        ),
+      },
+      {
+        avatar: Avatar2,
+        name: "Marcos Vinícius Prado",
+        time: "Há 1 mês",
+        text: "Excelente profissional! Competente, atencioso e muito humano. Me senti acolhido desde o primeiro contato. Recomendo demais!",
+      },
+      {
+        avatar: Avatar3,
+        name: "Juliana Rocha Medeiros",
+        time: "Há 3 semanas",
+        text: "Fiz tratamento com plasma de argônio com o Dr. Eduardo e o resultado foi surpreendente. Profissional calmo, explica tudo com clareza e ainda transmite muita confiança. ❤️",
+      },
+      {
+        avatar: Avatar4,
+        name: "Thiago Henrique Santana",
+        time: "Há 2 meses",
+        text: "Fui indicado para um acompanhamento endoscópico e fiquei impressionado com a atenção e o cuidado do Dr. Eduardo. Tudo muito bem feito, desde o atendimento até o pós. Recomendo de verdade.",
+      },
+      {
+        avatar: Avatar5,
+        name: "Camila Duarte Silveira",
+        time: "Há 3 meses",
+        text: "Estava com muito receio de colocar o balão, mas o Dr. Eduardo me passou toda a segurança. Já eliminei vários quilos e me sinto muito melhor! Atendimento humano e profissional! 😁",
+      },
+    ];
   
   const dropdownRef = useRef<HTMLLIElement>(null);
   const sectionRefs = {
     inicio: useRef<HTMLDivElement>(null),
     sobre: useRef<HTMLDivElement>(null),
     escolha: useRef<HTMLDivElement>(null), // Nova ref para a seção "Por que escolher"
+    depoimentos: useRef<HTMLDivElement>(null), // Ref para a nova seção
     conteudos: useRef<HTMLDivElement>(null),
     servicos: useRef<HTMLDivElement>(null),
     contato: useRef<HTMLDivElement>(null),
+
   };
 
   const cardBackgroundGradient2 = 'linear-gradient(0deg, rgba(70, 179, 60, 1) 23%, rgba(78, 234, 64, 1) 65%)';
@@ -157,30 +212,11 @@ function Home() {
         </div>
 
         {/* Seção Sobre Mim */}
-        <section id="sobre" ref={sectionRefs.sobre} className="py-20 px-4">
-            <div className="max-w-[1200px] mx-auto">
-                <p className="text-center text-2xl md:text-3xl font-light mb-12">
-                    "Não se trata apenas de emagrecer, mas de <br/> recuperar o controle, a saúde e o prazer de viver."
-                </p>
-                <div className="grid md:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <img src={DrEduardoSobre} alt="Foto do Dr. Eduardo Amui" className="rounded-lg w-full max-w-md mx-auto" />
-                    </div>
-                    <div>
-                        <h2 className="text-3xl font-bold mb-4">Conheça o Dr. Eduardo Amui</h2>
-                        <h3 className="text-xl text-[#907F62] font-semibold mb-6">Especialista em emagrecimento sem cirurgia.</h3>
-                        <div className="space-y-4 text-gray-300">
-                            <p>Desde a formatura em 2013, segui fascinado por oferecer procedimentos pouco invasivos aos pacientes. Escolhi a especialidade de endoscopia, onde adquiri muita experiência tratando de complicações de cirurgias bariátricas por endoscopia.</p>
-                            <p>Foi quando surgiu a dúvida: Por que não tratar a obesidade com procedimentos por endoscopia, ao invés de tratar as complicações de cirurgias bariátricas?</p>
-                            <p>Seguindo este propósito, decidi focar e me dedicar somente ao tratamento da obesidade com emagrecimento sem cortes por endoscopia, aliado ao acompanhamento multidisciplinar, promovendo a mudança de vida de muitas pessoas.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div id="sobre" ref={sectionRefs.sobre}>
+          <AboutSection />
+        </div>
 
-                {/* NOVA SEÇÃO: Por que pacientes escolhem */}
-                <section id="escolha" ref={sectionRefs.escolha} className="py-20 px-4 bg-white text-gray-800">
+          <section id="escolha" ref={sectionRefs.escolha} className="py-20 px-4 bg-white text-gray-800">
             <div className="max-w-[1200px] mx-auto">
                 <div className="flex justify-between items-start mb-12">
                     <div className="text-left">
@@ -229,11 +265,59 @@ function Home() {
             </div>
         </section>
 
-        {/* Placeholders para futuras seções */}
-        <div id="conteudos" ref={sectionRefs.conteudos} className="h-screen pt-20"><h1 className="text-4xl font-bold text-center">Conteúdos</h1></div>
-        <div id="servicos" ref={sectionRefs.servicos} className="h-screen pt-20"><h1 className="text-4xl font-bold text-center">Serviços</h1></div>
-        <div id="contato" ref={sectionRefs.contato} className="h-screen pt-20"><h1 className="text-4xl font-bold text-center">Contato</h1></div>
+
+
+                {/* NOVA SEÇÃO: Depoimentos */}
+                <section id="depoimentos" ref={sectionRefs.depoimentos} className="py-20 px-4">
+            <div className="max-w-[1980px] mx-auto text-center">
+                <p className="text-sm font-semibold text-gray-400 mb-2">DEPOIMENTOS</p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-white">O que dizem nossos pacientes</h2>
+
+                {/* Container dos Cards com Scroll Horizontal */}
+                <div className="flex space-x-8 pb-8 overflow-x-auto">
+                    {testimonials.map((testimonial, index) => (
+                        <TestimonialCard 
+                            key={index}
+                            avatar={testimonial.avatar}
+                            name={testimonial.name}
+                            time={testimonial.time}
+                            text={testimonial.text}
+                        />
+                    ))}
+                </div>
+
+                <div className="mt-12">
+                    <button className="bg-background: #46B33C; pl-6 p-3 rounded-[2rem] flex items-center justify-center lg:text-base font-[500] text-white z-9 mx-auto" style={{ backgroundImage: cardBackgroundGradient2 }}>
+                        QUERO AGENDAR MINHA AVALIAÇÃO
+                        <img src={Seta2} alt="Seta apontado para cima" className="w-10 ml-4" />
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+        <div id="servicos" ref={sectionRefs.servicos} className="h-auto">
+          <ServicesSection />
+        </div>
+
+
+        <div id="contato" ref={sectionRefs.contato} className="h-auto">
+          <LocationSection />
+        </div>
+
+
+        <div id="conteudos" ref={sectionRefs.conteudos} className="h-auto">
+            <ContentSection />
+        </div>
+
+
+        <FaqSection />
+
       </main>
+      <Footer />
+
     </>
   );
 }
