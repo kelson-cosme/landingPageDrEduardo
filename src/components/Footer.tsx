@@ -1,7 +1,6 @@
 // src/components/Footer.tsx
 
 import Logo from '../assets/logo.webp';
-import Mapa from '../assets/imagens/localizacao/fundo.webp'; // Imagem do mapa
 
 // Ícones de Redes Sociais
 const WhatsAppIcon = () => (
@@ -33,7 +32,16 @@ export const Footer = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                     {/* Coluna 1: Mapa */}
                     <div className="md:col-span-2 lg:col-span-1">
-                        <img src={Mapa} alt="Mapa da localização da clínica" className="rounded-lg w-full" />
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.731551229712!2d-56.10383798888062!3d-15.59990598522378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db1a0d7716963%3A0x7e0a4051a3f4e2!2sAv.%20das%20Flores%2C%20945%20-%2018%20Andar%20-%20Jardim%20Cuiaba%2C%20Cuiab%C3%A1%20-%20MT%2C%2078043-172%2C%20Brazil!5e0!3m2!1sen!2sus!4v1730878536102!5m2!1sen!2sus"
+                            width="100%"
+                            height="100%"
+                            style={{ border:0 }}
+                            allowFullScreen={true}
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            className="rounded-lg"
+                        ></iframe>
                     </div>
 
                     {/* Coluna 2: Logo e Descrição */}

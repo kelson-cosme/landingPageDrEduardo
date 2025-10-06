@@ -1,9 +1,7 @@
 // src/components/ContentSection.tsx
-
-// Adicione as importações das imagens dos seus posts aqui
-const Post1= 'https://img.freepik.com/fotos-gratis/closeup-tiro-de-uma-linda-borboleta-com-texturas-interessantes-em-uma-flor-de-petalas-de-laranja_181624-7640.jpg?semt=ais_hybrid&w=740&q=80'; 
-const Post2= 'https://img.freepik.com/fotos-gratis/closeup-tiro-de-uma-linda-borboleta-com-texturas-interessantes-em-uma-flor-de-petalas-de-laranja_181624-7640.jpg?semt=ais_hybrid&w=740&q=80'; 
-const Post3= 'https://img.freepik.com/fotos-gratis/closeup-tiro-de-uma-linda-borboleta-com-texturas-interessantes-em-uma-flor-de-petalas-de-laranja_181624-7640.jpg?semt=ais_hybrid&w=740&q=80'; 
+import Post1 from "../assets/imagens/posts/post1.webp"
+import Post2 from "../assets/imagens/posts/post2.webp"
+import Post3 from "../assets/imagens/posts/post3.webp"
 
 // Ícone do Instagram
 const InstagramIcon = () => (
@@ -25,8 +23,8 @@ const FacebookIcon = () => (
 export const ContentSection = () => {
     return (
         <section id="conteudos" className="py-20 px-4 bg-white text-gray-800">
-            <div className="max-w-[1200px] mx-auto text-center">
-                <p className="text-sm font-semibold text-gray-500 mb-2">CONTEÚDOS</p>
+            <div className="max-w-[1200px] mx-auto ">
+                <p className="text-sm font-semibold  mb-2 text-[#576BA1]">CONTEÚDOS</p>
                 <h2 className="text-3xl md:text-4xl font-bold mb-12">Acompanhe nossos conteúdos</h2>
 
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -41,8 +39,8 @@ export const ContentSection = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-center">
-                    <button className="border border-gray-300 text-gray-600 px-6 py-3 rounded-lg flex items-center space-x-4 hover:bg-gray-100 transition-colors duration-300">
+                <div className="flex justify-end">
+                    <button className="border  border-gray-300 text-gray-600 px-6 py-3 rounded-4xl flex items-center space-x-4 hover:bg-gray-100 transition-colors duration-300">
                         <span>Siga minhas redes sociais</span>
                         <InstagramIcon />
                         <FacebookIcon />

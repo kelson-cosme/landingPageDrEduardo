@@ -32,16 +32,16 @@ export const LocationSection = () => {
         </div>
 
         {/* Coluna Direita: Imagens Sobrepostas */}
-        <div className="relative h-[400px] mt-12 lg:mt-0">
+        <div className="relative h-[400px]  mt-12 lg:mt-0">
           <img 
             src={ClinicImage} 
             alt="Interior da clínica" 
-            className="absolute top-0 left-0 w-3/5 rounded-lg shadow-2xl z-20"
+            className="absolute top-0 lg:left-[-9em]  w-3/5 rounded-lg shadow-2xl z-20"
           />
           <img 
             src={DrImage} 
             alt="Dr. Eduardo Amui na clínica" 
-            className="absolute bottom-0 right-0 w-4/5 max-w-sm rounded-lg shadow-lg z-10"
+            className="absolute bottom-0 top-3.5 right-0 lg:right-20 w-3/5 max-w-sm rounded-lg shadow-lg z-10"
           />
         </div>
 
