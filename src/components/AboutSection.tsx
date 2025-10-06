@@ -1,7 +1,6 @@
 // src/components/AboutSection.tsx
 
 import { useState } from 'react';
-import DrEduardoSobre from "../assets/imagens/balao/dr Eduardo.webp";
 import Card from "../assets/imagens/card.webp"
 // Dados das credenciais
 const credentials = [

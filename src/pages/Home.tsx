@@ -4,7 +4,6 @@ import Fundo from "../assets/imagens/home/DR.webp";
 import Seta2 from "../assets/imagens/gastroplatia/array2.svg";
 import Review from "../assets/imagens/controle/review.svg";
 import Black from "../assets/imagens/Black.png";
-import DrEduardoSobre from "../assets/imagens/card.webp"; // Imagem para a seção "Sobre"
 import { TestimonialCard } from "../components/TestimonialCard";
 import { ServicesSection } from "../components/ServicesSection"; // Importe a nova seção
 import { LocationSection } from "../components/LocationSection"; // 1. IMPORTE AQUI
