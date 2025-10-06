@@ -1,7 +1,6 @@
 
 import Fundo from "../assets/imagens/balao/capaBalao.webp";
 import Seta2 from "../assets/imagens/gastroplatia/array2.svg";
-import Review from "../assets/imagens/controle/review.svg";
 import { useState, useEffect, useRef } from "react";
 import Logo from "../assets/logo.webp";
 
