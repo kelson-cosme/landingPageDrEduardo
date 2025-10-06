@@ -48,7 +48,7 @@ export const AboutSection = () => {
                         <div className="space-y-4 text-gray-300">
                             <p>Pioneiro em Cuiabá na gastroplastia endoscópica. Técnica moderna e aprovada internacionalmente de redução do estômago sem cortes.</p>
                             <p>Desde a formatura em 2013, seguia fascinado por oferecer tratamentos pouco invasivos aos pacientes. Escolhi a especialidade de endoscopia, onde adquiri muita experiência tratando de complicações de cirurgias bariátricas por endoscopia.</p>
-                            <p>Foi quando surgiu a dúvida: ‘Por que não tratar a obesidade com procedimentos por endoscopia, ao invés de tratar as complicações de cirurgias bariátricas?.</p>
+                            <p>Foi quando surgiu a dúvida: Por que não tratar a obesidade com procedimentos por endoscopia, ao invés de tratar as complicações de cirurgias bariátricas?.</p>
                             <p>Seguindo este propósito, decidi focar e me dedicar somente ao tratamento da obesidade com emagrecimento sem cortes por endoscopia, aliado ao acompanhamento multidisciplinar e promovendo a mudança de vida de muitas pessoas.</p>
                         </div>
 
