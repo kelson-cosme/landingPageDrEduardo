@@ -33,9 +33,11 @@ export const AboutSection = () => {
 
     return (
         <section id="sobre" className="py-20 px-4 text-white bg-[#262E46]">
-            <div className="max-w-[1200px] mx-auto">
+            <div className="max-w-[1200px] mx-auto relative">
                 <p className="text-center text-2xl md:text-3xl font-light mb-12">
                     "Não se trata apenas de emagrecer, mas de <br/> recuperar o controle, a saúde e o prazer de viver."
+                <br />
+                    <span className=' top-20 right-70 text-[0.4em] font-bold text-[#808695]'>- DR. EDUARDO AMUI</span>
                 </p>
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
@@ -44,7 +46,7 @@ export const AboutSection = () => {
                     <div className="flex flex-col">
                         <h2 className="text-3xl font-bold mb-4">Conheça o Dr. Eduardo Amui</h2>
                         <h3 className="text-xl  font-semibold ">Especialista em emagrecimento sem cirurgia.</h3>
-                        <div className="space-y-4 text-gray-300">
+                        <div className="space-y-4 text-gray-300 text-justify">
                             <p>Pioneiro em Cuiabá na gastroplastia endoscópica. Técnica moderna e aprovada internacionalmente de redução do estômago sem cortes.</p>
                             <p>Desde a formatura em 2013, seguia fascinado por oferecer tratamentos pouco invasivos aos pacientes. Escolhi a especialidade de endoscopia, onde adquiri muita experiência tratando de complicações de cirurgias bariátricas por endoscopia.</p>
                             <p>Foi quando surgiu a dúvida: Por que não tratar a obesidade com procedimentos por endoscopia, ao invés de tratar as complicações de cirurgias bariátricas?.</p>

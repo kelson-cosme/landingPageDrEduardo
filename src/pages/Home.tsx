@@ -12,6 +12,11 @@ import { FaqSection } from "../components/FaqSection"; // 1. IMPORTE AQUI
 import { Footer } from "../components/Footer"; // 1. IMPORTE AQUI
 import { AboutSection } from "../components/AboutSection"; // 1. IMPORTE AQUI
 
+import Tecnologia1 from "../assets/imagens/tecnologia1.svg"
+import Tecnologia2 from "../assets/imagens/tecnologia2.svg"
+import Tecnologia3 from "../assets/imagens/tecnologia3.svg"
+
+
 
 const Avatar1= "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-avatar-ou-perfil-humano_23-2150671142.jpg?semt=ais_hybrid&w=740&q=80"; // Crie ou adicione as imagens de avatar
 const Avatar2= "https://img.freepik.com/psd-gratuitas/ilustracao-3d-de-avatar-ou-perfil-humano_23-2150671142.jpg?semt=ais_hybrid&w=740&q=80";
@@ -34,7 +39,8 @@ function Home() {
         time: "Há 2 semanas",
         text: (
           <>
-            <span className="bg-blue-100 p-1 rounded">Coloquei o balão gástrico com o Dr. Eduardo</span> e só posso dizer que foi a melhor decisão da minha vida! Atendimento impecável, seguro e cheio de empatia. Me senti cuidada em cada detalhe. 💙
+            Coloquei o balão gástrico com o Dr. Eduardo e só posso dizer que foi a melhor decisão da minha vida! Atendimento impecável, seguro e cheio de empatia. Me senti cuidada em cada detalhe. 💙💬
+              
           </>
         ),
       },
@@ -48,7 +54,7 @@ function Home() {
         avatar: Avatar3,
         name: "Juliana Rocha Medeiros",
         time: "Há 3 semanas",
-        text: "Fiz tratamento com plasma de argônio com o Dr. Eduardo e o resultado foi surpreendente. Profissional calmo, explica tudo com clareza e ainda transmite muita confiança. ❤️",
+        text: "Fiz tratamento com plasma de argônio com o Dr. Eduardo e o resultado foi surpreendente. Profissional calmo, explica tudo com clareza e ainda transmite muita confiança.❤️",
       },
       {
         avatar: Avatar4,
@@ -60,7 +66,7 @@ function Home() {
         avatar: Avatar5,
         name: "Camila Duarte Silveira",
         time: "Há 3 meses",
-        text: "Estava com muito receio de colocar o balão, mas o Dr. Eduardo me passou toda a segurança. Já eliminei vários quilos e me sinto muito melhor! Atendimento humano e profissional! 😁",
+        text: "Estava com muito receio de colocar o balão, mas o Dr. Eduardo me passou toda a segurança. Já eliminei vários quilos e me sinto muito melhor! Atendimento humano e profissional! 🥹",
       },
     ];
   
@@ -231,7 +237,7 @@ function Home() {
                     {/* Card 1 */}
                     <div className="border border-gray-200 p-8 rounded-lg flex items-start space-x-6">
                         <div className="flex-shrink-0">
-                           <svg className="w-8 h-8 text-[#262E46]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.977l-.51.342a11.985 11.985 0 01-4.43-4.43l.342-.51a6 6 0 00.977-3.86l-.477-2.387a2 2 0 00-.547-1.022l-1.405-1.405a2 2 0 00-2.828 0L3 5.172a2 2 0 000 2.828l1.405 1.405a2 2 0 001.022.547l2.387.477a6 6 0 003.86-.977l.51-.342a11.985 11.985 0 014.43 4.43l-.342.51a6 6 0 00-.977 3.86l.477 2.387a2 2 0 00.547 1.022l1.405 1.405a2 2 0 002.828 0l2.828-2.828a2 2 0 000-2.828l-1.405-1.405z"></path></svg>
+                           <img src={Tecnologia1} alt="" />
                         </div>
                         <div>
                             <h3 className="text-xl font-semibold mb-2">Tecnologia de Ponta</h3>
@@ -242,18 +248,21 @@ function Home() {
                     {/* Card 2 */}
                     <div className="border border-gray-200 p-8 rounded-lg flex items-start space-x-6">
                         <div className="flex-shrink-0">
-                           <svg className="w-8 h-8 text-[#262E46]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        <img src={Tecnologia2} alt="" />
+
                         </div>
                         <div>
                             <h3 className="text-xl font-semibold mb-2">Recuperação Acelerada</h3>
-                            <p className="text-gray-500 text-sm">Os tratamentos realizados pelo Dr. Eduardo são menos invasivos, proporcionando alta rápida, menor desconforto e retorno mais breve às atividades do dia a dia.</p>
+                            <p className="text-gray-500 text-sm">Os tratamentos realizados pelo 
+                            Dr. Eduardo são menos invasivos, proporcionando alta rápida, menor desconforto e retorno mais breve às atividades do dia a dia.</p>
                         </div>
                     </div>
 
                     {/* Card 3 */}
                     <div className="border border-gray-200 p-8 rounded-lg flex items-start space-x-6">
                         <div className="flex-shrink-0">
-                           <svg className="w-8 h-8 text-[#262E46]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                          <img src={Tecnologia3} alt="" />
+
                         </div>
                         <div>
                             <h3 className="text-xl font-semibold mb-2">Atendimento Humanizado</h3>
@@ -268,9 +277,10 @@ function Home() {
 
                 {/* NOVA SEÇÃO: Depoimentos */}
                 <section id="depoimentos" ref={sectionRefs.depoimentos} className="py-20 px-4">
-            <div className="max-w-[1980px] mx-auto text-center">
-                <p className="text-sm font-semibold text-gray-400 mb-2">DEPOIMENTOS</p>
-                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-white">O que dizem nossos pacientes</h2>
+            <div className="max-w-[1980px] mx-auto ">
+
+                <p className="text-sm font-semibold text-gray-400 mb-2 text-center">DEPOIMENTOS</p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-white text-center">O que dizem nossos pacientes</h2>
 
                 {/* Container dos Cards com Scroll Horizontal */}
                 <div className="flex space-x-8 pb-8 overflow-x-auto">
