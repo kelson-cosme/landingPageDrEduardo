@@ -1,10 +1,15 @@
+/* Importações do Tailwind (devem vir primeiro) */
 @import "tailwindcss";
 
-#root {
-  font-family: 'arial'; /* Dê um nome para a sua fonte */
-  src: url('./assets/fonts/futura.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
+/* 1. Defina sua fonte local com um nome personalizado */
+@font-face {
+  font-family: 'FuturaBT'; /* Demos um nome para a fonte */
+  src: url('./assets/font/futura.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+/* 2. Suas animações e outras classes personalizadas */
 @layer utilities {
   /* Definição da animação de keyframes "float" */
   @keyframes float {
@@ -12,7 +17,7 @@
       transform: translateY(0px);
     }
     50% {
-      transform: translateY(-20px); /* Move 10px para cima */
+      transform: translateY(-20px);
     }
     100% {
       transform: translateY(0px);
@@ -21,6 +26,6 @@
 
   /* Classe utilitária para aplicar a animação */
   .animate-float {
-    animation: float 3s ease-in-out infinite; /* Duração de 3s, suave e infinita */
+    animation: float 3s ease-in-out infinite;
   }
 }

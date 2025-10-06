@@ -3,6 +3,11 @@ import Logo from "../assets/logo.webp";
 
 import Fundo from "../assets/imagens/home/DR.webp"
 
+import Seta2 from "../assets/imagens/gastroplatia/array2.svg"
+
+import Reveiw from "../assets/imagens/controle/review.svg"
+import Black from "../assets/imagens/Black.png"
+ 
 function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,6 +22,9 @@ function Home() {
     servicos: useRef<HTMLDivElement>(null),
     contato: useRef<HTMLDivElement>(null),
   };
+
+  const cardBackgroundGradient2 = 'linear-gradient(0deg, rgba(70, 179, 60, 1) 23%, rgba(78, 234, 64, 1) 65%)'
+
 
   // Efeito para detectar a rolagem e mudar o fundo do header
   useEffect(() => {
@@ -67,11 +75,10 @@ function Home() {
   return (
     <>
       <header 
-        className={`sticky top-0 z-50 transition-colors duration-300 ease-in-out 
+        className={`fixed w-full top-0 z-50 transition-colors duration-300 ease-in-out 
                     ${hasScrolled || isMobileMenuOpen ? 'bg-[#262E46] shadow-md' : 'bg-transparent'}`}
       >
-        <nav className="max-w-[1920px] mx-auto flex justify-between items-center p-4">
-          {/* Logo */}
+        <nav className="max-w-[1920px] mx-auto w-full flex justify-between items-center p-4">
           <div>
             <a href="#inicio" onClick={() => setIsMobileMenuOpen(false)}>
               <img src={Logo} alt="Logotipo Dr. Eduardo Amui" className="h-10 w-auto" />
@@ -137,8 +144,79 @@ function Home() {
         </div>
       </header>
 
-      <main className="max-w-[1920px] mx-auto p-4 text-white">
-        <div style={{backgroundImage:`url(${Fundo})`, backgroundRepeat:"no-repeat", backgroundSize:"cover", backgroundPosition: "center"}} id="inicio" ref={sectionRefs.inicio} className="h-[600px] pt-20"><h1 className="text-4xl font-bold mb-4">Início</h1></div>
+      <main className=" mx-auto  text-white">
+
+        <div style={{backgroundImage:`url(${Fundo})`}} id="inicio" ref={sectionRefs.inicio} className="h-[calc(100vh_-_5vh)] pt-20 bg-cover bg-  bg-no-repeat flex flex-col justify-center ">
+          
+          <div className="lg:ml-[10em]">
+          
+            <h1 className="text-4xl md:text-5xl lg:text-4xl font-[700] ">DR. EDUARDO AMUI</h1>
+            <p className="mb-5 font-[100] mt-2">Endoscopia, gastroplastia endoscópica e <br /> tratamentos para obesidade sem cortes</p>
+
+            <h2 className="font-[700] lg:text-2xl">Transformando vidas com <br /> métodos não invasivos <br /> para o controle do peso.</h2>
+          
+            <div className="mt-5 flex ">
+              <button className="bg-background: #46B33C; pl-4 p-2  rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500]  text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
+                  QUERO AGENDAR MINHA AVALIAÇÃO
+
+                <img src={Seta2} alt="Seta apontado para cima" className="w-8 ml-3" />
+              </button>
+
+              <img className="ml-5 w-40" src={Reveiw} alt="5 estrela na nota do google" />
+            </div>
+          </div>
+
+
+        </div>
+          
+          <div className="bg-white h-[5vh] flex ">
+            <div className="flex items-center justify-center  ml-7">
+              <img className="w-4" src={Black} alt="logo com as iniciais do Dr. Eduardo Amui" />
+              <h3 className="text-[#b7bac2] ml-5 font-[500]">DR. EDUARDO AMUI</h3>
+            </div>
+
+
+            <div className="flex items-center justify-center  ml-7">
+              <img className="w-4" src={Black} alt="logo com as iniciais do Dr. Eduardo Amui" />
+              <h3 className="text-[#b7bac2] ml-5 font-[500]">DR. EDUARDO AMUI</h3>
+            </div>
+
+
+            <div className="flex items-center justify-center  ml-7">
+              <img className="w-4" src={Black} alt="logo com as iniciais do Dr. Eduardo Amui" />
+              <h3 className="text-[#b7bac2] ml-5 font-[500]">DR. EDUARDO AMUI</h3>
+            </div>
+
+
+            <div className="flex items-center justify-center  ml-7">
+              <img className="w-4" src={Black} alt="logo com as iniciais do Dr. Eduardo Amui" />
+              <h3 className="text-[#b7bac2] ml-5 font-[500]">DR. EDUARDO AMUI</h3>
+            </div>
+
+
+            <div className="flex items-center justify-center  ml-7">
+              <img className="w-4" src={Black} alt="logo com as iniciais do Dr. Eduardo Amui" />
+              <h3 className="text-[#b7bac2] ml-5 font-[500]">DR. EDUARDO AMUI</h3>
+            </div>
+
+
+            <div className="flex items-center justify-center  ml-7">
+              <img className="w-4" src={Black} alt="logo com as iniciais do Dr. Eduardo Amui" />
+              <h3 className="text-[#b7bac2] ml-5 font-[500]">DR. EDUARDO AMUI</h3>
+            </div>
+
+
+
+            
+          </div>
+
+
+
+
+
+
+
+
         <div id="sobre" ref={sectionRefs.sobre} className="h-screen pt-20"><h1 className="text-4xl font-bold">Sobre mim</h1></div>
         <div id="conteudos" ref={sectionRefs.conteudos} className="h-screen pt-20"><h1 className="text-4xl font-bold">Conteúdos</h1></div>
         <div id="servicos" ref={sectionRefs.servicos} className="h-screen pt-20"><h1 className="text-4xl font-bold">Serviços</h1></div>
