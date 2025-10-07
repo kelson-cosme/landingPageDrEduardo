@@ -32,18 +32,24 @@
 
 /* src/Carousel.css */
 
+/* Animação de scroll infinita ATUALIZADA */
 .marquee {
+  --gap: 2rem;
   position: relative;
+  display: flex;
   overflow: hidden;
-  /* Váriavel para o espaçamento, corresponde ao `gap-8` no JSX */
-  --gap: 2rem; 
+  user-select: none;
+  gap: var(--gap);
 }
 
-.marquee-content {
+.marquee-group {
+  flex-shrink: 0;
   display: flex;
-  gap: var(--gap); /* Usa a váriavel para o espaçamento */
-  /* Duração aumentada para 80 segundos para deixar bem lento */
-  animation: scroll 80s linear infinite;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll 60s linear infinite;
 }
 
 @keyframes scroll {
@@ -51,19 +57,15 @@
     transform: translateX(0);
   }
   to {
-    /* Move o conteúdo exatamente pela metade do seu comprimento. 
-      Isso garante que a "emenda" seja perfeita.
-    */
-    transform: translateX(calc(-50% - (var(--gap) / 2)));
+    transform: translateX(calc(-100% - var(--gap)));
   }
 }
 
-/* Pausa a animação ao passar o mouse */
-.marquee:hover .marquee-content {
+.marquee:hover .marquee-group {
   animation-play-state: paused;
 }
 
-/* Efeito de fade nas laterais para um acabamento mais profissional */
+/* Efeito de fade nas laterais (mantido) */
 .marquee::before,
 .marquee::after {
   content: '';

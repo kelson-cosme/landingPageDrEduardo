@@ -22,6 +22,8 @@ import Avatar3 from "../assets/imagens/avatar3.webp"
 import Avatar4 from "../assets/imagens/avatar4.webp"
 import Avatar5 from "../assets/imagens/avatar5.webp"
 
+import { CtaButton } from '../components/CtaButton'; // Importando o novo componente
+
 function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -276,33 +278,43 @@ function Home() {
                 {/* NOVA SEÇÃO: Depoimentos */}
                 <section id="depoimentos" ref={sectionRefs.depoimentos} className="py-20 bg-[#262E46]">
                   <div className="max-w-[1200px] mx-auto text-center text-white">
-                      <p className="text-sm font-semibold text-gray-400 mb-2">DEPOIMENTOS</p>
-                      <h2 className="text-3xl md:text-4xl font-bold mb-12">O que dizem nossos pacientes</h2>
+                    <p className="text-sm font-semibold text-gray-400 mb-2">DEPOIMENTOS</p>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-12">O que dizem nossos pacientes</h2>
                   </div>
 
-                  {/* Container do carrossel infinito */}
                   <div className="marquee">
-                      <div className="marquee-content">
-                          {/* Renderiza a lista de cards duas vezes em um único array */}
-                          {[...testimonials, ...testimonials].map((testimonial, index) => (
-                              <TestimonialCard 
-                                  key={index}
-                                  avatar={testimonial.avatar}
-                                  name={testimonial.name}
-                                  time={testimonial.time}
-                                  text={testimonial.text}
-                              />
-                          ))}
-                      </div>
+                    {/* Primeiro grupo de cards */}
+                    <div className="marquee-group">
+                      {testimonials.map((testimonial, index) => (
+                        <TestimonialCard 
+                          key={`primeiro-${index}`}
+                          avatar={testimonial.avatar}
+                          name={testimonial.name}
+                          time={testimonial.time}
+                          text={testimonial.text}
+                        />
+                      ))}
+                    </div>
+                    {/* Segundo grupo de cards (cópia exata para o loop) */}
+                    <div aria-hidden="true" className="marquee-group">
+                      {testimonials.map((testimonial, index) => (
+                        <TestimonialCard 
+                          key={`segundo-${index}`}
+                          avatar={testimonial.avatar}
+                          name={testimonial.name}
+                          time={testimonial.time}
+                          text={testimonial.text}
+                        />
+                      ))}
+                    </div>
                   </div>
 
-                  <div className="mt-12 text-center">
-                      <button className="bg-background: #46B33C; pl-6 p-3 rounded-[2rem] flex items-center justify-center lg:text-base font-[500] text-white z-9 mx-auto" style={{ backgroundImage: cardBackgroundGradient2 }}>
-                          QUERO AGENDAR MINHA AVALIAÇÃO
-                          <img src={Seta2} alt="Seta apontado para cima" className="w-10 ml-4" />
-                      </button>
-                  </div>
-              </section>
+              <div className="mt-12 text-center">
+                <CtaButton className="mt-8 m-auto self-start">
+                  AGENDAR MINHA AVALIAÇÃO
+                </CtaButton>          
+              </div>
+                </section>
 
 
         

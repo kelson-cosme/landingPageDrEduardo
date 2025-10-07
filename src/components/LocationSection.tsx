@@ -16,7 +16,7 @@ export const LocationSection = () => {
         {/* Coluna Esquerda: Conteúdo */}
         <div className="text-center lg:text-left">
           <img src={Logo} alt="Logotipo Dr. Eduardo Amui" className="h-12 w-auto mx-auto lg:mx-0 mb-8" />
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold  mb-4 ">
             Clínica de<br />emagrecimento<br />sem cortes.
           </h2>
           <p className="text-lg text-gray-300 mb-8">SB Medical Tower</p>

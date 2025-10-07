@@ -27,9 +27,9 @@ const GoogleIcon = () => (
 
 export const TestimonialCard: React.FC<TestimonialCardProps> = ({ avatar, name, time, text }) => {
   return (
-    // Container principal do card
-    <div className="bg-white text-gray-800 rounded-xl shadow-lg p-6 w-full max-w-sm flex-shrink-0">
-      {/* Cabeçalho com avatar, nome e ícone do Google */}
+    // Container principal do card com altura fixa e layout flexível
+    <div className="bg-white text-gray-800 rounded-xl shadow-lg p-6 w-full max-w-sm flex-shrink-0 flex flex-col h-64">
+      {/* Cabeçalho */}
       <div className="flex items-center mb-4">
         <img src={avatar} alt={`Foto de ${name}`} className="w-12 h-12 rounded-full object-cover mr-4" />
         <div className="flex-grow">
@@ -38,12 +38,14 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({ avatar, name, 
         </div>
         <GoogleIcon />
       </div>
+      
       {/* Avaliação com estrelas */}
       <div className="flex mb-4">
         {[...Array(5)].map((_, i) => <StarIcon key={i} />)}
       </div>
-      {/* Texto do depoimento */}
-      <p className="text-gray-600 text-sm leading-relaxed">
+
+      {/* Texto do depoimento (ocupa o espaço restante) */}
+      <p className="text-gray-600 text-sm leading-relaxed flex-grow">
         {text}
       </p>
     </div>

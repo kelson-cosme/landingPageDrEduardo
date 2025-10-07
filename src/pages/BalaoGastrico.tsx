@@ -11,9 +11,59 @@ import { Procedure } from "../components/BalaoGastrico/Procedure";
 import { NoSurgery } from "../components/BalaoGastrico/NoSurgery";
 import { Advantages } from "../components/BalaoGastrico/Advantages";
 import { ImcCalculator } from "../components/BalaoGastrico/ImcCalculator";
-import { RealStories } from "../components/BalaoGastrico/RealStories"; // Importado aqui
+import { RealStories } from "../components/BalaoGastrico/RealStories"; 
+import { TestimonialCard } from "../components/TestimonialCard";
+import { CtaButton } from '../components/CtaButton';
+import { AboutSection } from "../components/AboutSection";
+import { LocationSection } from "../components/LocationSection";
+import { FaqSection } from "../components/FaqSection";
+import { Footer } from "../components/Footer";
+
+import Avatar1 from "../assets/imagens/avatar1.webp"
+import Avatar2 from "../assets/imagens/avatar2.webp"
+import Avatar3 from "../assets/imagens/avatar3.webp"
+import Avatar4 from "../assets/imagens/avatar4.webp"
+import Avatar5 from "../assets/imagens/avatar5.webp"
 
 function BalaoGastrico(){
+
+  const testimonials = [
+    {
+      avatar: Avatar1,
+      name: "Ana Beatriz Lemos",
+      time: "Há 2 semanas",
+      text: (
+        <>
+          Coloquei o balão gástrico com o Dr. Eduardo e só posso dizer que foi a melhor decisão da minha vida! Atendimento impecável, seguro e cheio de empatia. Me senti cuidada em cada detalhe. 💙💬
+            
+        </>
+      ),
+    },
+    {
+      avatar: Avatar2,
+      name: "Marcos Vinícius Prado",
+      time: "Há 1 mês",
+      text: "Excelente profissional! Competente, atencioso e muito humano. Me senti acolhido desde o primeiro contato. Recomendo demais!",
+    },
+    {
+      avatar: Avatar3,
+      name: "Juliana Rocha Medeiros",
+      time: "Há 3 semanas",
+      text: "Fiz tratamento com plasma de argônio com o Dr. Eduardo e o resultado foi surpreendente. Profissional calmo, explica tudo com clareza e ainda transmite muita confiança.❤️",
+    },
+    {
+      avatar: Avatar4,
+      name: "Thiago Henrique Santana",
+      time: "Há 2 meses",
+      text: "Fui indicado para um acompanhamento endoscópico e fiquei impressionado com a atenção e o cuidado do Dr. Eduardo. Tudo muito bem feito, desde o atendimento até o pós. Recomendo de verdade.",
+    },
+    {
+      avatar: Avatar5,
+      name: "Camila Duarte Silveira",
+      time: "Há 3 meses",
+      text: "Estava com muito receio de colocar o balão, mas o Dr. Eduardo me passou toda a segurança. Já eliminei vários quilos e me sinto muito melhor! Atendimento humano e profissional! 🥹",
+    },
+  ];
 
     const cardBackgroundGradient2 = 'linear-gradient(0deg, rgba(70, 179, 60, 1) 23%, rgba(78, 234, 64, 1) 65%)';
 
@@ -178,6 +228,51 @@ function BalaoGastrico(){
           <ImcCalculator />
           <RealStories />
 
+          <section id="depoimentos" ref={sectionRefs.depoimentos} className="py-20 bg-[#262E46]">
+          <div className="max-w-[1200px] mx-auto text-center text-white">
+            <p className="text-sm font-semibold text-gray-400 mb-2">DEPOIMENTOS</p>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12">O que dizem nossos pacientes</h2>
+          </div>
+
+          <div className="marquee">
+            {/* Primeiro grupo de cards */}
+            <div className="marquee-group">
+              {testimonials.map((testimonial, index) => (
+                <TestimonialCard 
+                  key={`primeiro-${index}`}
+                  avatar={testimonial.avatar}
+                  name={testimonial.name}
+                  time={testimonial.time}
+                  text={testimonial.text}
+                />
+              ))}
+            </div>
+            {/* Segundo grupo de cards (cópia exata para o loop) */}
+            <div aria-hidden="true" className="marquee-group">
+              {testimonials.map((testimonial, index) => (
+                <TestimonialCard 
+                  key={`segundo-${index}`}
+                  avatar={testimonial.avatar}
+                  name={testimonial.name}
+                  time={testimonial.time}
+                  text={testimonial.text}
+                />
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <CtaButton className="m-auto mt-8 self-start">
+              AGENDAR MINHA AVALIAÇÃO
+            </CtaButton>          
+          </div>
+        </section>
+
+
+        <AboutSection/>
+        <LocationSection/>
+        <FaqSection/>
+        <Footer/>
         </main>
      </>
     )
