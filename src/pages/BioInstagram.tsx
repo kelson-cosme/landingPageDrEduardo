@@ -50,7 +50,7 @@ function BioInstagram() {
             <img className="m-auto mb-8 w-[12em]" src={Logo} alt="Duas letras simbolizando a logo do Dr. Eduardo Amui, as letras EA" />
 
             <div className="m-auto flex flex-col items-center sm:max-w-[849px] ">
-                <Link to="#" className="w-full mb-3 sm:mb-11">
+                <Link to="https://api.whatsapp.com/send/?phone=5565999558558&text&type=phone_number&app_absent=0" className="w-full mb-3 sm:mb-11">
                     <div data-aos="fade-right" className="card relative isolate w-full h-[165px] sm:h-[339px]  rounded-[10px] sm:rounded-[20px]" 
                         style={{ backgroundImage: cardBackgroundGradient }}
                     >
