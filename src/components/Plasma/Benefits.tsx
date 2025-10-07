@@ -10,8 +10,8 @@ export const Benefits = () => {
     const sectionBgColor = 'linear-gradient(180deg,rgba(61, 71, 103, 1) 0%, rgba(52, 61, 89, 1) 100%)';
 
     return (
-        <section id="beneficios" className=" px-4 text-whit bg-white" >
-            <div className="p-17 rounded-2xl max-w-6xl mx-auto" style={{backgroundImage: sectionBgColor}}>
+        <section id="beneficios" className=" px-4 text-whit bg-[#F9FAFF] pb-15" >
+            <div className="p-17 rounded-2xl max-w-6xl mx-auto " style={{backgroundImage: sectionBgColor}}>
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Benefícios do Balão Gástrico</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                     {/* Benefício 1 */}

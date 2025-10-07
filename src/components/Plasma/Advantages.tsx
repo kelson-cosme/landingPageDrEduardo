@@ -13,7 +13,7 @@ export const Advantages = () => {
         <>
         <section id="vantagens" className="bg-[#F0F2FF] py-20 px-4 border border-t-[#9EB8FF] border-b-[#9EB8FF]">
             <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#2D2D2D] mb-16">Vantagens da Balão Gástrico</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-[#2D2D2D] mb-16">Vantagens da Plasma de Argônio</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                     {/* Vantagem 1 */}
                     <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
@@ -26,9 +26,9 @@ export const Advantages = () => {
                     {/* Vantagem 2 */}
                     <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
                         <img className="mb-2" src={Ad2} alt="Icone de uma mão segurando um bisturi" />
-                        <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Procedimento endoscópico, sem cortes</h3>
+                        <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Recuperação rápida e ambulatorial</h3>
                         <p className="text-gray-600 text-sm">
-                        Colocado por via oral, sem necessidade de incisões ou cicatrizes. Recuperação rápida e ambulatorial. Não exige internação e permite retorno às atividades em poucos dias.                        </p>
+                        Menos complicações em comparação à cirurgia revisional.</p>
                     </div>
                     {/* Vantagem 3 */}
                     <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
@@ -44,29 +44,30 @@ export const Advantages = () => {
 
         <section id="vantagens" className="bg-[#F0F2FF] py-20 px-4 border ">
             <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#2D2D2D] mb-16">Indicações do Balão Gástrico</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-[#2D2D2D] mb-16">Indicações do Plasma Argônio</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                     {/* Vantagem 1 */}
                     <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
                         <img className="mb-2" src={Ad2} alt="Icone de uma balança" />
-                        <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Pacientes com IMC a partir de 27</h3>
+                        <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Pacientes com Bypass Gástrico</h3>
                         <p className="text-gray-600 text-sm">
-                            Indicado para quem está em sobrepeso ou obesidade e não conseguiu resultado com dieta e exercícios.
+                            Indicado apenas para quem fez bariátrica por técnicas como Fobi-Capella, Wittgrove ou Higa.
                         </p>
                     </div>
                     {/* Vantagem 2 */}
                     <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
                         <img className="mb-2" src={Ad2} alt="Icone de uma mão segurando um bisturi" />
-                        <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Pacientes com comorbidades associadas ao peso</h3>
+                        <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Reganho de peso após 1-2 anos</h3>
                         <p className="text-gray-600 text-sm">
-                        Como diabetes tipo 2, hipertensão, colesterol alto ou problemas ortopédicos.</p>
+                            Quando o paciente volta a engordar após o período inicial de perda.
+                        </p>
                     </div>
                     {/* Vantagem 3 */}
                     <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
                         <img className="mb-2" src={Ad3} alt="Icone significando Reversível" />
-                        <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Pacientes que não podem ou não desejam cirurgia</h3>
+                        <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Reganho ≥10% do menor peso</h3>
                         <p className="text-gray-600 text-sm">
-                            Alternativa segura e menos invasiva para quem tem contraindicação ou não quer realizar cirurgia bariátrica.
+                         Para quem recuperou parte significativa do peso eliminado com a cirurgia.
                         </p>
                     </div>
                 </div>

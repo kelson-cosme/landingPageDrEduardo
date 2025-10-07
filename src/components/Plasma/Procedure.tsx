@@ -16,15 +16,14 @@ export const Procedure = () => {
                 <div className="hidden md:block w-px h-40 bg-gray-200"></div>
 
                 {/* Coluna do Texto */}
-                <div className="max-w-md md:w-2/3 text-center md:text-left">
-                    <div className="space-y-5 text-gray-600">
-                        <p>
-                            A colocação do balão gástrico é realizada por endoscopia, com o paciente sob sedação leve. <br />
-                            O balão, ainda vazio, é introduzido pela boca até o estômago e, em seguida, é preenchido com soro fisiológico.
-                        </p>
-                        <p>
-                            O procedimento dura em média 20 a 30 minutos, é ambulatorial e não exige internação. Após algumas horas de observação, o paciente recebe alta e pode retornar às atividades em poucos dias.
-                        </p>
+                <div className=" md:w-2/3 text-center md:text-left">
+                    <div className="space-y-5 text-[#2D2D2D] text-justify">
+                    O <span className="font-bold"> Plasma de Argônio</span>  é um procedimento realizado sob sedação por via endoscópica em ambiente ambulatorial, sem a necessidade de internação prévia ou anestesia geral. No procedimento, um cateter duplo é passado por dentro do endoscópio. O gás argônio passa por um lado do cateter, enquanto, do outro, passa uma corrente elétrica. <br />
+                    <br />
+                    A interação do gás argônio com a corrente elétrica na ponta do cateter permite sua transformação em energia térmica, formando um plasma de coagulação que age sobre a anastomose. É o processo de cicatrização da cauterização posteriormente que causa o estreitamento da área. <br />
+                    <br />
+
+                    Para atingir a eficácia necessária, o tratamento precisa ser feito em duas a três sessões, com intervalos de um a dois meses entre cada sessão.                    
                     </div>
                 </div>
             </div>
