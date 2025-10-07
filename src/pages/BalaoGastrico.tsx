@@ -4,7 +4,11 @@ import Seta2 from "../assets/imagens/gastroplatia/array2.svg";
 import { useState, useEffect, useRef } from "react";
 import Logo from "../assets/logo.webp";
 import Black from "../assets/imagens/Black.png";
-
+import { HowItWorks } from "../components/BalaoGastrico/HowItWorks";
+import { Benefits } from "../components/BalaoGastrico/Benefits";
+import { Intro } from "../components/BalaoGastrico/Intro";
+import { Procedure } from "../components/BalaoGastrico/Procedure";
+import { NoSurgery } from "../components/BalaoGastrico/NoSurgery";
 
 function BalaoGastrico(){
 
@@ -160,6 +164,14 @@ function BalaoGastrico(){
             </div>
           ))}
         </div>
+
+
+          <HowItWorks />
+          <Intro />
+          <Benefits />
+          <Procedure />
+          <NoSurgery />
+
 
         </main>
      </>
