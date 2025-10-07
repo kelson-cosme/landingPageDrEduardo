@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import BioInstagram from './pages/BioInstagram'
 import BalaoGastrico from './pages/BalaoGastrico'
 import Plasma from './pages/Plasma'
+import Gastroplastia from './pages/Gastroplastia'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
           <Route path='/links' element={<BioInstagram/>} />
           <Route path='/balao-gastrico' element={<BalaoGastrico/>} />
           <Route path='/plasma' element={<Plasma/>} />
+          <Route path='/gastroplastia' element={<Gastroplastia/>} />
 
         </Routes>
       </BrowserRouter>
