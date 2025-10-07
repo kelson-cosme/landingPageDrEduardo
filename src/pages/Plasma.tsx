@@ -17,6 +17,8 @@ import { Footer } from "../components/Footer";
 import { AboutSection } from "../components/AboutSection";
 import { LocationSection } from "../components/LocationSection";
 import { FaqSection } from "../components/FaqSection";
+
+
 import Avatar1 from "../assets/imagens/avatar1.webp"
 import Avatar2 from "../assets/imagens/avatar2.webp"
 import Avatar3 from "../assets/imagens/avatar3.webp"

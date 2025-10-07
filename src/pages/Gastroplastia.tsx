@@ -4,11 +4,16 @@ import Fundo from "../assets/imagens/gastroplatia/fundo.webp";
 import Seta2 from "../assets/imagens/gastroplatia/array2.svg";
 import Black from "../assets/imagens/Black.png";
 
-import Avatar1 from "../assets/imagens/avatar1.webp"
-import Avatar2 from "../assets/imagens/avatar2.webp"
-import Avatar3 from "../assets/imagens/avatar3.webp"
-import Avatar4 from "../assets/imagens/avatar4.webp"
-import Avatar5 from "../assets/imagens/avatar5.webp"
+// import Avatar1 from "../assets/imagens/avatar1.webp"
+// import Avatar2 from "../assets/imagens/avatar2.webp"
+// import Avatar3 from "../assets/imagens/avatar3.webp"
+// import Avatar4 from "../assets/imagens/avatar4.webp"
+// import Avatar5 from "../assets/imagens/avatar5.webp"
+import { Intro } from "../components/Gastroplastia/Intro";
+import { Advantages } from "../components/BalaoGastrico/Advantages";
+
+import { HowItWorks } from "../components/Gastroplastia/HowItWorks";
+import Reducao from "../assets/imagens/gastroplatia/reducao.webp"
 
 function Gastroplastia(){
 
@@ -111,43 +116,43 @@ function Gastroplastia(){
 
 
 
-      const testimonials = [
-        {
-          avatar: Avatar1,
-          name: "Ana Beatriz Lemos",
-          time: "Há 2 semanas",
-          text: (
-            <>
-              Coloquei o balão gástrico com o Dr. Eduardo e só posso dizer que foi a melhor decisão da minha vida! Atendimento impecável, seguro e cheio de empatia. Me senti cuidada em cada detalhe. 💙💬
+    //   const testimonials = [
+    //     {
+    //       avatar: Avatar1,
+    //       name: "Ana Beatriz Lemos",
+    //       time: "Há 2 semanas",
+    //       text: (
+    //         <>
+    //           Coloquei o balão gástrico com o Dr. Eduardo e só posso dizer que foi a melhor decisão da minha vida! Atendimento impecável, seguro e cheio de empatia. Me senti cuidada em cada detalhe. 💙💬
                 
-            </>
-          ),
-        },
-        {
-          avatar: Avatar2,
-          name: "Marcos Vinícius Prado",
-          time: "Há 1 mês",
-          text: "Excelente profissional! Competente, atencioso e muito humano. Me senti acolhido desde o primeiro contato. Recomendo demais!",
-        },
-        {
-          avatar: Avatar3,
-          name: "Juliana Rocha Medeiros",
-          time: "Há 3 semanas",
-          text: "Fiz tratamento com plasma de argônio com o Dr. Eduardo e o resultado foi surpreendente. Profissional calmo, explica tudo com clareza e ainda transmite muita confiança.❤️",
-        },
-        {
-          avatar: Avatar4,
-          name: "Thiago Henrique Santana",
-          time: "Há 2 meses",
-          text: "Fui indicado para um acompanhamento endoscópico e fiquei impressionado com a atenção e o cuidado do Dr. Eduardo. Tudo muito bem feito, desde o atendimento até o pós. Recomendo de verdade.",
-        },
-        {
-          avatar: Avatar5,
-          name: "Camila Duarte Silveira",
-          time: "Há 3 meses",
-          text: "Estava com muito receio de colocar o balão, mas o Dr. Eduardo me passou toda a segurança. Já eliminei vários quilos e me sinto muito melhor! Atendimento humano e profissional! 🥹",
-        },
-      ];
+    //         </>
+    //       ),
+    //     },
+    //     {
+    //       avatar: Avatar2,
+    //       name: "Marcos Vinícius Prado",
+    //       time: "Há 1 mês",
+    //       text: "Excelente profissional! Competente, atencioso e muito humano. Me senti acolhido desde o primeiro contato. Recomendo demais!",
+    //     },
+    //     {
+    //       avatar: Avatar3,
+    //       name: "Juliana Rocha Medeiros",
+    //       time: "Há 3 semanas",
+    //       text: "Fiz tratamento com plasma de argônio com o Dr. Eduardo e o resultado foi surpreendente. Profissional calmo, explica tudo com clareza e ainda transmite muita confiança.❤️",
+    //     },
+    //     {
+    //       avatar: Avatar4,
+    //       name: "Thiago Henrique Santana",
+    //       time: "Há 2 meses",
+    //       text: "Fui indicado para um acompanhamento endoscópico e fiquei impressionado com a atenção e o cuidado do Dr. Eduardo. Tudo muito bem feito, desde o atendimento até o pós. Recomendo de verdade.",
+    //     },
+    //     {
+    //       avatar: Avatar5,
+    //       name: "Camila Duarte Silveira",
+    //       time: "Há 3 meses",
+    //       text: "Estava com muito receio de colocar o balão, mas o Dr. Eduardo me passou toda a segurança. Já eliminei vários quilos e me sinto muito melhor! Atendimento humano e profissional! 🥹",
+    //     },
+    //   ];
 
 
 
@@ -230,6 +235,13 @@ function Gastroplastia(){
                 <img src={Seta2} alt="Seta apontado para cima" className="w-8 ml-3" />
                 </button>
                 </div>
+                <div className="mt-8 flex items-center">
+                    <div className="w-1 h-12 bg-white mr-6"></div>
+                    <div>
+                        <p className="text-2xl font-bold">DR. EDUARDO AMUI | RQE Nº 5727</p>
+                        <p className="text-lg text-[#999999]">Especialista em emagrecimento sem cortes</p>
+                    </div>
+                </div>
             </div>
             </div>
             
@@ -243,10 +255,19 @@ function Gastroplastia(){
                 </div>
             ))}
             </div>
+
+            <HowItWorks/>
+            
+            <div>
+                <img width={"100%"} src={Reducao} alt="imagem do estômago reduzido, em 3d" />
+            </div>
+
+            <Intro/>
+            <Advantages/>
         </main>     
     </>
     )
     
 }
 
-export default Gastroplastia
+export default Gastroplastia;
