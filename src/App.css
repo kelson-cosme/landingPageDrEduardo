@@ -1,6 +1,8 @@
 #root{
   /* background: #262E46;
 background: linear-gradient(180deg, rgba(38, 46, 70, 1) 0%, rgba(47, 55, 81, 1) 50%, rgba(29, 35, 53, 1) 100%); */
+scroll-behavior: smooth;
+
 }
 
 

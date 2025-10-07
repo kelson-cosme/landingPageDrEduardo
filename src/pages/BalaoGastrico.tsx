@@ -3,6 +3,7 @@ import Fundo from "../assets/imagens/balao/capaBalao.webp";
 import Seta2 from "../assets/imagens/gastroplatia/array2.svg";
 import { useState, useEffect, useRef } from "react";
 import Logo from "../assets/logo.webp";
+import Black from "../assets/imagens/Black.png";
 
 
 function BalaoGastrico(){
@@ -136,11 +137,10 @@ function BalaoGastrico(){
       </header>
 
         <main className="mx-auto text-white">
-        <div style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-screen min-h-[600px] pt-20 bg-cover bg-center bg-no-repeat flex flex-col justify-center">
+        <div style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-center bg-no-repeat flex flex-col justify-center">
           <div className="max-w-[1920px] mx-auto w-full px-4 lg:pl-[10em]">
-            <h1 className="text-4xl md:text-5xl lg:text-4xl font-[700] ">DR. EDUARDO AMUI</h1>
+            <h1 className="text-4xl md:text-5xl lg:text-4xl font-[700] ">EMAGRECIMENTO <span className="bg-[#e40000]">SEM CORTES</span>  <br /> COM O BALÃO GÁSTRICO</h1>
             <p className="mb-5 font-[100] mt-2">Método moderno, não invasivo e seguro <br /> para quem busca resultados reais com <br /> acompanhamento médico especializado.</p>
-            <h2 className="font-[700] lg:text-2xl text-[clamp(1.5rem,2.5vw,2rem)] leading-tight">Transformando vidas com <br /> métodos não invasivos <br /> para o controle do peso.</h2>
             <div className="mt-5 flex items-center flex-wrap">
               <button className="bg-background: #46B33C; pl-4 p-2 rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500] text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
               AGENDAR MINHA AVALIAÇÃO
@@ -149,6 +149,18 @@ function BalaoGastrico(){
             </div>
           </div>
         </div>
+        
+        
+        {/* Faixa de Logos */}
+        <div className="bg-white h-[5vh] flex items-center justify-around overflow-hidden whitespace-nowrap">
+          {[...Array(6)].map((_, i) => (
+            <div key={i} className="flex items-center justify-center mx-7">
+              <img className="w-4" src={Black} alt="logo com as iniciais do Dr. Eduardo Amui" />
+              <h3 className="text-[#b7bac2] ml-5 font-[500] text-sm">DR. EDUARDO AMUI</h3>
+            </div>
+          ))}
+        </div>
+
         </main>
      </>
     )

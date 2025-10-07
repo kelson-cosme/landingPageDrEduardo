@@ -189,7 +189,7 @@ function Home() {
 
       <main className="mx-auto text-white">
         {/* Seção Hero */}
-        <div style={{backgroundImage:`url(${Fundo})`}} id="inicio" ref={sectionRefs.inicio} className="h-screen min-h-[600px] pt-20 bg-cover bg-center bg-no-repeat flex flex-col justify-center">
+        <div style={{backgroundImage:`url(${Fundo})`}} id="inicio" ref={sectionRefs.inicio} className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-center bg-no-repeat flex flex-col justify-center">
           <div className="max-w-[1920px] mx-auto w-full px-4 lg:pl-[10em]">
             <h1 className="text-4xl md:text-5xl lg:text-4xl font-[700] ">DR. EDUARDO AMUI</h1>
             <p className="mb-5 font-[100] mt-2">Endoscopia, gastroplastia endoscópica e <br /> tratamentos para obesidade sem cortes</p>
@@ -205,7 +205,7 @@ function Home() {
         </div>
         
         {/* Faixa de Logos */}
-        <div className="bg-white h-[8vh] flex items-center justify-around overflow-hidden whitespace-nowrap">
+        <div className="bg-white h-[5vh] flex items-center justify-around overflow-hidden whitespace-nowrap">
           {[...Array(6)].map((_, i) => (
             <div key={i} className="flex items-center justify-center mx-7">
               <img className="w-4" src={Black} alt="logo com as iniciais do Dr. Eduardo Amui" />
