@@ -41,7 +41,7 @@ export const HowItWorks = () => {
                     ) : (
                         <iframe
                             className="w-full h-full absolute top-0 left-0"
-                            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&start=3`}
+                            src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&start=0`}
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
                             title="Como funciona o Balão Gástrico"

@@ -199,7 +199,7 @@ function BalaoGastrico(){
             <h1 className="text-4xl md:text-5xl lg:text-4xl font-[700] ">EMAGRECIMENTO <span className="bg-[#e40000]">SEM CORTES</span>  <br /> COM O BALÃO GÁSTRICO</h1>
             <p className="mb-5 font-[100] mt-2">Método moderno, não invasivo e seguro <br /> para quem busca resultados reais com <br /> acompanhamento médico especializado.</p>
             <div className="mt-5 flex items-center flex-wrap">
-              <button className="bg-background: #46B33C; pl-4 p-2 rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500] text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
+              <button className="pl-4 p-2 rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500] text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
               AGENDAR MINHA AVALIAÇÃO
               <img src={Seta2} alt="Seta apontado para cima" className="w-8 ml-3" />
               </button>

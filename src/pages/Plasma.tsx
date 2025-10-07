@@ -4,6 +4,10 @@ import Fundo from "../assets/imagens/plasma/fundo2.webp";
 import Seta2 from "../assets/imagens/gastroplatia/array2.svg";
 import Black from "../assets/imagens/Black.png";
 import { HowItWorks } from "../components/Plasma/HowItWorks";
+import { PlasmaInfo } from "../components/Plasma/PlasmaInfo"; // Importado aqui
+import { Intro } from "../components/Plasma/Intro";
+import { Benefits } from "../components/Plasma/Benefits";
+import { Advantages } from "../components/Plasma/Advantages";
 
 function Plasma(){
 
@@ -197,6 +201,10 @@ function Plasma(){
 
 
             <HowItWorks/>
+            <PlasmaInfo />
+            <Intro/>
+            <Benefits/>
+            <Advantages/>
         </main>     
       </>
     )
