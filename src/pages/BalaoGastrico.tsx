@@ -9,6 +9,9 @@ import { Benefits } from "../components/BalaoGastrico/Benefits";
 import { Intro } from "../components/BalaoGastrico/Intro";
 import { Procedure } from "../components/BalaoGastrico/Procedure";
 import { NoSurgery } from "../components/BalaoGastrico/NoSurgery";
+import { Advantages } from "../components/BalaoGastrico/Advantages";
+import { ImcCalculator } from "../components/BalaoGastrico/ImcCalculator";
+import { RealStories } from "../components/BalaoGastrico/RealStories"; // Importado aqui
 
 function BalaoGastrico(){
 
@@ -171,7 +174,9 @@ function BalaoGastrico(){
           <Benefits />
           <Procedure />
           <NoSurgery />
-
+          <Advantages />
+          <ImcCalculator />
+          <RealStories />
 
         </main>
      </>
