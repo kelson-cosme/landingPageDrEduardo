@@ -20,10 +20,10 @@ export const RealStories = () => {
                     <p className="text-gray-400 font-semibold text-sm uppercase tracking-wider mb-4">
                         Mudança Real
                     </p>
-                    <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-8">
+                    <h2 className="text-3xl md:text-4xl font-bold leading-tight  lg:mb-8">
                         Histórias reais de quem recuperou saúde, autoestima e esperança.
                     </h2>
-                    <CtaButton className="mx-auto md:mx-0">
+                    <CtaButton className="mx-auto md:mx-0 lg:block hidden">
                         AGENDAR MINHA AVALIAÇÃO
                     </CtaButton>
                 </div>
@@ -52,6 +52,10 @@ export const RealStories = () => {
                         ></iframe>
                     )}
                 </div>
+
+                <CtaButton className="mx-auto md:mx-0 lg:hidden block">
+                        AGENDAR MINHA AVALIAÇÃO
+                    </CtaButton>
             </div>
         </section>
     );

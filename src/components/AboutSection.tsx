@@ -1,5 +1,9 @@
 // src/components/AboutSection.tsx
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
+
 import { useState } from 'react';
 import Card from "../assets/imagens/card.webp"
 // Dados das credenciais
@@ -34,16 +38,16 @@ export const AboutSection = () => {
     return (
         <section id="sobre" className="py-20 px-4 text-white bg-[#262E46]">
             <div className="max-w-[1200px] mx-auto relative">
-                <p className="text-center text-2xl md:text-3xl font-light mb-12">
+                <p className="text-center text-2xl md:text-3xl font-light mb-12" data-aos="zoom-in-up">
                     "Não se trata apenas de emagrecer, mas de <br/> recuperar o controle, a saúde e o prazer de viver."
                 <br />
                     <span className=' top-20 right-70 text-[0.4em] font-bold text-[#808695]'>- DR. EDUARDO AMUI</span>
                 </p>
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <img src={Card} alt="Foto do Dr. Eduardo Amui" className="rounded-lg w-full max-w-[20em] mx-auto" />
+                        <img src={Card} alt="Foto do Dr. Eduardo Amui" className="rounded-lg w-full max-w-[20em] mx-auto" data-aos="zoom-in-right"/>
                     </div>
-                    <div className="flex flex-col">
+                    <div className="flex flex-col ml-4 mr-4" data-aos="zoom-in-left">
                         <h2 className="text-3xl font-bold mb-4">Conheça o Dr. Eduardo Amui</h2>
                         <h3 className="text-xl  font-semibold ">Especialista em emagrecimento sem cirurgia.</h3>
                         <div className="space-y-4 text-gray-300 text-justify">

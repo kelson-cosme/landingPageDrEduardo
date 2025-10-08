@@ -32,7 +32,7 @@ export const AboutSection = () => {
     const [isExpanded, setIsExpanded] = useState(false);
 
     return (
-        <section id="sobre" className="py-20 px-4 text-white bg-[#262E46]">
+        <section id="sobre" className="py-20 px-6 lg:px-4 text-white bg-[#262E46]">
             <div className="max-w-[1200px] mx-auto relative">
                 <p className="text-center text-2xl md:text-3xl font-light mb-12">
                     "Não se trata apenas de emagrecer, mas de <br/> recuperar o controle, a saúde e o prazer de viver."

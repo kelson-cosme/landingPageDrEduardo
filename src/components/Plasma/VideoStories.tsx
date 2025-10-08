@@ -43,7 +43,7 @@ export const VideoStories = () => {
                 <p className="font-semibold text-sm uppercase tracking-wider mb-4 text-[#F9E6C1]">
                     Mudança Real
                 </p>
-                <h2 className="text-3xl md:text-3xl font-bold leading-tight mb-12">
+                <h2 className="text-3xl md:text-3xl font-bold leading-tight mb-12 ">
                     Cada depoimento é uma vitória. Assista quem venceu o reganho de peso com o Plasma de Argônio.
                 </h2>
                 

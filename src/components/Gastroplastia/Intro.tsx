@@ -6,11 +6,11 @@ import { CtaButton } from '../CtaButton';
 export const Intro = () => {
 
     return (
-        <section id="o-que-e" className="bg-[#F9FAFF] py-20 px-4 text-gray-800">
+        <section id="o-que-e" className="bg-[#F9FAFF] py-20 px-6 lg:px-4 text-gray-800">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
                 {/* Coluna de Texto */}
                 <div className="text-left">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#2E3650]">O que é a <br />Gastroplastia Endoscópica?</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#2E3650]">O que é a <br className="hidden lg:block"/>Gastroplastia Endoscópica?</h2>
                     <p className="text-[#2D2D2D] mb-3 text-justify">
                         A gastroplastia endoscópica é um procedimento para emagrecimento feito sem cortes e sem cicatrizes. Com a ajuda de um aparelho introduzido pela boca, o médico dá pontos internos no estômago, deixando-o menor e em formato parecido com um tubo.
                     </p>

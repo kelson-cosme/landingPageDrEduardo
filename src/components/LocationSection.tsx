@@ -11,7 +11,7 @@ export const LocationSection = () => {
 
   return (
     <section id="contato" className="py-20 px-4 bg-[#2E3750] text-white overflow-hidden bg-no-repeat bg-cover bg-center " style={{backgroundImage: `url(${fundo3})`}}>
-      <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 gap-16 items-center">
+      <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 lg:gap-16 items-center">
         
         {/* Coluna Esquerda: Conteúdo */}
         <div className="text-center lg:text-left">
@@ -21,7 +21,7 @@ export const LocationSection = () => {
           </h2>
           <p className="text-lg text-gray-300 mb-8">SB Medical Tower</p>
           <button 
-            className="pl-6 pr-2 py-2 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 mx-auto lg:mx-0 group" 
+            className="pl-6 pr-2 py-2 rounded-full lg:flex items-center justify-center text-base font-semibold text-white z-10 mx-auto lg:mx-0 group hidden " 
             style={{ backgroundImage: cardBackgroundGradient2 }}
           >
             AGENDAR MINHA AVALIAÇÃO
@@ -44,6 +44,17 @@ export const LocationSection = () => {
             className="absolute bottom-0 top-3.5 right-0 lg:right-20 w-3/5 max-w-sm rounded-lg shadow-lg z-10"
           />
         </div>
+
+
+        <button 
+            className="pl-6 pr-2 py-2 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 mx-auto lg:mx-0 group lg:hidden " 
+            style={{ backgroundImage: cardBackgroundGradient2 }}
+          >
+            AGENDAR MINHA AVALIAÇÃO
+            <div className="bg-white rounded-full p-2 ml-4">
+              <img src={Seta2} alt="Seta" className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1" />
+            </div>
+          </button>
 
       </div>
     </section>

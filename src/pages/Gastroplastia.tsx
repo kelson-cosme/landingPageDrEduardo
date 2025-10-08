@@ -32,6 +32,7 @@ function Gastroplastia(){
     const [hasScrolled, setHasScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState("inicio");
 
+    const gradientMobile = "linear-gradient(270deg,rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0.31) 100%)"
     const gradient =  "linear-gradient(180deg,rgba(242, 245, 255, 1) 0%, rgba(249, 250, 255, 1) 100%)"
     const cardBackgroundGradient2 = 'linear-gradient(0deg, rgba(70, 179, 60, 1) 23%, rgba(78, 234, 64, 1) 65%)';
 
@@ -235,10 +236,13 @@ function Gastroplastia(){
 
 
         <main className="mx-auto text-white">
-            <div style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-center bg-no-repeat flex flex-col justify-center">
-            <div className="max-w-[1920px] mx-auto w-full px-4 lg:pl-[10em]">
-                <h1 className="text-4xl md:text-5xl lg:text-4xl font-[700] uppercase">Gastroplastia Endoscópica, <br /> redução do estômago sem cirurgia <br /> em Cuiabá | Dr. Eduardo Amui</h1>
-                <p className="mb-5 text-2xl font-[100] mt-6"><span className="font-bold">Redução de estômago por endoscopia</span>, técnica <br /> inovadora que permite emagrecimento sem cortes, <br /> com recuperação rápida..</p>
+            <div style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20  bg-cover  bg-position-[center_right_-72vh] lg:bg-center bg-no-repeat flex flex-col justify-center">
+                  <div className="h-[95vh] block lg:hidden absolute top-0 left-0 w-full z-1" style={{backgroundImage: gradientMobile}} >
+                  </div>
+                  
+            <div className="max-w-[1920px] mx-auto w-full px-4 lg:pl-[10em] z-9">
+                <h1 className="text-2xl md:text-5xl lg:text-4xl font-[700] uppercase">Gastroplastia Endoscópica,  < br className="hidden sm:block" /> redução do estômago sem cirurgia <br /> em Cuiabá | Dr. Eduardo Amui</h1>
+                <p className="mb-5 text-1xl font-[100] mt-6"><span className="font-bold">Redução de estômago por endoscopia</span>, técnica <br className="hidden sm:block"  /> inovadora que permite emagrecimento sem cortes, <br className="hidden sm:block"  /> com recuperação rápida..</p>
                 <div className="mt-5 flex items-center flex-wrap">
                 <button className="bg-background: #46B33C; pl-4 p-2 rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500] text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
                 AGENDAR MINHA AVALIAÇÃO
@@ -248,7 +252,7 @@ function Gastroplastia(){
                 <div className="mt-8 flex items-center">
                     <div className="w-1 h-12 bg-white mr-6"></div>
                     <div>
-                        <p className="text-2xl font-bold">DR. EDUARDO AMUI | RQE Nº 5727</p>
+                        <p className="text-1xl lg:text-2xl font-bold">DR. EDUARDO AMUI | RQE Nº 5727</p>
                         <p className="text-lg text-[#999999]">Especialista em emagrecimento sem cortes</p>
                     </div>
                 </div>
@@ -277,12 +281,12 @@ function Gastroplastia(){
 
             <section id="escolha" ref={sectionRefs.escolha} className="py-20 px-4 bg-white text-gray-800" style={{backgroundImage : gradient}}>
             <div className="max-w-[1200px] mx-auto">
-                <div className="flex justify-between items-start mb-12">
+                <div className="lg:flex justify-between  items-start mb-12">
                     <div className="text-left">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#2E3650]">Como é feita a <br /> Gastroplastia Endoscópica?</h2>
+                        <h2 className="mb-6 lg:mb-0 text-3xl md:text-4xl font-bold text-[#2E3650] lg:text-left text-center">Como é feita a <br className="hidden lg:block" /> Gastroplastia Endoscópica?</h2>
                     </div>
-                    <div className="hidden md:block ">
-                        <p className="text-sm font-bold text-[#576BA1]">TÉCNICA INOVADORA PARA REDUÇÃO <br /> DO ESTOMAGO SEM CIRURGIA</p>
+                    <div className=" ">
+                        <p className="text-[1em] lg:text-sm font-bold text-[#576BA1] lg:text-left text-center">TÉCNICA INOVADORA PARA REDUÇÃO <br className=""/> DO ESTOMAGO SEM CIRURGIA</p>
                     </div>
                 </div>
 

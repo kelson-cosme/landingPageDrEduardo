@@ -16,7 +16,7 @@ export const Procedure = () => {
                 <div className="hidden md:block w-px h-40 bg-gray-200"></div>
 
                 {/* Coluna do Texto */}
-                <div className="max-w-md md:w-2/3 text-center md:text-left">
+                <div className="max-w-md md:w-2/3 text-justify lg:text-center md:text-left">
                     <div className="space-y-5 text-gray-600">
                         <p>
                             A colocação do balão gástrico é realizada por endoscopia, com o paciente sob sedação leve. <br />

@@ -12,7 +12,7 @@ export const Advantages = () => {
         <>
         <section id="vantagens" className="bg-[#F0F2FF] py-20 px-4 border ">
             <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#2D2D2D] mb-16">Indicações da Gastroplastia Endoscópica</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-[#2D2D2D] mb-4 lg:mb-16">Indicações da Gastroplastia Endoscópica</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                     {/* Vantagem 1 */}
                     <div className="rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">

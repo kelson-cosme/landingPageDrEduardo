@@ -12,18 +12,18 @@ export const Intro = () => {
 
     return (
         <section id="o-que-e" className="bg-white py-20 px-4 text-gray-800">
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div className="max-w-6xl mx-auto flex flex-col-reverse lg:grid lg:md:grid-cols-2 gap-12 items-center">
                 {/* Coluna de Texto */}
                 <div className="text-left">
                     <h2 className="text-3xl md:text-4xl font-bold mb-6">O que é o Balão Gástrico?</h2>
-                    <p className="text-gray-600 mb-4">
+                    <p className="text-gray-600 mb-4 text-justify">
                         O balão gástrico é um tratamento endoscópico para sobrepeso e obesidade. Um balão de silicone é colocado no estômago e preenchido com soro, reduzindo o espaço disponível.
                     </p>
-                    <p className="text-gray-600 mb-8">
+                    <p className="text-gray-600 mb-8 text-justify">
                         Isso gera saciedade precoce, ajuda a controlar a quantidade de comida ingerida e favorece a perda de peso, sempre aliado à reeducação alimentar.
                     </p>
                     <button
-                        className="px-6 py-3 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 group"
+                        className="px-6 py-3 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 group m-auto"
                         style={{ backgroundImage: cardBackgroundGradient2 }}
                     >
                         AGENDAR MINHA AVALIAÇÃO

@@ -27,6 +27,8 @@ import Avatar5 from "../assets/imagens/avatar5.webp"
 
 function Plasma(){
 
+  const gradientMobile = "linear-gradient(270deg,rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0.31) 100%)"
+
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -231,10 +233,14 @@ function Plasma(){
         </header>   
 
         <main className="mx-auto text-white">
-            <div style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-center bg-no-repeat flex flex-col justify-center">
-            <div className="max-w-[1920px] mx-auto w-full px-4 lg:pl-[10em]">
-                <h1 className="text-4xl md:text-5xl lg:text-4xl font-[700] ">PLASMA DE ARGÔNICO: <br /> TRATAMENTO PARA REGANHO DE <br /> PESO PÓS-BARIÁTRICA EM CUIABÁ</h1>
-                <p className="mb-5 text-2xl font-[100] mt-2">Recupere o controle do seu peso após a bariátrica <br /> sem precisar de nova cirurgia.</p>
+            <div style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-position-[center_right_-69vh] lg:bg-center bg-no-repeat flex flex-col justify-center">
+           
+            <div className="h-[95vh] block lg:hidden absolute top-0 left-0 w-full z-1" style={{backgroundImage: gradientMobile}} >
+            </div>
+           
+            <div className="max-w-[1920px] mx-auto w-full px-4 lg:pl-[10em] z-9">
+                <h1 className="text-2xl md:text-5xl lg:text-4xl font-[700] ">PLASMA DE ARGÔNICO: <br /> TRATAMENTO PARA REGANHO DE <br className="lg:block hidden" /> PESO PÓS-BARIÁTRICA EM CUIABÁ</h1>
+                <p className="mb-5 text-1xl font-[100] mt-2">Recupere o controle do seu peso após a bariátrica <br className="lg:block hidden"/> sem precisar de nova cirurgia.</p>
                 <div className="mt-5 flex items-center flex-wrap">
                 <button className="bg-background: #46B33C; pl-4 p-2 rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500] text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
                 AGENDAR MINHA AVALIAÇÃO

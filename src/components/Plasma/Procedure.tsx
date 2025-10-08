@@ -2,7 +2,7 @@
 
 export const Procedure = () => {
     return (
-        <section id="procedimento" className="bg-[#F8F9FA] py-20 px-4">
+        <section id="procedimento" className="bg-[#F8F9FA] lg:pt-0 pt-15 lg:py-20 px-4">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16">
                 
                 {/* Coluna do Título */}
@@ -16,15 +16,15 @@ export const Procedure = () => {
                 <div className="hidden md:block w-px h-40 bg-gray-200"></div>
 
                 {/* Coluna do Texto */}
-                <div className=" md:w-2/3 text-center md:text-left">
-                    <div className="space-y-5 text-[#2D2D2D] text-justify">
+                <div className=" md:w-2/3 lg:p-0 p-3 text-center md:text-left">
+                    <p className="space-y-5 text-[#2D2D2D] text-justify " >
                     O <span className="font-bold"> Plasma de Argônio</span>  é um procedimento realizado sob sedação por via endoscópica em ambiente ambulatorial, sem a necessidade de internação prévia ou anestesia geral. No procedimento, um cateter duplo é passado por dentro do endoscópio. O gás argônio passa por um lado do cateter, enquanto, do outro, passa uma corrente elétrica. <br />
                     <br />
                     A interação do gás argônio com a corrente elétrica na ponta do cateter permite sua transformação em energia térmica, formando um plasma de coagulação que age sobre a anastomose. É o processo de cicatrização da cauterização posteriormente que causa o estreitamento da área. <br />
                     <br />
 
                     Para atingir a eficácia necessária, o tratamento precisa ser feito em duas a três sessões, com intervalos de um a dois meses entre cada sessão.                    
-                    </div>
+                    </p>
                 </div>
             </div>
         </section>

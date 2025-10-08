@@ -26,6 +26,7 @@ import Avatar4 from "../assets/imagens/avatar4.webp"
 import Avatar5 from "../assets/imagens/avatar5.webp"
 
 function BalaoGastrico(){
+  const gradientMobile = "linear-gradient(270deg,rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0.31) 100%)"
 
   const testimonials = [
     {
@@ -194,10 +195,14 @@ function BalaoGastrico(){
       </header>
 
         <main className="mx-auto text-white">
-        <div style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-center bg-no-repeat flex flex-col justify-center">
-          <div className="max-w-[1920px] mx-auto w-full px-4 lg:pl-[10em]">
-            <h1 className="text-4xl md:text-5xl lg:text-4xl font-[700] ">EMAGRECIMENTO <span className="bg-[#e40000]">SEM CORTES</span>  <br /> COM O BALÃO GÁSTRICO</h1>
-            <p className="mb-5 font-[100] mt-2">Método moderno, não invasivo e seguro <br /> para quem busca resultados reais com <br /> acompanhamento médico especializado.</p>
+        <div style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-position-[center_right_-72vh] lg:bg-center bg-no-repeat flex flex-col justify-center">
+          
+        <div className="h-[95vh] block lg:hidden absolute top-0 left-0 w-full z-1" style={{backgroundImage: gradientMobile}} >
+        </div>
+          
+          <div className="max-w-[1920px] mx-auto w-full px-4 lg:pl-[10em] z-999">
+            <h1 className="text-2xl md:text-5xl lg:text-4xl font-[700] ">EMAGRECIMENTO <span className="bg-[#e40000]">SEM CORTES</span>  <br  className="hidden lg:block"/> COM O BALÃO GÁSTRICO</h1>
+            <p className="mb-5 text-1xl font-[100] mt-2">Método moderno, não invasivo e seguro <br /> para quem busca resultados reais com <br /> acompanhamento médico especializado.</p>
             <div className="mt-5 flex items-center flex-wrap">
               <button className="pl-4 p-2 rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500] text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
               AGENDAR MINHA AVALIAÇÃO

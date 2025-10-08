@@ -24,11 +24,21 @@ import Avatar5 from "../assets/imagens/avatar5.webp"
 
 import { CtaButton } from '../components/CtaButton'; // Importando o novo componente
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("inicio");
+
+  const gradientMobile = "linear-gradient(270deg,rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0.31) 100%)"
+
+    useEffect( () => {
+        AOS.init();
+    }, [])
+
 
 
     // Dados dos depoimentos
@@ -127,7 +137,7 @@ function Home() {
 
   return (
     <>
-      <header 
+      <header data-aos="fade-down" 
         className={`fixed w-full top-0 z-50 transition-colors duration-300 ease-in-out 
                     ${hasScrolled || isMobileMenuOpen ? 'bg-[#262E46] shadow-md' : 'bg-transparent'}`}
       >
@@ -191,17 +201,21 @@ function Home() {
 
       <main className="mx-auto text-white">
         {/* Seção Hero */}
-        <div style={{backgroundImage:`url(${Fundo})`}} id="inicio" ref={sectionRefs.inicio} className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-center bg-no-repeat flex flex-col justify-center">
-          <div className="max-w-[1920px] mx-auto w-full px-4 lg:pl-[10em]">
-            <h1 className="text-4xl md:text-5xl lg:text-4xl font-[700] ">DR. EDUARDO AMUI</h1>
-            <p className="mb-5 font-[100] mt-2">Endoscopia, gastroplastia endoscópica e <br /> tratamentos para obesidade sem cortes</p>
-            <h2 className="font-[700] lg:text-2xl text-[clamp(1.5rem,2.5vw,2rem)] leading-tight">Transformando vidas com <br /> métodos não invasivos <br /> para o controle do peso.</h2>
-            <div className="mt-5 flex items-center flex-wrap">
+        <div data-aos="zoom-in" style={{backgroundImage:`url(${Fundo})`}} id="inicio" ref={sectionRefs.inicio} className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-center bg-no-repeat flex flex-col justify-center ">
+         
+        <div className="h-[95vh] block lg:hidden absolute top-0 left-0 w-full z-1" style={{backgroundImage: gradientMobile}} >
+        </div>
+         
+          <div className="max-w-[1920px] mx-auto w-full px-4 lg:pl-[10em] z-9">
+            <h1 className="text-2xl md:text-5xl lg:text-4xl font-[700] ">DR. EDUARDO AMUI</h1>
+            <p className="mb-5 text-1xl font-[100] mt-2">Endoscopia, gastroplastia endoscópica e <br /> tratamentos para obesidade sem cortes</p>
+            <h2 className="font-[700] lg:text-2xl  text-1xl leading-tight">Transformando vidas com <br /> métodos não invasivos <br /> para o controle do peso.</h2>
+            <div className="mt-5 flex  lg:flex items-center flex-wrap">
               <button className="bg-background: #46B33C; pl-4 p-2 rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500] text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
                 QUERO AGENDAR MINHA AVALIAÇÃO
                 <img src={Seta2} alt="Seta apontado para cima" className="w-8 ml-3" />
               </button>
-              <img className="ml-5 w-40 mt-4 sm:mt-0" src={Review} alt="5 estrela na nota do google" />
+              <img className="lg:ml-5 w-40 mt-4 sm:mt-0" src={Review} alt="5 estrela na nota do google" />
             </div>
           </div>
         </div>
@@ -217,7 +231,7 @@ function Home() {
         </div>
 
         {/* Seção Sobre Mim */}
-        <div id="sobre" ref={sectionRefs.sobre}>
+        <div id="sobre" ref={sectionRefs.sobre} >
           <AboutSection />
         </div>
 
@@ -226,7 +240,7 @@ function Home() {
                 <div className="flex justify-between items-start mb-12">
                     <div className="text-left">
                         <p className="text-sm font-semibold text-gray-500 mb-2">SOBRE MIM</p>
-                        <h2 className="text-3xl md:text-4xl font-bold">Por que pacientes escolhem<br/> o Dr. Eduardo Amui?</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold">Por que pacientes escolhem<br className="hidden lg:block"/> o Dr. Eduardo Amui?</h2>
                     </div>
                     <div className="hidden md:block text-right">
                         <p className="text-sm font-semibold text-[#262E46]">SUA SAÚDE NAS MÃOS DE UM<br/>PROFISSIONAL COMPROMETIDO</p>
