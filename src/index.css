@@ -1,6 +1,9 @@
 /* Importações do Tailwind (devem vir primeiro) */
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
 /* 1. Defina sua fonte local com um nome personalizado */
 @font-face {
   font-family: 'FuturaBT'; /* Demos um nome para a fonte */
