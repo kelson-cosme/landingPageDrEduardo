@@ -2,7 +2,7 @@
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-
+import { useEffect } from 'react';
 
 import { useState } from 'react';
 import Card from "../assets/imagens/card.webp"
@@ -34,7 +34,9 @@ const highlights = [
 
 export const AboutSection = () => {
     const [isExpanded, setIsExpanded] = useState(false);
-
+    useEffect( () => {
+        AOS.init();
+    }, [])
     return (
         <section id="sobre" className="py-20 px-4 text-white bg-[#262E46]">
             <div className="max-w-[1200px] mx-auto relative">
