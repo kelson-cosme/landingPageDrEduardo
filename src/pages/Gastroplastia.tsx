@@ -4,16 +4,26 @@ import Fundo from "../assets/imagens/gastroplatia/fundo.webp";
 import Seta2 from "../assets/imagens/gastroplatia/array2.svg";
 import Black from "../assets/imagens/Black.png";
 
-// import Avatar1 from "../assets/imagens/avatar1.webp"
-// import Avatar2 from "../assets/imagens/avatar2.webp"
-// import Avatar3 from "../assets/imagens/avatar3.webp"
-// import Avatar4 from "../assets/imagens/avatar4.webp"
-// import Avatar5 from "../assets/imagens/avatar5.webp"
+import Avatar1 from "../assets/imagens/avatar1.webp"
+import Avatar2 from "../assets/imagens/avatar2.webp"
+import Avatar3 from "../assets/imagens/avatar3.webp"
+import Avatar4 from "../assets/imagens/avatar4.webp"
+import Avatar5 from "../assets/imagens/avatar5.webp"
 import { Intro } from "../components/Gastroplastia/Intro";
 import { Advantages } from "../components/BalaoGastrico/Advantages";
-
+import { AboutSection } from "../components/Gastroplastia/AboutSection";
 import { HowItWorks } from "../components/Gastroplastia/HowItWorks";
+import { Beneficios } from "../components/Gastroplastia/Beneficios"
+import { ComparativeTable } from "../components/Gastroplastia/ComparativeSection";
+import { TestimonialCard } from "../components/TestimonialCard";
+import { CtaButton } from "../components/CtaButton";
+import { LocationSection } from "../components/LocationSection";
+import { Footer } from "../components/Footer";
+import { FaqSection } from "../components/FaqSection";
+
 import Reducao from "../assets/imagens/gastroplatia/reducao.webp"
+
+import Grafico from "../assets/imagens/gastroplatia/grafico.webp"
 
 function Gastroplastia(){
 
@@ -22,7 +32,7 @@ function Gastroplastia(){
     const [hasScrolled, setHasScrolled] = useState(false);
     const [activeSection, setActiveSection] = useState("inicio");
 
-
+    const gradient =  "linear-gradient(180deg,rgba(242, 245, 255, 1) 0%, rgba(249, 250, 255, 1) 100%)"
     const cardBackgroundGradient2 = 'linear-gradient(0deg, rgba(70, 179, 60, 1) 23%, rgba(78, 234, 64, 1) 65%)';
 
     const dropdownRef = useRef<HTMLLIElement>(null);
@@ -116,43 +126,43 @@ function Gastroplastia(){
 
 
 
-    //   const testimonials = [
-    //     {
-    //       avatar: Avatar1,
-    //       name: "Ana Beatriz Lemos",
-    //       time: "Há 2 semanas",
-    //       text: (
-    //         <>
-    //           Coloquei o balão gástrico com o Dr. Eduardo e só posso dizer que foi a melhor decisão da minha vida! Atendimento impecável, seguro e cheio de empatia. Me senti cuidada em cada detalhe. 💙💬
+      const testimonials = [
+        {
+          avatar: Avatar1,
+          name: "Ana Beatriz Lemos",
+          time: "Há 2 semanas",
+          text: (
+            <>
+              Coloquei o balão gástrico com o Dr. Eduardo e só posso dizer que foi a melhor decisão da minha vida! Atendimento impecável, seguro e cheio de empatia. Me senti cuidada em cada detalhe. 💙💬
                 
-    //         </>
-    //       ),
-    //     },
-    //     {
-    //       avatar: Avatar2,
-    //       name: "Marcos Vinícius Prado",
-    //       time: "Há 1 mês",
-    //       text: "Excelente profissional! Competente, atencioso e muito humano. Me senti acolhido desde o primeiro contato. Recomendo demais!",
-    //     },
-    //     {
-    //       avatar: Avatar3,
-    //       name: "Juliana Rocha Medeiros",
-    //       time: "Há 3 semanas",
-    //       text: "Fiz tratamento com plasma de argônio com o Dr. Eduardo e o resultado foi surpreendente. Profissional calmo, explica tudo com clareza e ainda transmite muita confiança.❤️",
-    //     },
-    //     {
-    //       avatar: Avatar4,
-    //       name: "Thiago Henrique Santana",
-    //       time: "Há 2 meses",
-    //       text: "Fui indicado para um acompanhamento endoscópico e fiquei impressionado com a atenção e o cuidado do Dr. Eduardo. Tudo muito bem feito, desde o atendimento até o pós. Recomendo de verdade.",
-    //     },
-    //     {
-    //       avatar: Avatar5,
-    //       name: "Camila Duarte Silveira",
-    //       time: "Há 3 meses",
-    //       text: "Estava com muito receio de colocar o balão, mas o Dr. Eduardo me passou toda a segurança. Já eliminei vários quilos e me sinto muito melhor! Atendimento humano e profissional! 🥹",
-    //     },
-    //   ];
+            </>
+          ),
+        },
+        {
+          avatar: Avatar2,
+          name: "Marcos Vinícius Prado",
+          time: "Há 1 mês",
+          text: "Excelente profissional! Competente, atencioso e muito humano. Me senti acolhido desde o primeiro contato. Recomendo demais!",
+        },
+        {
+          avatar: Avatar3,
+          name: "Juliana Rocha Medeiros",
+          time: "Há 3 semanas",
+          text: "Fiz tratamento com plasma de argônio com o Dr. Eduardo e o resultado foi surpreendente. Profissional calmo, explica tudo com clareza e ainda transmite muita confiança.❤️",
+        },
+        {
+          avatar: Avatar4,
+          name: "Thiago Henrique Santana",
+          time: "Há 2 meses",
+          text: "Fui indicado para um acompanhamento endoscópico e fiquei impressionado com a atenção e o cuidado do Dr. Eduardo. Tudo muito bem feito, desde o atendimento até o pós. Recomendo de verdade.",
+        },
+        {
+          avatar: Avatar5,
+          name: "Camila Duarte Silveira",
+          time: "Há 3 meses",
+          text: "Estava com muito receio de colocar o balão, mas o Dr. Eduardo me passou toda a segurança. Já eliminei vários quilos e me sinto muito melhor! Atendimento humano e profissional! 🥹",
+        },
+      ];
 
 
 
@@ -264,6 +274,72 @@ function Gastroplastia(){
 
             <Intro/>
             <Advantages/>
+
+            <section id="escolha" ref={sectionRefs.escolha} className="py-20 px-4 bg-white text-gray-800" style={{backgroundImage : gradient}}>
+            <div className="max-w-[1200px] mx-auto">
+                <div className="flex justify-between items-start mb-12">
+                    <div className="text-left">
+                        <h2 className="text-3xl md:text-4xl font-bold text-[#2E3650]">Como é feita a <br /> Gastroplastia Endoscópica?</h2>
+                    </div>
+                    <div className="hidden md:block ">
+                        <p className="text-sm font-bold text-[#576BA1]">TÉCNICA INOVADORA PARA REDUÇÃO <br /> DO ESTOMAGO SEM CIRURGIA</p>
+                    </div>
+                </div>
+
+                <div className="">
+                  <img className="w-full" src={Grafico} alt="" />
+                </div>
+            </div>
+        </section>
+
+        <Beneficios/>
+        <ComparativeTable />
+
+
+                  <section id="depoimentos" ref={sectionRefs.depoimentos} className="py-20 bg-[#262E46]">
+                  <div className="max-w-[1200px] mx-auto text-center text-white">
+                    <p className="text-sm font-semibold text-gray-400 mb-2">DEPOIMENTOS</p>
+                    <h2 className="text-3xl md:text-4xl font-bold mb-12">O que dizem nossos pacientes</h2>
+                  </div>
+        
+                  <div className="marquee">
+                    {/* Primeiro grupo de cards */}
+                    <div className="marquee-group">
+                      {testimonials.map((testimonial, index) => (
+                        <TestimonialCard 
+                          key={`primeiro-${index}`}
+                          avatar={testimonial.avatar}
+                          name={testimonial.name}
+                          time={testimonial.time}
+                          text={testimonial.text}
+                        />
+                      ))}
+                    </div>
+                    {/* Segundo grupo de cards (cópia exata para o loop) */}
+                    <div aria-hidden="true" className="marquee-group">
+                      {testimonials.map((testimonial, index) => (
+                        <TestimonialCard 
+                          key={`segundo-${index}`}
+                          avatar={testimonial.avatar}
+                          name={testimonial.name}
+                          time={testimonial.time}
+                          text={testimonial.text}
+                        />
+                      ))}
+                    </div>
+                  </div>
+        
+                  <div className="mt-12 text-center">
+                    <CtaButton className="m-auto mt-8 self-start">
+                      AGENDAR MINHA AVALIAÇÃO
+                    </CtaButton>          
+                  </div>
+                </section>
+        
+        <AboutSection/>
+        <LocationSection/>
+        <FaqSection/>
+        <Footer/>
         </main>     
     </>
     )
