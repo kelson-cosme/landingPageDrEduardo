@@ -137,7 +137,7 @@ function Home() {
 
   return (
     <>
-      <header data-aos="fade-down" 
+      <header 
         className={`fixed w-full top-0 z-50 transition-colors duration-300 ease-in-out 
                     ${hasScrolled || isMobileMenuOpen ? 'bg-[#262E46] shadow-md' : 'bg-transparent'}`}
       >
