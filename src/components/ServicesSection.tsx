@@ -45,15 +45,15 @@ export const ServicesSection = () => {
 
   return (
     <section id="servicos" className="py-20 px-4 bg-white text-gray-800">
-      <div className="max-w-[1200px] mx-auto">
-        <div className="text-left mb-12">
+      <div className="max-w-[1200px] mx-auto" >
+        <div className="text-left mb-12" data-aos="zoom-out-right">
           <p className="text-sm font-semibold text-gray-500 mb-2">SERVIÇOS</p>
           <h2 className="text-3xl md:text-4xl font-bold">Conheça todos os serviços</h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
+        <div className="grid lg:grid-cols-3 gap-12" >
           {/* Coluna 1: Botões */}
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-4" data-aos="zoom-out-right">
             <button onClick={() => setActiveService('gastroplastia')} className={`text-left p-6 rounded-lg font-semibold transition-all duration-300 ${getButtonClass('gastroplastia')}`}>
               Gastroplastia endoscópica
             </button>
@@ -66,7 +66,7 @@ export const ServicesSection = () => {
           </div>
 
           {/* Coluna 2: Textos Dinâmicos */}
-          <div className="space-y-6">
+          <div className="space-y-6" data-aos="zoom-out-down">
             <div>
               <h3 className="font-bold text-lg mb-2">{service.title}</h3>
               <p className="text-gray-600 text-sm">{service.description}</p>
@@ -86,7 +86,7 @@ export const ServicesSection = () => {
           </div>
 
           {/* Coluna 3: Imagem Dinâmica */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center" data-aos="zoom-out-left">
             <img src={service.image} alt={service.title} className="rounded-lg object-cover max-h-96 w-full transition-all duration-300" />
           </div>
         </div>

@@ -28,13 +28,13 @@ export const ContentSection = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-12">Acompanhe nossos conteúdos</h2>
 
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
-                    <div className="rounded-xl overflow-hidden shadow-lg">
+                    <div className="rounded-xl overflow-hidden shadow-lg" data-aos="flip-left">
                         <img src={Post1} alt="Post sobre balão gástrico" className="w-full h-full object-cover"/>
                     </div>
-                    <div className="rounded-xl overflow-hidden shadow-lg">
+                    <div className="rounded-xl overflow-hidden shadow-lg" data-aos="flip-up">
                         <img src={Post2} alt="Post sobre como viver os próximos 40 anos" className="w-full h-full object-cover"/>
                     </div>
-                    <div className="rounded-xl overflow-hidden shadow-lg">
+                    <div className="rounded-xl overflow-hidden shadow-lg" data-aos="flip-right">
                         <img src={Post3} alt="Post sobre obesidade e casamento" className="w-full h-full object-cover"/>
                     </div>
                 </div>

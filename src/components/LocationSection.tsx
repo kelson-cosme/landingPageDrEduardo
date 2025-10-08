@@ -14,7 +14,7 @@ export const LocationSection = () => {
       <div className="max-w-[1200px] mx-auto grid lg:grid-cols-2 lg:gap-16 items-center">
         
         {/* Coluna Esquerda: Conteúdo */}
-        <div className="text-center lg:text-left">
+        <div className="text-center lg:text-left" data-aos="zoom-out">
           <img src={Logo} alt="Logotipo Dr. Eduardo Amui" className="h-12 w-auto mx-auto lg:mx-0 mb-8" />
           <h2 className="text-4xl md:text-5xl font-bold  mb-4 ">
             Clínica de<br />emagrecimento<br />sem cortes.
@@ -36,12 +36,18 @@ export const LocationSection = () => {
           <img 
             src={ClinicImage} 
             alt="Interior da clínica" 
-            className="absolute top-0 lg:left-[-9em]  w-3/5 rounded-lg shadow-2xl z-20"
+            className="absolute top-0 lg:left-[-9em]  w-3/5 rounded-lg shadow-2xl z-20" 
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
           />
           <img 
             src={DrImage} 
             alt="Dr. Eduardo Amui na clínica" 
             className="absolute bottom-0 top-3.5 right-0 lg:right-20 w-3/5 max-w-sm rounded-lg shadow-lg z-10"
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
           />
         </div>
 

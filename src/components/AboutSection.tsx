@@ -37,6 +37,8 @@ export const AboutSection = () => {
     useEffect( () => {
         AOS.init();
     }, [])
+
+    
     return (
         <section id="sobre" className="py-20 px-4 text-white bg-[#262E46]">
             <div className="max-w-[1200px] mx-auto relative">

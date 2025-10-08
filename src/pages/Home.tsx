@@ -199,7 +199,7 @@ function Home() {
         </div>
       </header>
 
-      <main className="mx-auto text-white">
+      <main className="mx-auto text-white overflow-hidden">
         {/* Seção Hero */}
         <div data-aos="zoom-in" style={{backgroundImage:`url(${Fundo})`}} id="inicio" ref={sectionRefs.inicio} className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-center bg-no-repeat flex flex-col justify-center ">
          
@@ -238,18 +238,18 @@ function Home() {
           <section id="escolha" ref={sectionRefs.escolha} className="py-20 px-4 bg-white text-gray-800">
             <div className="max-w-[1200px] mx-auto">
                 <div className="flex justify-between items-start mb-12">
-                    <div className="text-left">
+                    <div className="text-left" data-aos="zoom-out-right">
                         <p className="text-sm font-semibold text-gray-500 mb-2">SOBRE MIM</p>
                         <h2 className="text-3xl md:text-4xl font-bold">Por que pacientes escolhem<br className="hidden lg:block"/> o Dr. Eduardo Amui?</h2>
                     </div>
-                    <div className="hidden md:block text-right">
+                    <div className="hidden md:block text-right" data-aos="zoom-out-left">
                         <p className="text-sm font-semibold text-[#262E46]">SUA SAÚDE NAS MÃOS DE UM<br/>PROFISSIONAL COMPROMETIDO</p>
                     </div>
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {/* Card 1 */}
-                    <div className="border border-gray-200 p-8 rounded-lg flex items-start space-x-6">
+                    <div className="border border-gray-200 p-8 rounded-lg flex items-start space-x-6" data-aos="flip-left">
                         <div className="flex-shrink-0">
                            <img src={Tecnologia1} alt="" />
                         </div>
@@ -260,7 +260,7 @@ function Home() {
                     </div>
 
                     {/* Card 2 */}
-                    <div className="border border-gray-200 p-8 rounded-lg flex items-start space-x-6">
+                    <div className="border border-gray-200 p-8 rounded-lg flex items-start space-x-6" data-aos="flip-up">
                         <div className="flex-shrink-0">
                         <img src={Tecnologia2} alt="" />
 
@@ -273,7 +273,7 @@ function Home() {
                     </div>
 
                     {/* Card 3 */}
-                    <div className="border border-gray-200 p-8 rounded-lg flex items-start space-x-6">
+                    <div className="border border-gray-200 p-8 rounded-lg flex items-start space-x-6" data-aos="flip-right">
                         <div className="flex-shrink-0">
                           <img src={Tecnologia3} alt="" />
 
@@ -290,7 +290,8 @@ function Home() {
 
 
                 {/* NOVA SEÇÃO: Depoimentos */}
-                <section id="depoimentos" ref={sectionRefs.depoimentos} className="py-20 bg-[#262E46]">
+                <section data-aos="fade-up"
+     data-aos-duration="3000" id="depoimentos" ref={sectionRefs.depoimentos} className="py-20 bg-[#262E46]">
                   <div className="max-w-[1200px] mx-auto text-center text-white">
                     <p className="text-sm font-semibold text-gray-400 mb-2">DEPOIMENTOS</p>
                     <h2 className="text-3xl md:text-4xl font-bold mb-12">O que dizem nossos pacientes</h2>
