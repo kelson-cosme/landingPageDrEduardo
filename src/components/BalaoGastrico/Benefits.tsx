@@ -10,10 +10,10 @@ export const Benefits = () => {
     return (
         <section id="beneficios" className=" px-4 text-white bg-white">
             <div className="bg-[#413E39] p-4 lg:p-17 rounded-2xl max-w-6xl mx-auto ">
-                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Benefícios do Balão Gástrico</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center"data-aos="fade-down" >Benefícios do Balão Gástrico</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                     {/* Benefício 1 */}
-                    <div className="border border-gray-600 rounded-lg p-8  flex flex-col  hover:border-white transition-colors duration-300">
+                    <div className="border border-gray-600 rounded-lg p-8  flex flex-col  hover:border-white transition-colors duration-300" data-aos="flip-left">
                         <img src={B1} alt="icone segurando um bisturi"  className="w-7"/>
                         <h3 className="font-bold mt-2">Controle da fome e da saciedade</h3>
                         <p className="text-gray-400 text-sm">
@@ -21,7 +21,7 @@ export const Benefits = () => {
                         </p>
                     </div>
                     {/* Benefício 2 */}
-                    <div className="border border-gray-600 rounded-lg p-8 flex flex-col  hover:border-white transition-colors duration-300">
+                    <div className="border border-gray-600 rounded-lg p-8 flex flex-col  hover:border-white transition-colors duration-300" data-aos="flip-up">
                         <img src={B2} alt="icone"  className="w-7"/>
                         <h3 className="font-bold mt-2">Emagrecimento seguro e eficaz</h3>
                         <p className="text-gray-400 text-sm">
@@ -29,7 +29,7 @@ export const Benefits = () => {
                         </p>
                     </div>
                     {/* Benefício 3 */}
-                    <div className="border border-gray-600 rounded-lg p-8 flex flex-col  hover:border-white transition-colors duration-300">
+                    <div className="border border-gray-600 rounded-lg p-8 flex flex-col  hover:border-white transition-colors duration-300" data-aos="flip-right">
                         <img src={B3} alt="icone" className="w-7" />
                         <h3 className="font-bold mt-2">Mudança real no estilo de vida</h3>
                         <p className="text-gray-400 text-sm">

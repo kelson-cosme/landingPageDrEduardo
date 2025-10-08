@@ -25,7 +25,15 @@ import Avatar3 from "../assets/imagens/avatar3.webp"
 import Avatar4 from "../assets/imagens/avatar4.webp"
 import Avatar5 from "../assets/imagens/avatar5.webp"
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 function BalaoGastrico(){
+
+      useEffect( () => {
+          AOS.init();
+      }, [])
+
   const gradientMobile = "linear-gradient(270deg,rgba(0, 0, 0, 0.44) 0%, rgba(0, 0, 0, 0.31) 100%)"
 
   const testimonials = [
@@ -194,7 +202,7 @@ function BalaoGastrico(){
         </div>
       </header>
 
-        <main className="mx-auto text-white">
+        <main className="mx-auto text-white"  data-aos="zoom-in">
         <div style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-position-[center_right_-72vh] lg:bg-center bg-no-repeat flex flex-col justify-center">
           
         <div className="h-[95vh] block lg:hidden absolute top-0 left-0 w-full z-1" style={{backgroundImage: gradientMobile}} >
