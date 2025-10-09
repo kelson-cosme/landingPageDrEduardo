@@ -7,7 +7,7 @@ export const Procedure = () => {
                 
                 {/* Coluna do Título */}
                 <div className="flex-shrink-0 md:w-1/3 text-center md:text-right">
-                    <h2 className="text-4xl md:text-4xl font-bold text-[#2E3750] leading-tight">
+                    <h2 className="text-4xl md:text-4xl font-bold text-[#2E3750] leading-tight" data-aos="zoom-in-down">
                         Como é feito<br />o procedimento?
                     </h2>
                 </div>
@@ -17,7 +17,7 @@ export const Procedure = () => {
 
                 {/* Coluna do Texto */}
                 <div className="max-w-md md:w-2/3 text-justify lg:text-center md:text-left">
-                    <div className="space-y-5 text-gray-600">
+                    <div className="space-y-5 text-gray-600" data-aos="zoom-in-up">
                         <p>
                             A colocação do balão gástrico é realizada por endoscopia, com o paciente sob sedação leve. <br />
                             O balão, ainda vazio, é introduzido pela boca até o estômago e, em seguida, é preenchido com soro fisiológico.

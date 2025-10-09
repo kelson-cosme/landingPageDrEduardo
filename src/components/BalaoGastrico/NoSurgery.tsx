@@ -13,17 +13,17 @@ export const NoSurgery = () => {
             <div className="max-w-6xl mx-auto flex flex-col-reverse md:grid md:grid-cols-2 gap-12 items-center">
                 {/* Coluna de Texto */}
                 <div className="text-left">
-                    <h3 className="text-3xl md:text-4xl font-bold  text-center lg:text-left text-[#2E3650]">Balão Gástrico:</h3>
-                    <h2 className="text-3xl text-center lg:text-left md:text-4xl font-bold text-[#2E3750] mb-2">emagrecimento sem cirurgia</h2>
-                    <p className="text-gray-600 mb-6 font-bold text-justify">
+                    <h3 className="text-3xl md:text-4xl font-bold  text-center lg:text-left text-[#2E3650]" data-aos="fade-up-right">Balão Gástrico:</h3>
+                    <h2 className="text-3xl text-center lg:text-left md:text-4xl font-bold text-[#2E3750] mb-2" data-aos="fade-up-right">emagrecimento sem cirurgia</h2>
+                    <p className="text-gray-600 mb-6 font-bold text-justify" data-aos="fade-up-left"> 
                         Um procedimento endoscópico, seguro e temporário, que promove saciedade precoce e auxilia na reeducação alimentar.
                     </p>
 
-                    <div className="flex items-center justify-center">
-                    <img src={IlustracaoBalao} alt="Ilustração do Balão Gástrico" className="rounded-lg w-3/4 max-w-lg block lg:hidden mb-5" />
+                    <div className="flex items-center justify-center" data-aos="flip-down">
+                    <img src={IlustracaoBalao} alt="Ilustração do Balão Gástrico" className="rounded-lg w-3/4 max-w-lg block lg:hidden mb-5"   />
                 </div>
 
-                    <ul className="list-disc list-inside space-y-2 text-gray-600 mb-8 ">
+                    <ul className="list-disc list-inside space-y-2 text-gray-600 mb-8" data-aos="zoom-out-right">
                         <li className="leading-tight">Sem cortes: colocado por endoscopia, com sedação leve.</li>
                         <li className="leading-tight">Recuperação rápida: alta no mesmo dia e retorno às atividades em poucos dias.</li>
                         <li className="leading-tight">Resultados reais: perda de peso comprovada e melhora da saúde.</li>
@@ -40,7 +40,7 @@ export const NoSurgery = () => {
                 </div>
 
                 {/* Coluna de Imagem */}
-                <div className="flex items-center justify-center">
+                <div className="flex items-center justify-center" ata-aos="flip-down">
                     <img src={IlustracaoBalao} alt="Ilustração do Balão Gástrico" className="rounded-lg w-3/4 max-w-lg hidden lg:block"  />
                 </div>
             </div>

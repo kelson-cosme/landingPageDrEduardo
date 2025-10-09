@@ -25,7 +25,16 @@ import Reducao from "../assets/imagens/gastroplatia/reducao.webp"
 
 import Grafico from "../assets/imagens/gastroplatia/grafico.webp"
 
+
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+
 function Gastroplastia(){
+
+  
+        useEffect( () => {
+            AOS.init();
+        }, [])
 
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -235,8 +244,8 @@ function Gastroplastia(){
 
 
 
-        <main className="mx-auto text-white">
-            <div style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20  bg-cover  bg-position-[center_right_-72vh] lg:bg-center bg-no-repeat flex flex-col justify-center">
+        <main className="mx-auto text-white overflow-hidden">
+            <div data-aos="zoom-in" style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20  bg-cover  bg-position-[center_right_-72vh] lg:bg-center bg-no-repeat flex flex-col justify-center">
                   <div className="h-[95vh] block lg:hidden absolute top-0 left-0 w-full z-1" style={{backgroundImage: gradientMobile}} >
                   </div>
                   

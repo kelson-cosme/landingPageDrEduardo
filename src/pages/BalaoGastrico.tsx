@@ -202,7 +202,7 @@ function BalaoGastrico(){
         </div>
       </header>
 
-        <main className="mx-auto text-white"  data-aos="zoom-in">
+        <main className="mx-auto text-white overflow-hidden"  data-aos="zoom-in">
         <div style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-position-[center_right_-72vh] lg:bg-center bg-no-repeat flex flex-col justify-center">
           
         <div className="h-[95vh] block lg:hidden absolute top-0 left-0 w-full z-1" style={{backgroundImage: gradientMobile}} >
