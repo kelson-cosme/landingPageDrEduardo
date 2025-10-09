@@ -26,7 +26,6 @@ import { CtaButton } from '../components/CtaButton'; // Importando o novo compon
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-import { Link } from "react-router";
 
 function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
