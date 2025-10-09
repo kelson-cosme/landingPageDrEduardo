@@ -27,6 +27,7 @@ import Avatar5 from "../assets/imagens/avatar5.webp"
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { Link } from "react-router";
 
 function BalaoGastrico(){
 
@@ -149,9 +150,9 @@ function BalaoGastrico(){
       >
         <nav className="max-w-[1920px] mx-auto w-full flex justify-between items-center p-4">
           <div>
-            <a href="#inicio" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
               <img src={Logo} alt="Logotipo Dr. Eduardo Amui" className="h-10 w-auto" />
-            </a>
+            </Link>
           </div>
           <div className="hidden md:block">
             <ul className="flex space-x-8 items-center">
@@ -165,10 +166,10 @@ function BalaoGastrico(){
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                <div className={`absolute top-full right-0 mt-2 w-64 rounded-md shadow-lg bg-[] text-white transition-all duration-300 ease-in-out ${isDropdownOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible'}`}>
-                  <a href="#balao-gastrico" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Balão Gástrico</a>
-                  <a href="#plasma-argonio" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Plasma Argônio</a>
-                  <a href="#gastroplastia" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Gastroplastia Endoscópica</a>
+                <div className={`absolute top-full right-0 mt-6 w-64 bg-[#413E39]  rounded-md shadow-lg bg-[] text-white transition-all duration-300 ease-in-out ${isDropdownOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible'}`}>
+                     <a href="/balao-gastrico" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Balão Gástrico</a>
+                    <a href="/plasma" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Plasma Argônio</a>
+                    <a href="/gastroplastia" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Gastroplastia Endoscópica</a>
                 </div>
               </li>
               <li><a href="#contato" className={getLinkClass('contato')}>Contato</a></li>
@@ -195,9 +196,9 @@ function BalaoGastrico(){
                 </svg>
               </button>
               <div className={`bg-[#413E39] overflow-hidden transition-all duration-300 ease-in-out ${isDropdownOpen ? 'max-h-40' : 'max-h-0'}`}>
-                <a href="#balao-gastrico" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2">Balão Gástrico</a>
-                <a href="#plasma-argonio" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2">Plasma Argônio</a>
-                <a href="#gastroplastia" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2">Gastroplastia Endoscópica</a>
+                <a href="/balao-gastrico" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2 text-white">Balão Gástrico</a>
+                <a href="/plasma" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2 text-white">Plasma Argônio</a>
+                <a href="/gastroplastia" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2 text-white">Gastroplastia Endoscópica</a>
               </div>
             </li>
             <li className="py-2"><a href="#contato" onClick={() => setIsMobileMenuOpen(false)} className={getMobileLinkClass('contato')}>Contato</a></li>
@@ -215,10 +216,13 @@ function BalaoGastrico(){
             <h1 className="text-2xl md:text-5xl lg:text-4xl font-[700] ">EMAGRECIMENTO <span className="bg-[#e40000]">SEM CORTES</span>  <br  className="hidden lg:block"/> COM O BALÃO GÁSTRICO</h1>
             <p className="mb-5 text-1xl font-[100] mt-2">Método moderno, não invasivo e seguro <br /> para quem busca resultados reais com <br /> acompanhamento médico especializado.</p>
             <div className="mt-5 flex items-center flex-wrap">
-              <button className="pl-4 p-2 rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500] text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
+              <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+              <button className="cursor-pointer pl-4 p-2 rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500] text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
               AGENDAR MINHA AVALIAÇÃO
               <img src={Seta2} alt="Seta apontado para cima" className="w-8 ml-3" />
-              </button>
+              </button>              
+              </Link>
+
             </div>
           </div>
         </div>
@@ -279,9 +283,12 @@ function BalaoGastrico(){
           </div>
 
           <div className="mt-12 text-center">
-            <CtaButton className="m-auto mt-8 self-start">
-              AGENDAR MINHA AVALIAÇÃO
-            </CtaButton>          
+            <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+              <CtaButton className="cursor-pointer m-auto mt-8 self-start">
+                AGENDAR MINHA AVALIAÇÃO
+              </CtaButton>          
+            </Link>
+
           </div>
         </section>
 

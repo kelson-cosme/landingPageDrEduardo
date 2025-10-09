@@ -5,6 +5,7 @@ import DrImage from '../assets/imagens/Eduardo.webp';
 import ClinicImage from "../assets/imagens/espcao.webp"
 import Seta2 from '../assets/imagens/gastroplatia/array2.svg';
 import fundo3 from "../assets/imagens/fundo3.webp"
+import { Link } from 'react-router';
 
 export const LocationSection = () => {
   const cardBackgroundGradient2 = 'linear-gradient(0deg, rgba(70, 179, 60, 1) 23%, rgba(78, 234, 64, 1) 65%)';
@@ -20,15 +21,19 @@ export const LocationSection = () => {
             Clínica de<br />emagrecimento<br />sem cortes.
           </h2>
           <p className="text-lg text-gray-300 mb-8">SB Medical Tower</p>
+
+          <Link to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
           <button 
-            className="pl-6 pr-2 py-2 rounded-full lg:flex items-center justify-center text-base font-semibold text-white z-10 mx-auto lg:mx-0 group hidden " 
+            className="pl-6 cursor-pointer pr-2 py-2 rounded-full lg:flex items-center justify-center text-base font-semibold text-white z-10 mx-auto lg:mx-0 group hidden " 
             style={{ backgroundImage: cardBackgroundGradient2 }}
           >
             AGENDAR MINHA AVALIAÇÃO
             <div className="bg-white rounded-full p-2 ml-4">
               <img src={Seta2} alt="Seta" className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1" />
             </div>
-          </button>
+          </button>          
+          </Link>
+
         </div>
 
         {/* Coluna Direita: Imagens Sobrepostas */}
@@ -52,15 +57,18 @@ export const LocationSection = () => {
         </div>
 
 
+        <Link target='_blank' to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
         <button 
-            className="pl-6 pr-2 py-2 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 mx-auto lg:mx-0 group lg:hidden " 
+            className="cursor-pointer pl-6 pr-2 py-2 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 mx-auto lg:mx-0 group lg:hidden " 
             style={{ backgroundImage: cardBackgroundGradient2 }}
           >
             AGENDAR MINHA AVALIAÇÃO
             <div className="bg-white rounded-full p-2 ml-4">
               <img src={Seta2} alt="Seta" className="w-6 h-6 transition-transform duration-300 group-hover:translate-x-1" />
             </div>
-          </button>
+          </button>        
+        </Link>
+
 
       </div>
     </section>

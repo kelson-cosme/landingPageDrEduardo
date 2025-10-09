@@ -26,6 +26,7 @@ import { CtaButton } from '../components/CtaButton'; // Importando o novo compon
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { Link } from "react-router";
 
 function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -149,9 +150,9 @@ function Home() {
       >
         <nav className="max-w-[1920px] mx-auto w-full flex justify-between items-center p-4">
           <div>
-            <a href="#inicio" onClick={() => setIsMobileMenuOpen(false)}>
+            <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
               <img src={Logo} alt="Logotipo Dr. Eduardo Amui" className="h-10 w-auto" />
-            </a>
+            </Link>
           </div>
           <div className="hidden md:block">
             <ul className="flex space-x-8 items-center">
@@ -164,7 +165,7 @@ function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                <div className={`absolute top-full right-0 mt-2 w-64 rounded-md shadow-lg bg-[#2A324A] text-white transition-all duration-300 ease-in-out ${isDropdownOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible'}`}>
+                <div className={`absolute top-full right-0 mt-6 w-64 rounded-md shadow-lg bg-[#2A324A] text-white transition-all duration-300 ease-in-out ${isDropdownOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible'}`}>
                   <a href="/balao-gastrico" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Balão Gástrico</a>
                   <a href="/plasma" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Plasma Argônio</a>
                   <a href="/gastroplastia" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Gastroplastia Endoscópica</a>
@@ -219,10 +220,13 @@ function Home() {
             <p className="mb-5 text-1xl font-[100] mt-2">Endoscopia, gastroplastia endoscópica e <br /> tratamentos para obesidade sem cortes</p>
             <h2 className="font-[700] lg:text-2xl  text-1xl leading-tight">Transformando vidas com <br /> métodos não invasivos <br /> para o controle do peso.</h2>
             <div className="mt-5 flex  lg:flex items-center flex-wrap">
-              <button className="bg-background: #46B33C; pl-4 p-2 rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500] text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
+              <Link  to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+              <button className="cursor-pointer bg-background: #46B33C; pl-4 p-2 rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500] text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
                 QUERO AGENDAR MINHA AVALIAÇÃO
                 <img src={Seta2} alt="Seta apontado para cima" className="w-8 ml-3" />
               </button>
+              </Link>
+
               <img className="lg:ml-5 w-40 mt-4 sm:mt-0" src={Review} alt="5 estrela na nota do google" />
             </div>
           </div>
@@ -333,9 +337,11 @@ function Home() {
                   </div>
 
               <div className="mt-12 text-center">
-                <CtaButton className="mt-8 m-auto self-start">
+                <Link to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+                <CtaButton className="cursor-pointer mt-8 m-auto self-start">
                   AGENDAR MINHA AVALIAÇÃO
-                </CtaButton>          
+                </CtaButton>                   
+                </Link>
               </div>
                 </section>
 

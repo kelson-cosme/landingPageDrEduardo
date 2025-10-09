@@ -1,4 +1,5 @@
 // src/components/BalaoGastrico/Intro.tsx
+import { Link } from "react-router";
 import BalaoImagem from "../../assets/imagens/balao/balaogastrico.webp";
 
 const Seta2 = () => (
@@ -22,15 +23,19 @@ export const Intro = () => {
                     <p className="text-gray-600 mb-8 text-justify">
                         Isso gera saciedade precoce, ajuda a controlar a quantidade de comida ingerida e favorece a perda de peso, sempre aliado à reeducação alimentar.
                     </p>
+
+                    <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
                     <button
-                        className="px-6 py-3 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 group m-auto lg:m-0"
+                        className="cursor-pointer px-6 py-3 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 group m-auto lg:m-0"
                         style={{ backgroundImage: cardBackgroundGradient2 }}
                     >
                         AGENDAR MINHA AVALIAÇÃO
                         <div className="bg-white/20 rounded-full p-2 ml-4 group-hover:translate-x-1 transition-transform duration-300">
                             <Seta2 />
                         </div>
-                    </button>
+                    </button>                    
+                    </Link>
+
                 </div>
 
                 {/* Coluna de Imagem */}

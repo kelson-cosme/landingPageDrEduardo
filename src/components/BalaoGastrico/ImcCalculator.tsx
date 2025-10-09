@@ -1,7 +1,7 @@
 // src/components/BalaoGastrico/ImcCalculator.tsx
 import { useState } from 'react';
 import { CtaButton } from '../CtaButton'; // Importando o novo componente
-
+import { Link } from 'react-router';
 
 export const ImcCalculator = () => {
     const [peso, setPeso] = useState('');
@@ -104,9 +104,13 @@ export const ImcCalculator = () => {
                             )}
                         </div>
                     )}
-                   <CtaButton className="m-auto lg mt-6 self-start">
+
+                    <Link target='_blank' to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+                   <CtaButton className="cursor-pointer m-auto lg mt-6 self-start">
                         AGENDAR MINHA AVALIAÇÃO
-                    </CtaButton>
+                    </CtaButton>                    
+                    </Link>
+
                 </div>
 
                 {/* Coluna da Tabela */}

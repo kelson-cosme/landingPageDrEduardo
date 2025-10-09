@@ -3,6 +3,7 @@ import { CtaButton } from '../CtaButton';
 
 // Importando a imagem de capa local que já existe no projeto.
 import VideoThumbnail from "../../assets/imagens/gastroplatia/fundo2.webp";
+import { Link } from "react-router";
 
 // Componente SVG para a seta
 
@@ -48,9 +49,14 @@ export const HowItWorks = () => {
 
 
                 <div className="mt-12 text-center">
-                    <CtaButton className="m-auto mt-8 self-start">
-                    AGENDAR MINHA AVALIAÇÃO
-                    </CtaButton>          
+
+                    <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+                    
+                        <CtaButton className="cursor-pointer m-auto mt-8 self-start">
+                            AGENDAR MINHA AVALIAÇÃO
+                        </CtaButton>  
+                    </Link>
+        
                 </div>
             </div>
         </section>

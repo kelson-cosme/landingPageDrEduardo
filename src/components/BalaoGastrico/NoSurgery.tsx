@@ -1,4 +1,5 @@
 // src/components/BalaoGastrico/NoSurgery.tsx
+import { Link } from "react-router";
 import IlustracaoBalao from "../../assets/imagens/balao/procedimento.webp"; // Adicione a imagem da ilustração aqui
 import Seta2 from "../../assets/imagens/gastroplatia/array2.svg"
 
@@ -28,15 +29,19 @@ export const NoSurgery = () => {
                         <li className="leading-tight">Recuperação rápida: alta no mesmo dia e retorno às atividades em poucos dias.</li>
                         <li className="leading-tight">Resultados reais: perda de peso comprovada e melhora da saúde.</li>
                     </ul>
+
+                    <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
                     <button
-                        className="px-6 py-3 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 group "
+                        className="cursor-pointer px-6 py-3 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 group "
                         style={{ backgroundImage: cardBackgroundGradient2 }}
                     >
                         AGENDAR MINHA AVALIAÇÃO
                         <div className="bg-white/20 rounded-full  ml-4 group-hover:translate-x-1 transition-transform duration-300 ">
                             <img src={Seta2} alt="" />
                         </div>
-                    </button>
+                    </button>                    
+                    </Link>
+
                 </div>
 
                 {/* Coluna de Imagem */}

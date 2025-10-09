@@ -3,6 +3,7 @@ import { useState } from 'react';
 import PacienteStory1 from '../../assets/imagens/plasma/mudanca1.webp'; // Imagem para o primeiro vídeo
 import PacienteStory2 from '../../assets/imagens/plasma/mudanca2.webp'; // Imagem para o segundo vídeo
 import { CtaButton } from '../CtaButton';
+import { Link } from 'react-router';
 
 // Componente reutilizável para o leitor de vídeo em formato "story"
 const StoryPlayer = ({ videoId, thumbnail }: { videoId: string, thumbnail: string }) => {
@@ -60,9 +61,12 @@ export const VideoStories = () => {
             </div>
 
             <div className='mt-9'>
-                <CtaButton className='m-auto'>
+                <Link target='_blank' to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+                <CtaButton className='cursor-pointer m-auto'>
                     AGENDAR MINHA AVALIAÇÃO
-                </CtaButton>
+                </CtaButton>                
+                </Link>
+
             </div>
         </section>
     );

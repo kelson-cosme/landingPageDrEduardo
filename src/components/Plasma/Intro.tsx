@@ -1,4 +1,5 @@
 // src/components/BalaoGastrico/Intro.tsx
+import { Link } from "react-router";
 import BalaoImagem from "../../assets/imagens/plasma/argonio.webp";
 import { CtaButton } from '../CtaButton';
 
@@ -21,9 +22,12 @@ export const Intro = () => {
 
 
                     <div className=" text-center">
-                        <CtaButton className=" mt-8 self-start">
+                        <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+                        <CtaButton className="cursor-pointer mt-8 self-start">
                         AGENDAR MINHA AVALIAÇÃO
-                        </CtaButton>          
+                        </CtaButton>                        
+                        </Link>
+          
                     </div>
                 </div>
 

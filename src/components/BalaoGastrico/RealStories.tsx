@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { CtaButton } from '../CtaButton';
 import PacienteStory from '../../assets/imagens/balao/PacienteStory.webp'; // Usando a imagem avatar3.webp como capa
+import { Link } from 'react-router';
 
 export const RealStories = () => {
     const [isPlaying, setIsPlaying] = useState(false);
@@ -23,9 +24,13 @@ export const RealStories = () => {
                     <h2 className="text-3xl md:text-4xl font-bold leading-tight  lg:mb-8">
                         Histórias reais de quem recuperou saúde, autoestima e esperança.
                     </h2>
-                    <CtaButton className="mx-auto md:mx-0 lg:block hidden">
+
+                    <Link target='_blank' to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+                    <CtaButton className="cursor-pointer mx-auto md:mx-0 lg:flex hidden">
                         AGENDAR MINHA AVALIAÇÃO
-                    </CtaButton>
+                    </CtaButton>                    
+                    </Link>
+
                 </div>
 
                 {/* Coluna de Vídeo "Story" */}

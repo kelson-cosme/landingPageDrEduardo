@@ -1,7 +1,7 @@
 import { useState } from "react";
 // Importando a imagem de capa local que já existe no projeto.
 import VideoThumbnail from "../../assets/imagens/balao/video.webp";
-
+import { Link } from "react-router";
 // Componente SVG para a seta
 const Seta2 = () => (
     <svg className="w-6 h-6" fill="none" stroke="#46B33C" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -51,12 +51,15 @@ export const HowItWorks = () => {
 
                 {/* Detalhes do Procedimento */}
 
-                <button className="pl-6 pr-2 py-2 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 mx-auto group" style={{ backgroundImage: cardBackgroundGradient2 }}>
+                <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+                <button className="cursor-pointer pl-6 pr-2 py-2 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 mx-auto group" style={{ backgroundImage: cardBackgroundGradient2 }}>
                     AGENDAR MINHA AVALIAÇÃO
                     <div className="bg-white rounded-full p-2 ml-4 group-hover:translate-x-1 transition-transform duration-300">
                         <Seta2 />
                     </div>
                 </button>
+                </Link>
+
             </div>
         </section>
     );
