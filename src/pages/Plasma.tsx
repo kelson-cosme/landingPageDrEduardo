@@ -170,6 +170,8 @@ function Plasma(){
 
     return(
         <>
+        <title>Plasma de Argônio em Cuiabá | Dr. Eduardo Amui</title>
+        <meta name="description" content="Conheça o tratamento com plasma de argônio para reganho de peso pós-bariátrica em Cuiabá com o Dr. Eduardo Amui." />
         <header 
             className={`fixed w-full top-0 z-50 transition-colors duration-300 ease-in-out 
                         ${hasScrolled || isMobileMenuOpen ? 'bg-[#413E39] shadow-md' : 'bg-transparent'}`}

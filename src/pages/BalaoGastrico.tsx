@@ -138,6 +138,9 @@ function BalaoGastrico(){
 
     return(
         <>
+
+      <title>Balão Gástrico em Cuiabá | Dr. Eduardo Amui</title>
+  <meta name="description" content="Saiba mais sobre o balão gástrico, um procedimento de emagrecimento sem cortes oferecido pelo Dr. Eduardo Amui em Cuiabá." />
         {/* Seção Hero */}
 
         <header 

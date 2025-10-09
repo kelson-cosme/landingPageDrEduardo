@@ -138,7 +138,13 @@ function Home() {
 
   return (
     <>
-      <header 
+      <title>Dr. Eduardo Amui | Endoscopia e Tratamentos para Obesidade em Cuiabá</title>
+      <meta name="description" content="Dr. Eduardo Amui, especialista em endoscopia digestiva e tratamentos para obesidade sem cortes em Cuiabá. Oferecemos gastroplastia endoscópica, balão gástrico e plasma de argônio." />
+      <meta name="keywords" content="endoscopia, gastroplastia, balão gástrico, plasma de argônio, emagrecimento, obesidade, Dr. Eduardo Amui, Cuiabá" />
+
+    
+
+          <header 
         className={`fixed w-full top-0 z-50 transition-colors duration-300 ease-in-out 
                     ${hasScrolled || isMobileMenuOpen ? 'bg-[#262E46] shadow-md' : 'bg-transparent'}`}
       >

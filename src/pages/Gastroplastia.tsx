@@ -178,6 +178,9 @@ function Gastroplastia(){
 
     return(
         <>
+        <title>Gastroplastia Endoscópica em Cuiabá | Dr. Eduardo Amui</title>
+  <meta name="description" content="A gastroplastia endoscópica é uma redução do estômago sem cirurgia. Saiba mais sobre o procedimento com o Dr. Eduardo Amui em Cuiabá." />
+
             <header 
                 className={`fixed w-full top-0 z-50 transition-colors duration-300 ease-in-out 
                             ${hasScrolled || isMobileMenuOpen ? 'bg-[#413E39] shadow-md' : 'bg-transparent'}`}
