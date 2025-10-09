@@ -11,7 +11,8 @@ import Avatar4 from "../assets/imagens/avatar4.webp"
 import Avatar5 from "../assets/imagens/avatar5.webp"
 import { Intro } from "../components/Gastroplastia/Intro";
 import { Advantages } from "../components/BalaoGastrico/Advantages";
-import { AboutSection } from "../components/Gastroplastia/AboutSection";
+// import { AboutSection } from "../components/Gastroplastia/AboutSection";
+import { AboutSection } from "../components/AboutSection";
 import { HowItWorks } from "../components/Gastroplastia/HowItWorks";
 import { Beneficios } from "../components/Gastroplastia/Beneficios"
 import { ComparativeTable } from "../components/Gastroplastia/ComparativeSection";
@@ -284,7 +285,7 @@ function Gastroplastia(){
 
             <HowItWorks/>
             
-            <div>
+            <div data-aos="zoom-in-down">
                 <img width={"100%"} src={Reducao} alt="imagem do estômago reduzido, em 3d" />
             </div>
 
@@ -294,15 +295,15 @@ function Gastroplastia(){
             <section id="escolha" ref={sectionRefs.escolha} className="py-20 px-4 bg-white text-gray-800" style={{backgroundImage : gradient}}>
             <div className="max-w-[1200px] mx-auto">
                 <div className="lg:flex justify-between  items-start mb-12">
-                    <div className="text-left">
-                        <h2 className="mb-6 lg:mb-0 text-3xl md:text-4xl font-bold text-[#2E3650] lg:text-left text-center">Como é feita a <br className="hidden lg:block" /> Gastroplastia Endoscópica?</h2>
+                    <div className="text-left" >
+                        <h2 data-aos="fade-right" className="mb-6 lg:mb-0 text-3xl md:text-4xl font-bold text-[#2E3650] lg:text-left text-center" >Como é feita a <br className="hidden lg:block" /> Gastroplastia Endoscópica?</h2>
                     </div>
                     <div className=" ">
-                        <p className="text-[1em] lg:text-sm font-bold text-[#576BA1] lg:text-left text-center">TÉCNICA INOVADORA PARA REDUÇÃO <br className=""/> DO ESTOMAGO SEM CIRURGIA</p>
+                        <p data-aos="fade-left" className="text-[1em] lg:text-sm font-bold text-[#576BA1] lg:text-left text-center">TÉCNICA INOVADORA PARA REDUÇÃO <br className=""/> DO ESTOMAGO SEM CIRURGIA</p>
                     </div>
                 </div>
 
-                <div className="">
+                <div className="" data-aos="fade-up" data-aos-duration="3000">
                   <img className="w-full" src={Grafico} alt="" />
                 </div>
             </div>
@@ -312,7 +313,8 @@ function Gastroplastia(){
         <ComparativeTable />
 
 
-                  <section id="depoimentos" ref={sectionRefs.depoimentos} className="py-20 bg-[#262E46]">
+                  <section id="depoimentos" ref={sectionRefs.depoimentos} className="py-20 bg-[#262E46]" data-aos="fade-up"
+     data-aos-duration="3000">
                   <div className="max-w-[1200px] mx-auto text-center text-white">
                     <p className="text-sm font-semibold text-gray-400 mb-2">DEPOIMENTOS</p>
                     <h2 className="text-3xl md:text-4xl font-bold mb-12">O que dizem nossos pacientes</h2>

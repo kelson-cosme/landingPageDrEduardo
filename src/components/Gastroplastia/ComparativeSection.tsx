@@ -16,7 +16,8 @@ const comparisonData = [
   
   export const ComparativeTable = () => {
     return (
-      <section id="comparativo" className="py-20 px-4 bg-[#413E39]">
+      <section id="comparativo" className="py-20 px-4 bg-[#413E39]" data-aos="fade-up"
+     data-aos-duration="3000">
         <div className="max-w-4xl mx-auto text-center text-white">
           <p className="text-sm font-semibold text-gray-400 mb-2 uppercase">Tabela Comparativa</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Compare as opções de tratamento</h2>

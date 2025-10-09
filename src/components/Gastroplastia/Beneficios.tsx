@@ -13,10 +13,10 @@ export const Beneficios = () => {
 
         <section id="vantagens" className="bg-[#F0F2FF] py-20 px-4 border ">
             <div className="max-w-6xl mx-auto text-center">
-                <h2 className="text-3xl md:text-4xl font-bold text-[#2D2D2D] mb-16">Benefícios da Gastroplastia Endoscópica</h2>
+                <h2 data-aos="zoom-out-down" className="text-3xl md:text-4xl font-bold text-[#2D2D2D] mb-16">Benefícios da Gastroplastia Endoscópica</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                     {/* Vantagem 1 */}
-                    <div className=" rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
+                    <div data-aos="flip-left" className=" rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
                         <img className="mb-2" src={Ad2} alt="Icone de uma balança" />
                         <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Emagrecimento</h3>
                         <p className="text-gray-600 text-sm">
@@ -24,7 +24,7 @@ export const Beneficios = () => {
                         </p>
                     </div>
                     {/* Vantagem 2 */}
-                    <div className=" rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
+                    <div data-aos="flip-up" className=" rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
                         <img className="mb-2" src={Ad2} alt="Icone de uma mão segurando um bisturi" />
                         <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Procedimento Minimamente Invasivo</h3>
                         <p className="text-gray-600 text-sm">
@@ -32,7 +32,7 @@ export const Beneficios = () => {
                         </p>
                     </div>
                     {/* Vantagem 3 */}
-                    <div className=" rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
+                    <div data-aos="flip-left" className=" rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
                         <img className="mb-2" src={Ad3} alt="Icone significando Reversível" />
                         <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Método definitivo e seguro</h3>
                         <p className="text-gray-600 text-sm">

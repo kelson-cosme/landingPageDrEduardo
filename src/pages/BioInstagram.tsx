@@ -124,13 +124,13 @@ function BioInstagram() {
 
                         <div className="absolute inset-0 bg-[linear-gradient(90deg,_rgba(0,0,0,0.6)_0%,_rgba(28,63,24,0)_65%)] rounded-[10px] sm:rounded-[20px]"></div>
 
-                        <div className="relative z-20 w-full h-full p-3 sm:p-10">
+                        <div className="relative z- w-full h-full p-3 sm:p-10">
                             
                             <img src={Icon3} alt="icone gastroplatia" className="absolute top-3 w-4 sm:w-18 sm:top-6 left-[7px] sm:left-6 sm:p-4  " />
                             <img src={Eduardo3} className="absolute right-2 sm:right-12 bottom-0  w-[140px] sm:w-[299px]" alt="Foto do Dr. Eduardo" />
                             
                             <div className="h-full flex flex-col justify-center items-start">
-                                <h1 className="text-white font-bold text-[13.5px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 leading-tight">
+                                <h1 className="text-white font-bold text-[13.5px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 leading-tight z-9">
                                     EMAGRECIMENTO <span className="bg-[#E40000]">SEM CORTES</span> <br /> COM O BALÃO GÁSTRICO</h1>
 
                                 <button className="bg-background: #46B33C; pl-4 pt-1 sm:pt-1.5 pb-1 sm:pb-1.5 pr-1 rounded-[2rem] flex items-center text-[8px] sm:text-[23px] font-semibold text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
@@ -158,7 +158,7 @@ function BioInstagram() {
                             <img src={Eduardo4} className="absolute right-2 sm:right-12 bottom-0  w-[125px] sm:w-[269px]" alt="Foto do Dr. Eduardo" />
                             
                             <div className="h-full flex flex-col justify-center items-start">
-                                <h1 className="text-white font-bold text-[13.5px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 leading-tight text-justify">
+                                <h1 className="text-white font-bold text-[13.5px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 leading-tight text-justify z-9">
                                     PLASMA DE ARGÔNIO: <br /> TRATAMENTO PARA REGANHO DE <br /> PESO PÓS-BARIÁTRICA EM CUIABÁ
                                     </h1>
 
@@ -187,7 +187,7 @@ function BioInstagram() {
                             <img src={Reveiw} alt="Avaliação 5 estrelas no google" className="absolute right-3 bottom-3 w-20 sm:w-50"/>
 
                             <div className="h-full flex flex-col justify-center items-start">
-                                <h1 className="text-white font-bold text-[13.5px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 leading-tight text-justify">
+                                <h1 className="text-white font-bold text-[13.5px] sm:text-[25px] mb-3 sm:mb-8 mt-7 sm:mt-15 leading-tight text-justify z-9">
                                     TRANSFORMANDO VIDAS COM <br /> MÉTODOS NÃO INVASIVOS <br /> PARA O CONTROLE DO PESO.                            
                                 </h1>
 
@@ -200,7 +200,7 @@ function BioInstagram() {
                     </div>
                 </Link>
 
-                <Link to="/#contato" className="w-full mb-3 sm:mb-11">
+                <Link  to="https://www.google.com/search?sca_esv=301c2d72a545a3fe&rlz=1C1JJTC_pt-BRBR1105BR1105&sxsrf=AE3TifMt-WYDbbiPzz_K82b2uuozm7juBA:1751295790560&kgmid=/g/11krdq21w4&q=Dr.+Eduardo+Amui+-+Bal%C3%A3o+g%C3%A1strico+%7C+Reganho+de+peso+p%C3%B3s-bari%C3%A1trica+%7C+Plasma+de+Arg%C3%B4nio+%7C+Cuiab%C3%A1+%E2%80%93MT.&shndl=30&shem=lcuae,uaasie&source=sh/x/loc/uni/m1/1&kgs=2cb93fd5b64539cb" target="_blank" className="w-full mb-3 sm:mb-11">
                     <div data-aos="fade-left" className="card relative isolate w-full h-[165px] sm:h-[339px] rounded-[10px] sm:rounded-[20px]" >
                         <div 
                             className="absolute inset-0 bg-cover bg-center opacity-100 rounded-[10px] sm:rounded-[20px]" 
@@ -225,7 +225,7 @@ function BioInstagram() {
                             <div className="h-full flex flex-col justify-center items-start">
 
 
-                                <button className="bg-white z-9 pl-4 pt-1 sm:pt-1.5 pb-1 sm:pb-1.5 pr-1 rounded-[2rem] flex items-center text-[8px] sm:text-[23px] font-semibold text-white mt-11 sm:mt-19" style={{ backgroundImage: cardBackgroundGradient3 }}>
+                                <button className="bg-white z-99 pl-4 pt-1 sm:pt-1.5 pb-1 sm:pb-1.5 pr-1 rounded-[2rem] flex items-center text-[8px] sm:text-[23px] font-semibold text-white mt-11 sm:mt-19" style={{ backgroundImage: cardBackgroundGradient3 }}>
                                     VER LOCAL DE ATENDIMENTO
                                     <img className=" ml-2 sm:ml-5 w-5  sm:w-auto" src={Seta2} alt="Flexa"/>
                                 </button>
