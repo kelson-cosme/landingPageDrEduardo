@@ -151,7 +151,6 @@ function Home() {
             <ul className="flex space-x-8 items-center">
               <li><a href="#inicio" className={getLinkClass('inicio')}>Início</a></li>
               <li><a href="#sobre" className={getLinkClass('sobre')}>Sobre mim</a></li>
-              <li><a href="#conteudos" className={getLinkClass('conteudos')}>Conteúdos</a></li>
               <li className="relative" ref={dropdownRef}>
                 <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className={getLinkClass('servicos') + ' flex items-center'}>
                   Serviços
@@ -160,11 +159,12 @@ function Home() {
                   </svg>
                 </button>
                 <div className={`absolute top-full right-0 mt-2 w-64 rounded-md shadow-lg bg-[#2A324A] text-white transition-all duration-300 ease-in-out ${isDropdownOpen ? 'opacity-100 translate-y-0 visible' : 'opacity-0 -translate-y-2 invisible'}`}>
-                  <a href="#balao-gastrico" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Balão Gástrico</a>
-                  <a href="#plasma-argonio" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Plasma Argônio</a>
-                  <a href="#gastroplastia" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Gastroplastia Endoscópica</a>
+                  <a href="/balao-gastrico" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Balão Gástrico</a>
+                  <a href="/plasma" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Plasma Argônio</a>
+                  <a href="/gastroplastia" onClick={() => setIsDropdownOpen(false)} className="block px-4 py-2 hover:bg-[#3A425A] transition-colors duration-300">Gastroplastia Endoscópica</a>
                 </div>
               </li>
+              <li><a href="#conteudos" className={getLinkClass('conteudos')}>Conteúdos</a></li>
               <li><a href="#contato" className={getLinkClass('contato')}>Contato</a></li>
             </ul>
           </div>
@@ -189,9 +189,9 @@ function Home() {
                 </svg>
               </button>
               <div className={`bg-[#2A324A] overflow-hidden transition-all duration-300 ease-in-out ${isDropdownOpen ? 'max-h-40' : 'max-h-0'}`}>
-                <a href="#balao-gastrico" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2">Balão Gástrico</a>
-                <a href="#plasma-argonio" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2">Plasma Argônio</a>
-                <a href="#gastroplastia" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2">Gastroplastia Endoscópica</a>
+                <a href="/balao-gastrico" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2 text-white">Balão Gástrico</a>
+                <a href="/plasma" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2">Plasma Argônio</a>
+                <a href="/gastroplastia" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2">Gastroplastia Endoscópica</a>
               </div>
             </li>
             <li className="py-2"><a href="#contato" onClick={() => setIsMobileMenuOpen(false)} className={getMobileLinkClass('contato')}>Contato</a></li>
@@ -339,9 +339,7 @@ function Home() {
         </div>
 
 
-        <div id="contato" ref={sectionRefs.contato} className="h-auto">
           <LocationSection />
-        </div>
 
 
         <div id="conteudos" ref={sectionRefs.conteudos} className="h-auto">
@@ -352,7 +350,10 @@ function Home() {
         <FaqSection />
 
       </main>
-      <Footer />
+      
+        <div id="contato" ref={sectionRefs.contato} className="h-auto">
+          <Footer />
+        </div>
 
     </>
   );
