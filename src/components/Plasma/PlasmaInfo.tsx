@@ -6,11 +6,11 @@ export const PlasmaInfo = () => {
 
     return (
         // Um contentor com a cor de fundo da secção de cima para preencher o espaço do recorte.
-        <div  className="relative bg-[#483839] pt-7 pb-7" style={{ backgroundImage: sectionBgColor }} >
+        <div  className="relative bg-[#483839] pt-7 pb-7" style={{ backgroundImage: sectionBgColor }}  >
             <img src={Curva} className="absolute m-auto top-0 left-0 right-0" alt="imagem de uma curvatura" />
 
                 {/* O conteúdo da secção */}
-                <div className="relative pt-24 pb-20 px-4 z-10">
+                <div className="relative pt-24 pb-20 px-4 z-10" data-aos="zoom-in">
                     <div className=" text-center">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">
                             O que é Plasma de Argônio?

@@ -19,13 +19,13 @@ export const HowItWorks = () => {
     return (
         <section id="funcionamento" className="bg-[#372D2E] py-20 px-4 text-white">
             <div className="max-w-4xl mx-auto text-center">
-                <p className="text-sm font-semibold text-[#F9E6C1] mb-2 uppercase">Procedimento</p>
-                <h2 className="text-3xl md:text-4xl font-bold mb-4">Como o Plasma de Argônio age no seu corpo?</h2>
-                <p className="max-w-3xl mx-auto text-white mb-12">
+                <p className="text-sm font-semibold text-[#F9E6C1] mb-2 uppercase" data-aos="zoom-in-down">Procedimento</p>
+                <h2 className="text-3xl md:text-4xl font-bold mb-4" data-aos="zoom-in-down">Como o Plasma de Argônio age no seu corpo?</h2>
+                <p className="max-w-3xl mx-auto text-white mb-12" data-aos="zoom-in-down">
                 O Plasma de Argônio cauteriza pontos no estômago por endoscopia, reduzindo a elasticidade e prolongando a saciedade. <span className="font-bold">Menos fome, mais controle.</span></p>
 
                 {/* Player de Vídeo */}
-                <div className="relative max-w-3xl mx-auto rounded-lg overflow-hidden shadow-2xl mb-12  aspect-video">
+                <div className="relative max-w-3xl mx-auto rounded-lg overflow-hidden shadow-2xl mb-12  aspect-video" data-aos="flip-right">
                     {!isPlaying ? (
                         <div className="relative cursor-pointer h-full" onClick={handlePlayClick}>
                             <img

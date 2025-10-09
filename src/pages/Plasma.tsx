@@ -173,6 +173,7 @@ function Plasma(){
         <>
         <title>Plasma de Argônio em Cuiabá | Dr. Eduardo Amui</title>
         <meta name="description" content="Conheça o tratamento com plasma de argônio para reganho de peso pós-bariátrica em Cuiabá com o Dr. Eduardo Amui." />
+      
         <header 
             className={`fixed w-full top-0 z-50 transition-colors duration-300 ease-in-out 
                         ${hasScrolled || isMobileMenuOpen ? 'bg-[#372D2E] shadow-md' : 'bg-transparent'}`}
@@ -236,7 +237,7 @@ function Plasma(){
         </header>   
 
         <main className="mx-auto text-white">
-            <div style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-position-[center_right_-69vh] lg:bg-center bg-no-repeat flex flex-col justify-center">
+            <div data-aos="zoom-in-up" style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-position-[center_right_-69vh] lg:bg-center bg-no-repeat flex flex-col justify-center">
            
             <div className="h-[95vh] block lg:hidden absolute top-0 left-0 w-full z-1" style={{backgroundImage: gradientMobile}} >
             </div>
