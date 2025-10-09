@@ -26,6 +26,7 @@ import { CtaButton } from '../components/CtaButton'; // Importando o novo compon
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { Link } from "react-router";
 
 function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -111,7 +112,7 @@ function Home() {
   }, [dropdownRef]);
 
   useEffect(() => {
-    const observerOptions = { root: null, rootMargin: "0px", threshold: 0.5 };
+    const observerOptions = { root: null, rootMargin: "0px", threshold: 0.1 };
     
     const observerCallback = (entries: IntersectionObserverEntry[]) => {
       entries.forEach((entry) => {
@@ -149,7 +150,7 @@ function Home() {
           </div>
           <div className="hidden md:block">
             <ul className="flex space-x-8 items-center">
-              <li><a href="#inicio" className={getLinkClass('inicio')}>Início</a></li>
+              <li> <a href="#inicio" className={getLinkClass('inicio')}>Início</a></li>
               <li><a href="#sobre" className={getLinkClass('sobre')}>Sobre mim</a></li>
               <li className="relative" ref={dropdownRef}>
                 <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className={getLinkClass('servicos') + ' flex items-center'}>
@@ -168,6 +169,7 @@ function Home() {
               <li><a href="#contato" className={getLinkClass('contato')}>Contato</a></li>
             </ul>
           </div>
+
           <div className="md:hidden">
             <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Abrir menu">
               <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -180,7 +182,6 @@ function Home() {
           <ul className="flex flex-col items-center py-4">
             <li className="py-2"><a href="#inicio" onClick={() => setIsMobileMenuOpen(false)} className={getMobileLinkClass('inicio')}>Início</a></li>
             <li className="py-2"><a href="#sobre" onClick={() => setIsMobileMenuOpen(false)} className={getMobileLinkClass('sobre')}>Sobre mim</a></li>
-            <li className="py-2"><a href="#conteudos" onClick={() => setIsMobileMenuOpen(false)} className={getMobileLinkClass('conteudos')}>Conteúdos</a></li>
             <li className="py-2 w-full text-center">
               <button onClick={() => setIsDropdownOpen(!isDropdownOpen)} className={`${getMobileLinkClass('servicos')} flex items-center justify-center w-full`}>
                 Serviços
@@ -190,10 +191,12 @@ function Home() {
               </button>
               <div className={`bg-[#2A324A] overflow-hidden transition-all duration-300 ease-in-out ${isDropdownOpen ? 'max-h-40' : 'max-h-0'}`}>
                 <a href="/balao-gastrico" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2 text-white">Balão Gástrico</a>
-                <a href="/plasma" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2">Plasma Argônio</a>
-                <a href="/gastroplastia" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2">Gastroplastia Endoscópica</a>
+                <a href="/plasma" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2 text-white">Plasma Argônio</a>
+                <a href="/gastroplastia" onClick={() => {setIsMobileMenuOpen(false); setIsDropdownOpen(false);}} className="block py-2 text-white">Gastroplastia Endoscópica</a>
               </div>
             </li>
+            <li className="py-2"><a href="#conteudos" onClick={() => setIsMobileMenuOpen(false)} className={getMobileLinkClass('conteudos')}>Conteúdos</a></li>
+
             <li className="py-2"><a href="#contato" onClick={() => setIsMobileMenuOpen(false)} className={getMobileLinkClass('contato')}>Contato</a></li>
           </ul>
         </div>

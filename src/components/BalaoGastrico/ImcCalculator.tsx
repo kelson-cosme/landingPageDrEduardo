@@ -25,8 +25,8 @@ export const ImcCalculator = () => {
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-start">
 
                 {/* Coluna da Calculadora */}
-                <div className="flex flex-col gap-6">
-                    <h2 className="text-2xl font-bold leading-tight text-center lg:text-left">DESCUBRA SE O BALÃO GÁSTRICO É IDEAL PARA VOCÊ EMAGRECER COM SEGURANÇA, SEM CIRURGIA.</h2>
+                <div className="flex flex-col gap-6" data-aos="fade-right">
+                    <h2 className="text-2xl font-bold leading-tight text-center lg:text-left" data-aos="fade-down">DESCUBRA SE O BALÃO GÁSTRICO É IDEAL PARA VOCÊ EMAGRECER COM SEGURANÇA, SEM CIRURGIA.</h2>
                     
                                 {/* Coluna da Tabela */}
                                 <div className=" lg:p-8 rounded-lg lg:border-1 lg:hidden block">
@@ -110,7 +110,7 @@ export const ImcCalculator = () => {
                 </div>
 
                 {/* Coluna da Tabela */}
-                <div className=" lg:p-8 rounded-lg lg:border-1 lg:block hidden">
+                <div className=" lg:p-8 rounded-lg lg:border-1 lg:block hidden" data-aos="fade-left">  
                     <div className="overflow-hidden rounded-lg shadow-lg">
                         <table className="w-full text-gray-800">
                             <thead>

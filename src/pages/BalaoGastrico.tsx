@@ -203,7 +203,7 @@ function BalaoGastrico(){
       </header>
 
         <main className="mx-auto text-white overflow-hidden"  data-aos="zoom-in">
-        <div style={{backgroundImage:`url(${Fundo})`}} id="inicio"  className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-position-[center_right_-72vh] lg:bg-center bg-no-repeat flex flex-col justify-center">
+        <div style={{backgroundImage:`url(${Fundo})`}} id="inicio" ref={sectionRefs.inicio} className="h-[95vh] min-h-[600px] pt-20 bg-cover bg-position-[center_right_-72vh] lg:bg-center bg-no-repeat flex flex-col justify-center">
           
         <div className="h-[95vh] block lg:hidden absolute top-0 left-0 w-full z-1" style={{backgroundImage: gradientMobile}} >
         </div>
@@ -241,7 +241,8 @@ function BalaoGastrico(){
           <ImcCalculator />
           <RealStories />
 
-          <section id="depoimentos" ref={sectionRefs.depoimentos} className="py-20 bg-[#262E46]">
+          <section id="depoimentos" ref={sectionRefs.depoimentos} className="py-20 bg-[#262E46]" data-aos="fade-up"
+     data-aos-duration="3000"  >
           <div className="max-w-[1200px] mx-auto text-center text-white">
             <p className="text-sm font-semibold text-gray-400 mb-2">DEPOIMENTOS</p>
             <h2 className="text-3xl md:text-4xl font-bold mb-12">O que dizem nossos pacientes</h2>
@@ -285,8 +286,12 @@ function BalaoGastrico(){
         <AboutSection/>
         <LocationSection/>
         <FaqSection/>
-        <Footer/>
+
         </main>
+        <div id="contato" ref={sectionRefs.contato} className="h-auto">
+          <Footer/>
+        </div>
+
      </>
     )
 }

@@ -13,10 +13,10 @@ export const RealStories = () => {
 
     return (
         <section id="historias-reais" className="bg-[#413E39] py-20 px-4">
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center" > 
 
                 {/* Coluna de Texto */}
-                <div className="text-white text-center md:text-left">
+                <div className="text-white text-center md:text-left" data-aos="zoom-in"> 
                     <p className="text-gray-400 font-semibold text-sm uppercase tracking-wider mb-4">
                         Mudança Real
                     </p>
@@ -29,7 +29,7 @@ export const RealStories = () => {
                 </div>
 
                 {/* Coluna de Vídeo "Story" */}
-                <div className="relative max-w-[300px] mx-auto w-full aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl group bg-black">
+                <div className="relative max-w-[300px] mx-auto w-full aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl group bg-black" data-aos="flip-right">
                     {!isPlaying ? (
                         <div className="relative cursor-pointer h-full" onClick={handlePlayClick}>
                             <img
