@@ -1,12 +1,16 @@
 // src/components/BalaoGastrico/Advantages.tsx
 
 import { Link } from "react-router";
-import Ad2 from "../../assets/imagens/balao/ad2.svg"
-import Ad3 from "../../assets/imagens/balao/ad3.svg"
 import Seta2 from "../../assets/imagens/gastroplatia/array2.svg"
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { useEffect } from "react";
+
+
+
+import Balanca from "../../assets/imagens/gastroplatia/balanca.svg"
+import Bisturi from "../../assets/imagens/gastroplatia/bisturi.svg"
+import Mais from "../../assets/imagens/gastroplatia/mais.svg"
 
 export const Beneficios = () => {
         useEffect( () => {
@@ -24,7 +28,7 @@ export const Beneficios = () => {
                 <div className="grid md:grid-cols-3 gap-8">
                     {/* Vantagem 1 */}
                     <div data-aos="flip-left" className=" rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
-                        <img className="mb-2" src={Ad2} alt="Icone de uma balança" />
+                        <img className="mb-2" src={Balanca} alt="Icone de uma balança" />
                         <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Emagrecimento</h3>
                         <p className="text-gray-600 text-sm">
                             Espera-se uma perda média de cerca de 20% do peso inicial, podendo chegar a 30% em um ano, dependendo do caso.
@@ -32,7 +36,7 @@ export const Beneficios = () => {
                     </div>
                     {/* Vantagem 2 */}
                     <div data-aos="flip-up" className=" rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
-                        <img className="mb-2" src={Ad2} alt="Icone de uma mão segurando um bisturi" />
+                        <img className="mb-2" src={Bisturi} alt="Icone de uma mão segurando um bisturi" />
                         <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Procedimento Minimamente Invasivo</h3>
                         <p className="text-gray-600 text-sm">
                             Procedimento realizado por endoscopia, com anestesia geral e recuperação rápida.
@@ -40,7 +44,7 @@ export const Beneficios = () => {
                     </div>
                     {/* Vantagem 3 */}
                     <div data-aos="flip-left" className=" rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
-                        <img className="mb-2" src={Ad3} alt="Icone significando Reversível" />
+                        <img className="mb-2" src={Mais} alt="Icone significando Reversível" />
                         <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Método definitivo e seguro</h3>
                         <p className="text-gray-600 text-sm">
                             Reduz em até 70% a capacidade do estômago, promovendo saciedade prolongada e perda de peso.
@@ -49,7 +53,7 @@ export const Beneficios = () => {
                 </div>
             </div>
 
-            <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+            <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20do%20Dr.%20Eduardo%20Amui%20e%20gostaria%20de%20saber%20mais%20sobre%20Gastroplastia%20Endosc%C3%B3pica"}>
 
                 <button
                     className="cursor-pointer m-auto mt-9 px-6 py-3 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 group"

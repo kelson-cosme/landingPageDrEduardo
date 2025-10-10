@@ -1,5 +1,6 @@
+import { Link } from "react-router";
+import { CtaButton } from "../CtaButton";
 // src/components/Gastroplastia/ComparativeTable.tsx
-
 const comparisonData = [
     { criterion: 'Abordagem', endoscopic: 'Endoscópico', bariatric: 'Cirúrgico' },
     { criterion: 'Acesso', endoscopic: 'Via oral', bariatric: 'Por videolaparoscopia' },
@@ -44,6 +45,15 @@ const comparisonData = [
             ))}
           </div>
         </div>
+
+            <Link to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20do%20Dr.%20Eduardo%20Amui%20e%20gostaria%20de%20saber%20mais%20sobre%20Gastroplastia%20Endosc%C3%B3pica"}>
+            <CtaButton className="m-auto mt-9">
+
+              AGENDAR MINHA AVALIAÇÃO
+            </CtaButton>
+            </Link>
+
+
       </section>
     );
   };
