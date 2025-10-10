@@ -403,7 +403,7 @@ function BioInstagram() {
                     <p className="my-2 md:my-0">Política de privacidade</p>
                     <p>
                         <Link target='_blank' to={"https://vivoxmarketing.com.br/"}>
-                            Desenvolvido por Invictus Web.
+                            Desenvolvido por <span className='underline font-bold'>Invictus Web.</span>
                         </Link>
                     </p>
                 </div>

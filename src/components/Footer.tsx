@@ -34,7 +34,7 @@ export const Footer = () => {
                     {/* Coluna 1: Mapa */}
                     <div className="md:col-span-2 lg:col-span-1">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.731551229712!2d-56.10383798888062!3d-15.59990598522378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db1a0d7716963%3A0x7e0a4051a3f4e2!2sAv.%20das%20Flores%2C%20945%20-%2018%20Andar%20-%20Jardim%20Cuiaba%2C%20Cuiab%C3%A1%20-%20MT%2C%2078043-172%2C%20Brazil!5e0!3m2!1sen!2sus!4v1730878536102!5m2!1sen!2sus"
+                            src="https://maps.google.com/maps?q=Edif%C3%ADcio%20SB%20Medical%20-%20Av.%20das%20Flores%2C%20945%20-%2015%C2%B0%20andar%2C%20Sala%201510&t=&z=15&ie=UTF8&iwloc=&output=embed"
                             width="100%"
                             height="100%"
                             style={{ border:0 }}
@@ -85,7 +85,7 @@ export const Footer = () => {
 
                     <p>
                         <Link target='_blank' to={"https://vivoxmarketing.com.br/"}>
-                            Desenvolvido por Invictus Web.
+                            Desenvolvido por <span className='underline font-bold'>Invictus Web.</span>
                         </Link>
                     </p>
                 </div>

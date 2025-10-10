@@ -57,7 +57,7 @@ export const ServicesSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold">Conheça todos os serviços</h2>
         </div>
 
-        <div className="grid flex lg:grid-cols-3 gap-12" >
+        <div className="grid lg:grid-cols-3 gap-12" >
           {/* Coluna 1: Botões */}
           <div className="flex flex-col space-y-4" data-aos="zoom-out-right">
             <button onClick={() => setActiveService('gastroplastia')} className={`text-left p-6 rounded-lg font-semibold transition-all duration-300 ${getButtonClass('gastroplastia')}`}>
