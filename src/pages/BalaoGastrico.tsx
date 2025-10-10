@@ -208,7 +208,7 @@ function BalaoGastrico(){
         </div>
           
           <div className="max-w-[1920px] mx-auto w-full px-4 lg:pl-[10em] z-999">
-            <h1 className="text-2xl md:text-5xl lg:text-4xl font-[700] ">EMAGRECIMENTO <span className="bg-[#e40000]">SEM CORTES</span>  <br  className="hidden lg:block"/> COM O BALÃO GÁSTRICO</h1>
+            <h1 className="text-2xl md:text-5xl lg:text-4xl font-[700] uppercase">Balão gástrico, emagrecimento <br  className="hidden lg:block"/>  <span className="bg-[#e40000]">SEM CORTES</span>   EM CUIABÁ</h1>
             <p className="mb-5 text-1xl font-[100] mt-2">Método moderno, não invasivo e seguro <br /> para quem busca resultados reais com <br /> acompanhamento médico especializado.</p>
             <div className="mt-5 flex items-center flex-wrap">
               <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>

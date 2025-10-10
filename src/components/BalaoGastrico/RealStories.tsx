@@ -1,12 +1,12 @@
 // src/components/BalaoGastrico/RealStories.tsx
 import { useState } from 'react';
 import { CtaButton } from '../CtaButton';
-import PacienteStory from '../../assets/imagens/balao/PacienteStory.webp'; // Usando a imagem avatar3.webp como capa
+import PacienteStory from '../../assets/imagens/balao/videoBalao.webp'; // Usando a imagem avatar3.webp como capa
 import { Link } from 'react-router';
 
 export const RealStories = () => {
     const [isPlaying, setIsPlaying] = useState(false);
-    const videoId = "I5p4VoNyqb4"; // ID do vídeo do YouTube Shorts
+    const videoId = "5Z3IZ7ey5kU"; // ID do vídeo do YouTube Shorts
 
     const handlePlayClick = () => {
         setIsPlaying(true);
