@@ -401,7 +401,11 @@ function BioInstagram() {
                 <div className="border-t border-gray-700 py-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
                     <p>© 2025 Dr. Eduardo Amui. Todos os direitos reservados.</p>
                     <p className="my-2 md:my-0">Política de privacidade</p>
-                    <p>Desenvolvido por Invictus Web.</p>
+                    <p>
+                        <Link target='_blank' to={"https://vivoxmarketing.com.br/"}>
+                            Desenvolvido por Invictus Web.
+                        </Link>
+                    </p>
                 </div>
             </div>
         </footer>        

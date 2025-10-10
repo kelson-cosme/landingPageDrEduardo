@@ -1,10 +1,12 @@
 // src/components/ServicesSection.tsx
 
 import { useState } from 'react';
-import ImagemBalao from '../assets/imagens/balaoga.webp'; // Adicione as imagens corretas
-import ImagemGastro from '../assets/imagens/gastroplatia/DrEduardo2.png';
-import ImagemPlasma from '../assets/imagens/plasma/dr. Eduardp.png';
+import ImagemBalao from '../assets/imagens/balaogastrico.webp'; // Adicione as imagens corretas
+import ImagemGastro from '../assets/imagens/Gastroplastia.webp';
+import ImagemPlasma from '../assets/imagens/Plasma.webp';
 import Seta from '../assets/imagens/gastroplatia/array2.svg';
+import { Link } from 'react-router';
+
 
 // Dados para cada serviço
 const servicesData = {
@@ -14,6 +16,8 @@ const servicesData = {
     indications: 'Indicado para pacientes com IMC acima de 30, que buscam uma alternativa segura e eficaz à cirurgia bariátrica tradicional.',
     benefits: 'Recuperação rápida, menor risco de complicações, perda de peso significativa e sustentável, além de melhora na qualidade de vida e comorbidades associadas à obesidade.',
     image: ImagemGastro,
+    link: "/gastroplastia"
+
   },
   balao: {
     title: 'O que é Balão Gástrico?',
@@ -21,6 +25,7 @@ const servicesData = {
     indications: 'Indicado para pessoas com IMC (Índice de Massa Corporal) acima de 27 (sobrepeso) ou acima de 30 (obesidade), para quem já tentou emagrecer de outras formas e não conseguiu.',
     benefits: 'Minimamente invasivo, reversível, com rápida recuperação. Reduz o apetite, promove saciedade, auxilia na perda de peso e reeducação alimentar.',
     image: ImagemBalao,
+    link: "/balao-gastrico"
   },
   plasma: {
     title: 'O que é o Uso de plasma argônio?',
@@ -28,6 +33,7 @@ const servicesData = {
     indications: 'Indicado para pacientes que realizaram cirurgia bariátrica do tipo bypass gástrico e voltaram a ganhar peso devido à dilatação da anastomose gastrojejunal.',
     benefits: 'Procedimento rápido e seguro, realizado por endoscopia, que restaura a sensação de saciedade e auxilia na retomada da perda de peso, sem a necessidade de uma nova cirurgia.',
     image: ImagemPlasma,
+    link: "/plasma"
   }
 };
 
@@ -51,7 +57,7 @@ export const ServicesSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold">Conheça todos os serviços</h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12" >
+        <div className="grid flex lg:grid-cols-3 gap-12" >
           {/* Coluna 1: Botões */}
           <div className="flex flex-col space-y-4" data-aos="zoom-out-right">
             <button onClick={() => setActiveService('gastroplastia')} className={`text-left p-6 rounded-lg font-semibold transition-all duration-300 ${getButtonClass('gastroplastia')}`}>
@@ -79,15 +85,19 @@ export const ServicesSection = () => {
               <h4 className="font-bold text-md mb-2">Benefícios:</h4>
               <p className="text-gray-600 text-sm">{service.benefits}</p>
             </div>
-            <button className="bg-[#2E3750] text-white px-6 py-3 rounded-full flex items-center font-semibold mt-4 group">
-              Agendar Avaliação
-              <img src={Seta} alt="Seta" className="w-6 ml-3 transition-transform duration-300 group-hover:translate-x-1" />
-            </button>
+            
+            <Link to={service.link} className=''>
+              <button className="cursor-pointer bg-[#2E3750] text-white px-6 py-3 rounded-full flex items-center font-semibold mt-4 group">
+                  Mais informações
+                <img src={Seta} alt="Seta" className="w-6 ml-3 transition-transform duration-300 group-hover:translate-x-1" />
+              </button>
+            </Link>
+
           </div>
 
           {/* Coluna 3: Imagem Dinâmica */}
           <div className="flex items-center justify-center" data-aos="zoom-out-left">
-            <img src={service.image} alt={service.title} className="rounded-lg object-cover max-h-96 w-full transition-all duration-300" />
+            <img src={service.image} alt={service.title} className="rounded-lg object-cover max-h-96 w-fit transition-all duration-300" />
           </div>
         </div>
       </div>
