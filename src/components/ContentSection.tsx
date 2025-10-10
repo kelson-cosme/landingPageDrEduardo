@@ -1,8 +1,8 @@
 // src/components/ContentSection.tsx
+import { Link } from "react-router";
 import Post1 from "../assets/imagens/posts/post1.webp"
 import Post2 from "../assets/imagens/posts/post2.webp"
 import Post3 from "../assets/imagens/posts/post3.webp"
-
 // Ícone do Instagram
 const InstagramIcon = () => (
     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -28,15 +28,26 @@ export const ContentSection = () => {
                 <h2 className="text-3xl md:text-4xl font-bold mb-12">Acompanhe nossos conteúdos</h2>
 
                 <div className="grid md:grid-cols-3 gap-6 mb-12">
-                    <div className="rounded-xl overflow-hidden shadow-lg" data-aos="flip-left">
-                        <img src={Post1} alt="Post sobre balão gástrico" className="w-full h-full object-cover"/>
-                    </div>
-                    <div className="rounded-xl overflow-hidden shadow-lg" data-aos="flip-up">
-                        <img src={Post2} alt="Post sobre como viver os próximos 40 anos" className="w-full h-full object-cover"/>
-                    </div>
-                    <div className="rounded-xl overflow-hidden shadow-lg" data-aos="flip-right">
-                        <img src={Post3} alt="Post sobre obesidade e casamento" className="w-full h-full object-cover"/>
-                    </div>
+                    <Link target="_blank" to={"https://www.instagram.com/p/DH9c5FPJh39/"} className="cursor-pointer rounded-xl overflow-hidden shadow-lg" data-aos="flip-left" >
+                        <div className="h-full">
+                            <img src={Post1} alt="Post sobre balão gástrico" className="w-full h-full object-cover"/>
+                        </div>
+                    </Link>
+
+
+                    <Link target="_blank" to={"https://www.instagram.com/p/DHUQIxivxXe/?img_index=1"} className="cursor-pointer rounded-xl overflow-hidden shadow-lg" data-aos="flip-up">
+                        <div className="h-full">
+                            <img src={Post2} alt="Post sobre como viver os próximos 40 anos" className="w-full h-full object-cover"/>
+                        </div>
+                    </Link>
+
+
+                    <Link target="_blank" to={"https://www.instagram.com/p/DGjVCvOhsE5/?img_index=1"} className="cursor-pointer rounded-xl overflow-hidden shadow-lg" data-aos="flip-right">
+                        <div className="h-full">
+                            <img src={Post3} alt="Post sobre obesidade e casamento" className="w-full h-full object-cover"/>
+                        </div>
+                    </Link>
+
                 </div>
 
                 <div className="flex justify-end">
