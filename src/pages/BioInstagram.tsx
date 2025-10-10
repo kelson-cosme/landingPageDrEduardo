@@ -42,7 +42,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import {useEffect} from "react";
 import { Link } from "react-router";
-import { Footer } from "../components/Footer"
 
 function BioInstagram() {
 
