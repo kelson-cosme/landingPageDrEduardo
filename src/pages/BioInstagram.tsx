@@ -27,15 +27,46 @@ import Fundo6 from "../assets/imagens/localizacao/fundo.webp"
 import Icon5 from "../assets/imagens/localizacao/icon.png"
 import Eduardo6 from "../assets/imagens/localizacao/dr Eduardo.webp"
 import Pino from "../assets/imagens/localizacao/pino.webp"
+import FundoInsta from "../assets/imagens/fundoInsta.webp"
+import textoInsta from "../assets/imagens/textoInsta.webp"
 
+import EduardoInsta from "../assets/imagens/eduardoinsta.webp"
+import LogoInsta from "../assets/imagens/logoInsta.webp"
+
+import FundoYoutube from "../assets/imagens/fundoyoutube.webp"
+import LogoYoutube from "../assets/imagens/logoYoutube.webp"
+import EduardoYoutube from "../assets/imagens/eduardoYoutube.webp"
+import LogoYoutube2 from "../assets/imagens/logoyoutube2.webp"
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import {useEffect} from "react";
 import { Link } from "react-router";
-
+import { Footer } from "../components/Footer"
 
 function BioInstagram() {
+
+    const WhatsAppIcon = () => (
+        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M.052 24l1.687-6.163c-1.041-1.804-1.598-3.825-1.598-5.918 0-5.418 4.381-9.8 9.8-9.8s9.8 4.382 9.8 9.8-4.381 9.8-9.8 9.8c-2.004 0-3.933-.578-5.588-1.631L.052 24zM8.381 4.542c4.102 0 7.424 3.322 7.424 7.424s-3.322 7.424-7.424 7.424-7.424-3.322-7.424-7.424c0-2.019.811-3.865 2.13-5.23l.119-.148-1.378 4.253 4.41-1.353.133-.082c1.325-.826 2.928-1.31 4.63-1.31l-.014.002z" />
+        </svg>
+    );
+    
+    const InstagramIcon = () => (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+    );
+    
+    const FacebookIcon = () => (
+        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
+        </svg>
+    );
+    
+
     // Gradiente principal do card
     const cardBackgroundGradient = 'linear-gradient(110deg, #44B93C 0%, #4EEA40 100%)';
     const cardBackgroundGradient2 = 'linear-gradient(0deg, rgba(70, 179, 60, 1) 23%, rgba(78, 234, 64, 1) 65%)'
@@ -46,7 +77,10 @@ function BioInstagram() {
     }, [])
 
     return (
-        <section className="container m-auto p-5 overflow-hidden">
+
+
+        <>
+                <section className="container m-auto p-5 overflow-hidden">
             <img className="m-auto mb-8 w-[12em]" src={Logo} alt="Duas letras simbolizando a logo do Dr. Eduardo Amui, as letras EA" />
 
             <div className="m-auto flex flex-col items-center sm:max-w-[849px] ">
@@ -236,8 +270,141 @@ function BioInstagram() {
 
 
 
+                <Link  to="https://www.instagram.com/dr.eduardoamui" target="_blank" className="w-full mb-3 sm:mb-11">
+                    <div data-aos="fade-right" className="card relative isolate w-full h-[165px] sm:h-[339px] rounded-[10px] sm:rounded-[20px]" >
+                        <div 
+                            className="absolute inset-0 bg-cover bg-center opacity-100 rounded-[10px] sm:rounded-[20px]" 
+                            style={{ backgroundImage: `url(${FundoInsta})`, backgroundSize: "cover" }}
+                        ></div>
+
+
+
+                        {/* <div className="absolute inset-0 bg-[linear-gradient(90deg,_rgba(0,0,0,0.6)_0%,_rgba(28,63,24,0)_65%)] rounded-[10px] sm:rounded-[20px]"></div> */}
+
+                        <div className="relative z-20 w-full h-full p-3 sm:p-10">
+                            
+                            <img src={EduardoInsta} className="absolute right-2 sm:right-13 bottom-0  w-[143px] sm:w-[299px] z-99" alt="Foto do Dr. Eduardo " />
+                            <img src={LogoInsta} alt="Pino de localização" className="animate-float absolute sm:w-[140px] w-[50px] sm:right-[-15px] right-[-7px] rotate-10  z-9"  />
+
+                            <img src={LogoInsta} alt="Pino de localização" className="animate-float absolute sm:w-[116px] w-[50px]  sm:right-[230px] bottom-[80px] sm:bottom-[160px] right-[95px] rotate-10 blur-[3.5px] "  />
+
+
+                            <img src={LogoInsta} alt="Pino de localização" className="animate-float absolute sm:w-[116px] w-[50px] sm:right-[260px] bottom-[-5px] right-[100px] rotate-350 blur-[1.7px] z-99"  />
+
+
+
+                            <div className="h-full flex flex-col justify-center items-start">
+
+
+                            <div>
+                                <img src={textoInsta} alt="foto do Dr. Eduardo" className="z-99 w-[10rem] lg:w-[20rem]"/>
+                            </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </Link>
+
+
+                <Link  to="https://www.youtube.com/@eduardoamui" target="_blank" className="w-full mb-3 sm:mb-11">
+                    <div data-aos="fade-left" className="card relative isolate w-full h-[165px] sm:h-[339px] rounded-[10px] sm:rounded-[20px]" >
+                        <div 
+                            className="absolute inset-0 bg-cover bg-center opacity-100 rounded-[10px] sm:rounded-[20px]" 
+                            style={{ backgroundImage: `url(${FundoYoutube})`, backgroundSize: "cover" }}
+                        ></div>
+
+        
+
+                        <div className="relative z-20 w-full h-full p-3 sm:p-10">
+                            
+                            <img src={EduardoYoutube} className="absolute right-2 sm:right-13 bottom-0  w-[143px] sm:w-[299px] z-99" alt="Foto do Dr. Eduardo " />
+                            <img src={LogoYoutube2} alt="Pino de localização" className="animate-float absolute sm:w-[166px] w-[50px] sm:right-[-15px] right-[-7px] rotate-10  z-9"  />
+
+                            <img src={LogoYoutube2} alt="Pino de localização" className="animate-float absolute sm:w-[116px] w-[50px]  sm:right-[230px] bottom-[80px] sm:bottom-[160px] right-[95px] rotate-10 blur-[3.5px] "  />
+
+
+                            <img src={LogoYoutube2} alt="Pino de localização" className="animate-float absolute sm:w-[116px] w-[50px] sm:right-[260px] bottom-[-5px] right-[100px] rotate-350 blur-[1.7px] z-99"  />
+
+
+
+                            <div className="h-full flex flex-col  justify-center items-center  w-[50%]">
+
+                                <img src={LogoYoutube} className="w-[10rem] sm:w-[15rem]" alt="Logo do Youtube" />
+
+                                <button className="bg-white z-99 pl-4 pt-1 sm:pt-1.5 pb-1 sm:pb-1.5 pr-1 rounded-[2rem] flex items-center text-[8px] sm:text-[23px] font-semibold text-[#B90012] mt-4 sm:mt-9" >
+                                    ACESSE AGORA MESMO
+                                    <img className=" ml-2 sm:ml-5 w-5  sm:w-auto" src={Seta2} alt="Flexa"/>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </Link>
+
+
+
             </div>
         </section>
+
+        <footer className="bg-white text-[#262E44] pt-16">
+            <div className="max-w-[1200px] mx-auto px-4">
+                {/* Seção Principal do Rodapé */}
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                    {/* Coluna 1: Mapa */}
+                    <div className="md:col-span-2 lg:col-span-1">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.731551229712!2d-56.10383798888062!3d-15.59990598522378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939db1a0d7716963%3A0x7e0a4051a3f4e2!2sAv.%20das%20Flores%2C%20945%20-%2018%20Andar%20-%20Jardim%20Cuiaba%2C%20Cuiab%C3%A1%20-%20MT%2C%2078043-172%2C%20Brazil!5e0!3m2!1sen!2sus!4v1730878536102!5m2!1sen!2sus"
+                            width="100%"
+                            height="100%"
+                            style={{ border:0 }}
+                            allowFullScreen={true}
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                            className="rounded-lg"
+                        ></iframe>
+                    </div>
+
+                    {/* Coluna 2: Logo e Descrição */}
+                    <div>
+                        <img src={Logo} alt="Logotipo Dr. Eduardo Amui" className="h-10 mb-4"/>
+                        <p className="text-sm text-gray-400 mb-4">
+                            Endoscopista, Gastroplastia Endoscópica e Tratamentos para Obesidade
+                        </p>
+                        <div className="flex space-x-4">
+                            <a href="#" className="hover:text-gray-300"><WhatsAppIcon /></a>
+                            <a href="#" className="hover:text-gray-300"><InstagramIcon /></a>
+                            <a href="#" className="hover:text-gray-300"><FacebookIcon /></a>
+                        </div>
+                    </div>
+
+                    {/* Coluna 3: Navegação */}
+                    <div>
+                        <h4 className="font-bold mb-4">Navegação:</h4>
+                        <ul className="space-y-2 text-sm">
+                            <li><a href="#" className="text-gray-400 hover:text-white">Blog</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">Tratamentos</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-white">Localização</a></li>
+                        </ul>
+                    </div>
+
+                    {/* Coluna 4: Contato */}
+                    <div>
+                        <h4 className="font-bold mb-4">Contato:</h4>
+                        <ul className="space-y-2 text-sm text-gray-400">
+                            <li>Seg - Sex | 08h às 19h</li>
+                            <li>(65) 9 9955-8558</li>
+                        </ul>
+                    </div>
+                </div>
+
+                {/* Seção Secundária (Direitos Autorais) */}
+                <div className="border-t border-gray-700 py-6 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
+                    <p>© 2025 Dr. Eduardo Amui. Todos os direitos reservados.</p>
+                    <p className="my-2 md:my-0">Política de privacidade</p>
+                    <p>Desenvolvido por Invictus Web.</p>
+                </div>
+            </div>
+        </footer>        
+        </>
     )
 }
 
