@@ -1,6 +1,8 @@
 import Logo from "../assets/logo.webp"
 import FundoCard1 from "../assets/fundoCard1.webp"
 import Seta from "../assets/array.svg"
+import Seta3 from "../assets/arrayRed.svg"
+
 import Zap1 from "../assets/zap1.webp"
 import Eduardo from "../assets/dr.webp"
 import Zap2 from "../assets/zap2.webp"
@@ -332,7 +334,7 @@ function BioInstagram() {
 
                                 <button className="bg-white z-99 pl-4 pt-1 sm:pt-1.5 pb-1 sm:pb-1.5 pr-1 rounded-[2rem] flex items-center text-[8px] sm:text-[23px] font-semibold text-[#B90012] mt-4 sm:mt-9" >
                                     ACESSE AGORA MESMO
-                                    <img className=" ml-2 sm:ml-5 w-5  sm:w-auto" src={Seta2} alt="Flexa"/>
+                                    <img className=" ml-2 sm:ml-5 w-5  sm:w-auto" src={Seta3} alt="Flexa"/>
                                 </button>
                             </div>
                         </div>
