@@ -253,7 +253,7 @@ function Gastroplastia(){
                 <h1 className="text-2xl md:text-5xl lg:text-4xl font-[700] uppercase">Gastroplastia Endoscópica,  < br className="hidden sm:block" /> redução do estômago sem cirurgia <br /> em Cuiabá | Dr. Eduardo Amui</h1>
                 <p className="mb-5 text-1xl font-[100] mt-6"><span className="font-bold">Redução de estômago por endoscopia</span>, técnica <br className="hidden sm:block"  /> inovadora que permite emagrecimento sem cortes, <br className="hidden sm:block"  /> com recuperação rápida..</p>
                 <div className="mt-5 flex items-center flex-wrap">
-                  <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+                  <Link target="_blank" to={"figma.com/exit?url=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5565999558558%26text%3DOl%25C3%25A1%252C%2520vim%2520pela%2520p%25C3%25A1gina%2520do%2520Dr.%2520Eduardo%2520Amui%2520e%2520gostaria%2520de%2520saber%2520mais%2520sobre%2520Gastroplastia%2520Endosc%25C3%25B3pica"}>
                   <button className="cursor-pointer bg-background: #46B33C; pl-4 p-2 rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500] text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
                   AGENDAR MINHA AVALIAÇÃO
                   <img src={Seta2} alt="Seta apontado para cima" className="w-8 ml-3" />
