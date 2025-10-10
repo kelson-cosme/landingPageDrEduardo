@@ -19,11 +19,11 @@ import { LocationSection } from "../components/LocationSection";
 import { FaqSection } from "../components/FaqSection";
 
 
-import Avatar1 from "../assets/imagens/avatar1.webp"
-import Avatar2 from "../assets/imagens/avatar2.webp"
-import Avatar3 from "../assets/imagens/avatar3.webp"
-import Avatar4 from "../assets/imagens/avatar4.webp"
-import Avatar5 from "../assets/imagens/avatar5.webp"
+import Avatar1 from "../assets/imagens/plasma/av1.webp"
+import Avatar2 from "../assets/imagens/plasma/av2.webp"
+import Avatar3 from "../assets/imagens/plasma/av3.webp"
+import Avatar4 from "../assets/imagens/plasma/av4.webp"
+import Avatar5 from "../assets/imagens/plasma/av5.webp"
 import { Link } from "react-router";
 
 function Plasma(){
@@ -133,38 +133,33 @@ function Plasma(){
       const testimonials = [
         {
           avatar: Avatar1,
-          name: "Ana Beatriz Lemos",
+          name: "Mariana Gusmão",
           time: "Há 2 semanas",
-          text: (
-            <>
-              Coloquei o balão gástrico com o Dr. Eduardo e só posso dizer que foi a melhor decisão da minha vida! Atendimento impecável, seguro e cheio de empatia. Me senti cuidada em cada detalhe. 💙💬
-                
-            </>
-          ),
+          text: "O Dr. Eduardo me apresentou o plasma, e foi a solução que eu precisava. Fiz 2 sessões, procedimento rápido e tranquilo. Já eliminei 9kg e voltei a ter controle da saciedade. Muito grata!"
         },
         {
           avatar: Avatar2,
-          name: "Marcos Vinícius Prado",
-          time: "Há 1 mês",
-          text: "Excelente profissional! Competente, atencioso e muito humano. Me senti acolhido desde o primeiro contato. Recomendo demais!",
+          name: "Roberto Linhares",
+          time: "Há 4 meses",
+          text: "Depois da cirurgia bariátrica, comecei a reparar que conseguia comer mais e o peso voltou. O plasma de argônio foi fundamental pra corrigir isso. Fiz 3 sessões com o Dr. Eduardo, perdi 11kg e me sinto muito melhor. Vale cada centavo.",
         },
         {
           avatar: Avatar3,
-          name: "Juliana Rocha Medeiros",
-          time: "Há 3 semanas",
-          text: "Fiz tratamento com plasma de argônio com o Dr. Eduardo e o resultado foi surpreendente. Profissional calmo, explica tudo com clareza e ainda transmite muita confiança.❤️",
+          name: "Patrícia Almeida",
+          time: "Há 6 meses",
+          text: "O Dr. Eduardo explicou como o plasma funciona e me deu esperança. Realizei o procedimento, senti um leve desconforto só no primeiro dia, mas nada demais. Perdi 8kg e voltei ao meu peso ideal.",
         },
         {
           avatar: Avatar4,
-          name: "Thiago Henrique Santana",
-          time: "Há 2 meses",
-          text: "Fui indicado para um acompanhamento endoscópico e fiquei impressionado com a atenção e o cuidado do Dr. Eduardo. Tudo muito bem feito, desde o atendimento até o pós. Recomendo de verdade.",
+          name: "Fernando Ribas",
+          time: "Há 9 meses",
+          text: "Achei que teria que fazer outra cirurgia pelo reganho, mas o Dr. Eduardo me mostrou uma alternativa menos invasiva. O plasma de argônio resolveu meu problema em 2 sessões. Eliminei 14kg, voltei a sentir saciedade e recuperei minha qualidade de vida.",
         },
         {
           avatar: Avatar5,
-          name: "Camila Duarte Silveira",
-          time: "Há 3 meses",
-          text: "Estava com muito receio de colocar o balão, mas o Dr. Eduardo me passou toda a segurança. Já eliminei vários quilos e me sinto muito melhor! Atendimento humano e profissional! 🥹",
+          name: "Vanessa Moreira",
+          time: "Há 1 ano",
+          text: "Fiz bariátrica em 2019 e aos poucos o peso começou a voltar. O plasma de argônio foi minha segunda chance. Procedimento rápido, bem tranquilo, fiz pelo Dr. Eduardo. Em 3 sessões perdi 10kg e o melhor: voltei a me sentir satisfeita com porções menores.",
         },
       ];
 

@@ -15,7 +15,7 @@ export const Intro = () => {
                     <p className="text-gray-600 mb-3">
                     O Plasma de Argônio é um tratamento endoscópico, minimamente invasivo, indicado para pacientes que voltaram a ganhar peso após a cirurgia bariátrica.                    </p>
                     <p className="text-gray-600 mb-3">
-                    Durante o procedimento, o gás de argônio promove a cicatrização da anastomose (união entre estômago e intestino), reduzindo seu diâmetro.                    </p>
+                    Durante o procedimento, o Plasma de Argônio cauterizará a região da anastomose (união entre estômago e intestino), para estimular cicatrização de reduzir o seu diâmetro.</p>
                     <p className="text-gray-600 mb-3">
                     Com isso, o paciente recupera a sensação de saciedade, retoma o controle alimentar e volta a perder peso sem precisar de nova cirurgia.
                     </p>

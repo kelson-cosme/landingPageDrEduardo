@@ -22,7 +22,7 @@ export const HowItWorks = () => {
                 <p className="text-sm font-semibold text-[#F9E6C1] mb-2 uppercase" data-aos="fade-down">Procedimento</p>
                 <h2 className="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-down">O que é Gastroplastia Endoscópica?</h2>
                 <p className="max-w-3xl mx-auto text-white mb-12" data-aos="fade-down">
-                    <span className="font-bold">Conhecida como Bariátrica sem cortes, a redução do estômago sem cirurgia</span> é uma técnica de endosutura gástrica feita por endoscopia, que ajuda o paciente a emagrecer de forma segura.
+                    <span className="font-bold">Conhecida como Bariátrica sem cortes, a redução do estômago sem cirurgia</span> é uma técnica de sutura gástrica feita por endoscopia, que ajuda o paciente a emagrecer de forma segura.
                 </p>
 
                 {/* Player de Vídeo */}

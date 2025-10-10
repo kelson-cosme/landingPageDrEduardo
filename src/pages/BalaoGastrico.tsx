@@ -19,11 +19,11 @@ import { LocationSection } from "../components/LocationSection";
 import { FaqSection } from "../components/FaqSection";
 import { Footer } from "../components/Footer";
 
-import Avatar1 from "../assets/imagens/avatar1.webp"
-import Avatar2 from "../assets/imagens/avatar2.webp"
-import Avatar3 from "../assets/imagens/avatar3.webp"
-import Avatar4 from "../assets/imagens/avatar4.webp"
-import Avatar5 from "../assets/imagens/avatar5.webp"
+import Avatar1 from "../assets/imagens/balao/av1.webp"
+import Avatar2 from "../assets/imagens/balao/av2.webp"
+import Avatar3 from "../assets/imagens/balao/av3.webp"
+import Avatar4 from "../assets/imagens/balao/av4.webp"
+import Avatar5 from "../assets/imagens/balao/av5.webp"
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -40,38 +40,33 @@ function BalaoGastrico(){
   const testimonials = [
     {
       avatar: Avatar1,
-      name: "Ana Beatriz Lemos",
-      time: "Há 2 semanas",
-      text: (
-        <>
-          Coloquei o balão gástrico com o Dr. Eduardo e só posso dizer que foi a melhor decisão da minha vida! Atendimento impecável, seguro e cheio de empatia. Me senti cuidada em cada detalhe. 💙💬
-            
-        </>
-      ),
+      name: "Larissa Medeiros",
+      time: "Há 3 meses",
+      text: "Decidi fazer o balão gástrico com o Dr. Eduardo depois de anos tentando dietas sem sucesso. Perdi 18kg em 5 meses e minha relação com comida mudou completamente. O procedimento foi tranquilo e a equipe me acompanhou em cada etapa. Recomendo!"
     },
     {
       avatar: Avatar2,
-      name: "Marcos Vinícius Prado",
-      time: "Há 1 mês",
+      name: "Renato Figueiredo",
+      time: "Há 1 semana",
       text: "Excelente profissional! Competente, atencioso e muito humano. Me senti acolhido desde o primeiro contato. Recomendo demais!",
     },
     {
       avatar: Avatar3,
-      name: "Juliana Rocha Medeiros",
+      name: "Jéssica Tavares",
       time: "Há 3 semanas",
-      text: "Fiz tratamento com plasma de argônio com o Dr. Eduardo e o resultado foi surpreendente. Profissional calmo, explica tudo com clareza e ainda transmite muita confiança.❤️",
+      text: "Fiquei impressionada! O acompanhamento do Dr. Eduardo fez toda diferença. Perdi 15kg em 4 meses, me sinto mais leve e confiante. Atendimento impecável do início ao fim.",
     },
     {
       avatar: Avatar4,
-      name: "Thiago Henrique Santana",
-      time: "Há 2 meses",
-      text: "Fui indicado para um acompanhamento endoscópico e fiquei impressionado com a atenção e o cuidado do Dr. Eduardo. Tudo muito bem feito, desde o atendimento até o pós. Recomendo de verdade.",
+      name: "Caio Henrique Barros",
+      time: "Há 1 mês",
+      text: "Confesso que tinha receio se funcionaria. O Dr. Eduardo foi super realista desde o começo, não prometeu milagre. Eliminei 20kg, aprendi a comer melhor e hoje me sinto outra pessoa. Procedimento seguro e eficaz. E já recomendei para dois familiares.",
     },
     {
       avatar: Avatar5,
-      name: "Camila Duarte Silveira",
-      time: "Há 3 meses",
-      text: "Estava com muito receio de colocar o balão, mas o Dr. Eduardo me passou toda a segurança. Já eliminei vários quilos e me sinto muito melhor! Atendimento humano e profissional! 🥹",
+      name: "Andréia Campos",
+      time: "Há 9 meses",
+      text: "Melhor investimento na minha saúde! Estava com diabetes descontrolada há anos. O Dr. Eduardo me acolheu desde a primeira consulta. Fiz o balão há 7 meses, já perdi 24kg e minha glicemia está controlada. Me sinto renascida!",
     },
   ];
 

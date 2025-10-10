@@ -4,11 +4,11 @@ import Fundo from "../assets/imagens/gastroplatia/fundo.webp";
 import Seta2 from "../assets/imagens/gastroplatia/array2.svg";
 import Black from "../assets/imagens/Black.png";
 
-import Avatar1 from "../assets/imagens/avatar1.webp"
-import Avatar2 from "../assets/imagens/avatar2.webp"
-import Avatar3 from "../assets/imagens/avatar3.webp"
-import Avatar4 from "../assets/imagens/avatar4.webp"
-import Avatar5 from "../assets/imagens/avatar5.webp"
+import Avatar1 from "../assets/imagens/gastroplatia/av1.webp"
+import Avatar2 from "../assets/imagens/gastroplatia/av2.webp"
+import Avatar3 from "../assets/imagens/gastroplatia/av3.webp"
+import Avatar4 from "../assets/imagens/gastroplatia/av4.webp"
+import Avatar5 from "../assets/imagens/gastroplatia/av5.webp"
 import { Intro } from "../components/Gastroplastia/Intro";
 import { Advantages } from "../components/BalaoGastrico/Advantages";
 // import { AboutSection } from "../components/Gastroplastia/AboutSection";
@@ -143,36 +143,31 @@ function Gastroplastia(){
           avatar: Avatar1,
           name: "Ana Beatriz Lemos",
           time: "Há 2 semanas",
-          text: (
-            <>
-              Coloquei o balão gástrico com o Dr. Eduardo e só posso dizer que foi a melhor decisão da minha vida! Atendimento impecável, seguro e cheio de empatia. Me senti cuidada em cada detalhe. 💙💬
-                
-            </>
-          ),
+          text: "Escolhi a gastroplastia com o Dr. Eduardo porque não queria passar por cirurgia bariátrica. Melhor decisão! Procedimento rápido, alta no mesmo dia. Voltei a fazer caminhadas sem cansaço e minha autoestima voltou. Gratidão total!"
         },
         {
           avatar: Avatar2,
           name: "Marcos Vinícius Prado",
           time: "Há 1 mês",
-          text: "Excelente profissional! Competente, atencioso e muito humano. Me senti acolhido desde o primeiro contato. Recomendo demais!",
+          text: "Estava com 118kg, IMC alto, mas tinha receio da bariátrica. O Dr. Eduardo me explicou a gastroplastia endoscópica e foi perfeito pra mim. Já eliminei 21kg, minha pressão normalizou e o melhor: sem cortes, sem internação longa. Recomendo demais!",
         },
         {
           avatar: Avatar3,
           name: "Juliana Rocha Medeiros",
           time: "Há 3 semanas",
-          text: "Fiz tratamento com plasma de argônio com o Dr. Eduardo e o resultado foi surpreendente. Profissional calmo, explica tudo com clareza e ainda transmite muita confiança.❤️",
+          text: "Fiquei impressionada com a rapidez do procedimento e a recuperação. Fiz a gastroplastia numa sexta, segunda já estava trabalhando normalmente. Perdi 19kg, aprendi a me alimentar melhor e ganhei qualidade de vida que não tinha há anos.",
         },
         {
           avatar: Avatar4,
           name: "Thiago Henrique Santana",
           time: "Há 2 meses",
-          text: "Fui indicado para um acompanhamento endoscópico e fiquei impressionado com a atenção e o cuidado do Dr. Eduardo. Tudo muito bem feito, desde o atendimento até o pós. Recomendo de verdade.",
+          text: "Tudo muito bem explicado desde a primeira consulta. Realizei a gastroplastia, recuperação tranquila. Em 7 meses eliminei 23kg, saí do sedentarismo e voltei a ter disposição. Gratidão ao Dr. e a equipe!",
         },
         {
           avatar: Avatar5,
           name: "Camila Duarte Silveira",
           time: "Há 3 meses",
-          text: "Estava com muito receio de colocar o balão, mas o Dr. Eduardo me passou toda a segurança. Já eliminei vários quilos e me sinto muito melhor! Atendimento humano e profissional! 🥹",
+          text: "Gastroplastia e foi a solução ideal. Procedimento minimamente invasivo, me sinto segura. Já perdi 15kg e o acompanhamento nutricional fez toda diferença. Valeu muito a pena!",
         },
       ];
 
@@ -324,9 +319,9 @@ function Gastroplastia(){
                     <h2 className="text-3xl md:text-4xl font-bold mb-12">O que dizem nossos pacientes</h2>
                   </div>
         
-                  <div className="marquee">
+                  <div className="marquee ">
                     {/* Primeiro grupo de cards */}
-                    <div className="marquee-group">
+                    <div className="marquee-group text-justify ">
                       {testimonials.map((testimonial, index) => (
                         <TestimonialCard 
                           key={`primeiro-${index}`}

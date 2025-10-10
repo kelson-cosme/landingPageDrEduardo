@@ -23,7 +23,7 @@ export const Procedure = () => {
                             O balão, ainda vazio, é introduzido pela boca até o estômago e, em seguida, é preenchido com soro fisiológico.
                         </p>
                         <p>
-                            O procedimento dura em média 20 a 30 minutos, é ambulatorial e não exige internação. Após algumas horas de observação, o paciente recebe alta e pode retornar às atividades em poucos dias.
+                        O procedimento dura em média 10 minutos, é ambulatorial e não exige internação. Após algumas horas de observação, o paciente recebe alta e pode retornar às atividades em poucos dias.
                         </p>
                     </div>
                 </div>

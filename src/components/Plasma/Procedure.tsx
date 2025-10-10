@@ -23,7 +23,7 @@ export const Procedure = () => {
                     A interação do gás argônio com a corrente elétrica na ponta do cateter permite sua transformação em energia térmica, formando um plasma de coagulação que age sobre a anastomose. É o processo de cicatrização da cauterização posteriormente que causa o estreitamento da área. <br />
                     <br />
 
-                    Para atingir a eficácia necessária, o tratamento precisa ser feito em duas a três sessões, com intervalos de um a dois meses entre cada sessão.                    
+                    Em poucos minutos o paciente realiza o tratamento e retorna para casa no mesmo dia.                    
                     </p>
                 </div>
             </div>

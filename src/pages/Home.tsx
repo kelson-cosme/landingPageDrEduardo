@@ -16,11 +16,11 @@ import Tecnologia1 from "../assets/imagens/tecnologia1.svg"
 import Tecnologia2 from "../assets/imagens/tecnologia2.svg"
 import Tecnologia3 from "../assets/imagens/tecnologia3.svg"
 
-import Avatar1 from "../assets/imagens/avatar1.webp"
-import Avatar2 from "../assets/imagens/avatar2.webp"
-import Avatar3 from "../assets/imagens/avatar3.webp"
-import Avatar4 from "../assets/imagens/avatar4.webp"
-import Avatar5 from "../assets/imagens/avatar5.webp"
+import Avatar1 from "../assets/imagens/av1.webp"
+import Avatar2 from "../assets/imagens/av2.webp"
+import Avatar3 from "../assets/imagens/av3.webp"
+import Avatar4 from "../assets/imagens/av4.webp"
+import Avatar5 from "../assets/imagens/av5.webp"
 
 import { CtaButton } from '../components/CtaButton'; // Importando o novo componente
 
@@ -46,38 +46,33 @@ function Home() {
     const testimonials = [
       {
         avatar: Avatar1,
-        name: "Ana Beatriz Lemos",
-        time: "Há 2 semanas",
-        text: (
-          <>
-            Coloquei o balão gástrico com o Dr. Eduardo e só posso dizer que foi a melhor decisão da minha vida! Atendimento impecável, seguro e cheio de empatia. Me senti cuidada em cada detalhe. 💙💬
-              
-          </>
-        ),
+        name: "Liédson Cavaleiro",
+        time: "Há 3 semanas",
+        text: "Fui super bem atendido! Super recomendo. A equipe é excelente, foi atenciosa em todos os sentidos: explicaram tudo com clareza, tiraram todas as minhas dúvidas, foram pacientes e prestativos. Recomendo de verdade, vocês não vão se arrepender."
       },
       {
         avatar: Avatar2,
-        name: "Marcos Vinícius Prado",
-        time: "Há 1 mês",
-        text: "Excelente profissional! Competente, atencioso e muito humano. Me senti acolhido desde o primeiro contato. Recomendo demais!",
+        name: "Caroline Santos Gonçalves",
+        time: "Há 3 meses",
+        text: "Excelente profissional, atendimento humanizado, educado e atencioso, deixa as pessoas super a vontade sem aquele tabu de médico que dá um medinho, explica muito bem. Super recomendo esse excelente profissional e sua equipe. ",
       },
       {
         avatar: Avatar3,
-        name: "Juliana Rocha Medeiros",
-        time: "Há 3 semanas",
-        text: "Fiz tratamento com plasma de argônio com o Dr. Eduardo e o resultado foi surpreendente. Profissional calmo, explica tudo com clareza e ainda transmite muita confiança.❤️",
+        name: "Kesllen thamires Grego Silva",
+        time: "Há 3 meses",
+        text: "Dr. Eduardo Amui e sua equipe são sinônimo de excelência! Profissionalismo, cuidado e atenção em cada detalhe. Super recomendo! Você se sente acolhido desde a primeira consulta. Um time que realmente ama o que faz! 👏🏻",
       },
       {
         avatar: Avatar4,
-        name: "Thiago Henrique Santana",
-        time: "Há 2 meses",
-        text: "Fui indicado para um acompanhamento endoscópico e fiquei impressionado com a atenção e o cuidado do Dr. Eduardo. Tudo muito bem feito, desde o atendimento até o pós. Recomendo de verdade.",
+        name: "Naiane Suely",
+        time: "Há 3 meses",
+        text: "Equipe nota 1.000 ótimo atendimento, equipe de milhões, profissionais super atenciosos, dedicado e com extremo cuidado com os pacientes, super recomendo.",
       },
       {
         avatar: Avatar5,
-        name: "Camila Duarte Silveira",
+        name: "Carlos Eugenio Silva Matos",
         time: "Há 3 meses",
-        text: "Estava com muito receio de colocar o balão, mas o Dr. Eduardo me passou toda a segurança. Já eliminei vários quilos e me sinto muito melhor! Atendimento humano e profissional! 🥹",
+        text: "Atendimento excelente, equipe muito competente e ambiente acolhedor. Continue sempre assim, pois dessa forma ficará cada vez melhor. Obrigado!",
       },
     ];
   

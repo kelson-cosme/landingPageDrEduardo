@@ -2,16 +2,15 @@
 
 const comparisonData = [
     { criterion: 'Abordagem', endoscopic: 'Endoscópico', bariatric: 'Cirúrgico' },
-    { criterion: 'Duração/reversibilidade', endoscopic: 'Reversível até 6 semanas', bariatric: 'Irreversível' },
     { criterion: 'Acesso', endoscopic: 'Via oral', bariatric: 'Por videolaparoscopia' },
-    { criterion: 'Perda média de peso', endoscopic: 'Média de 20 a 30%', bariatric: 'Média de 40%' },
-    { criterion: 'Indicação por IMC', endoscopic: 'IMC entre 30-40', bariatric: 'IMC acima de 35' },
+    { criterion: 'Perda média de peso', endoscopic: 'Média de 20 a 30%', bariatric: 'Média de 35%' },
+    { criterion: 'Indicação por IMC', endoscopic: 'IMC a partir de 30', bariatric: 'IMC acima de 40, ter doenças associadas.' },
     { criterion: 'Anestesia/sedação', endoscopic: 'Anestesia geral', bariatric: 'Anestesia geral' },
     { criterion: 'Local do procedimento', endoscopic: 'Clínica com suporte', bariatric: 'Somente hospital' },
-    { criterion: 'Recuperação', endoscopic: '7 dias ou mais', bariatric: '15 a 30 dias' },
+    { criterion: 'Recuperação', endoscopic: '1 a 3 dias', bariatric: '15 a 30 dias' },
     { criterion: 'Complicações', endoscopic: 'Baixo índice de complicações', bariatric: 'Maior índice de complicações' },
-    { criterion: 'Opções futuras', endoscopic: 'Nova redução endoscópica ou conversão para cirurgias bariátricas', bariatric: 'Reoperação, sutura endoscópica ou plasma de argônio' },
-    { criterion: 'Cicatriz', endoscopic: 'Nenhuma cicatriz', bariatric: 'Tipicamente 4 a 5 pequenas cicatrizes' },
+    { criterion: 'Opções futuras', endoscopic: 'Nova redução endoscópica, conversão para cirurgias bariátricas e medicamentos.', bariatric: 'Opções muito limitadas, medicamentos tem menor efeito.' },
+    { criterion: 'Cicatriz', endoscopic: 'Nenhuma cicatriz', bariatric: '6 menores (por vídeo) ou uma grande (cirurgia aberta)' },
   ];
   
   export const ComparativeTable = () => {

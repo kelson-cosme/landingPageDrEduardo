@@ -51,7 +51,7 @@ export const Advantages = () => {
                         <img className="mb-2" src={Ad2} alt="Icone de uma balança" />
                         <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Pacientes com Bypass Gástrico</h3>
                         <p className="text-gray-600 text-sm">
-                            Indicado apenas para quem fez bariátrica por técnicas como Fobi-Capella, Wittgrove ou Higa.
+                            Indicado apenas para quem fez bariátrica por técnicas como fobi-capella (com ou sem anel) e bypass tradicional.
                         </p>
                     </div>
                     {/* Vantagem 2 */}
