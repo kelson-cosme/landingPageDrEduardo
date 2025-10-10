@@ -24,7 +24,7 @@ export const Intro = () => {
                         Isso gera saciedade precoce, ajuda a controlar a quantidade de comida ingerida e favorece a perda de peso, sempre aliado à reeducação alimentar.
                     </p>
 
-                    <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+                    <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20do%20Dr.%20Eduardo%20Amui%20e%20quero%20agendar%20uma%20consulta%20para%20conversar%20sobre%20o%C2%A0Bal%C3%A3o%C2%A0G%C3%A1strico"}>
                     <button
                         className="cursor-pointer px-6 py-3 rounded-full flex items-center justify-center text-base font-semibold text-white z-10 group m-auto lg:m-0"
                         style={{ backgroundImage: cardBackgroundGradient2 }}

@@ -241,7 +241,7 @@ function Plasma(){
                 <h1 className="text-2xl md:text-5xl lg:text-4xl font-[700] ">PLASMA DE ARGÔNICO: <br /> TRATAMENTO PARA REGANHO DE <br className="lg:block hidden" /> PESO PÓS-BARIÁTRICA EM CUIABÁ</h1>
                 <p className="mb-5 text-1xl font-[100] mt-2">Recupere o controle do seu peso após a bariátrica <br className="lg:block hidden"/> sem precisar de nova cirurgia.</p>
                 <div className="mt-5 flex items-center flex-wrap">
-                  <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+                  <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20do%20Dr.%20Eduardo%20Amui%20e%20quero%20agendar%20uma%20consulta%20para%20avaliar%20se%20o%20Plasma%20de%20Arg%C3%B4nio%20%C3%A9%20indicado%20para%C2%A0o%C2%A0meu%C2%A0caso"}>
                   <button className="cursor-pointer bg-background: #46B33C; pl-4 p-2 rounded-[2rem] flex items-center justify-center lg:text-[12px] font-[500] text-white z-9" style={{ backgroundImage: cardBackgroundGradient2 }}>
                 AGENDAR MINHA AVALIAÇÃO
                 <img src={Seta2} alt="Seta apontado para cima" className="w-8 ml-3" />
@@ -310,7 +310,7 @@ function Plasma(){
                       </div>
             
                       <div className="mt-12 text-center">
-                    <Link target='_blank' to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+                    <Link target='_blank' to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20do%20Dr.%20Eduardo%20Amui%20e%20quero%20agendar%20uma%20consulta%20para%20avaliar%20se%20o%20Plasma%20de%20Arg%C3%B4nio%20%C3%A9%20indicado%20para%C2%A0o%C2%A0meu%C2%A0caso"}>
                 <CtaButton className='cursor-pointer m-auto'>
                     AGENDAR MINHA AVALIAÇÃO
                 </CtaButton>                

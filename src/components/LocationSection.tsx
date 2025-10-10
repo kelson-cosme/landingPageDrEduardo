@@ -22,7 +22,7 @@ export const LocationSection = () => {
           </h2>
           <p className="text-lg text-gray-300 mb-8">SB Medical Tower</p>
 
-          <Link to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20Dr.%20Eduardo!%20Tenho%20interesse%20em%20saber%20mais%20e%20agendar%20uma%20avalia%C3%A7%C3%A3o"}>
+          <Link target='_blank' to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20do%20Dr.%20Eduardo%20Amui%20e%20gostaria%20de%20agendar%20uma%20consulta%20para%20entender%20qual%20dos%20tratamentos%20%C3%A9%20mais%20indicado%C2%A0para%C2%A0mim"}>
           <button 
             className="pl-6 cursor-pointer pr-2 py-2 rounded-full lg:flex items-center justify-center text-base font-semibold text-white z-10 mx-auto lg:mx-0 group hidden " 
             style={{ backgroundImage: cardBackgroundGradient2 }}

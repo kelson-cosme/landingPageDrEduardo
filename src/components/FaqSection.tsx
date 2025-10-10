@@ -1,6 +1,7 @@
 // src/components/FaqSection.tsx
 
 import { useState } from 'react';
+import { Link } from 'react-router';
 
 // Dados das perguntas e respostas
 const faqData = [
@@ -67,9 +68,11 @@ export const FaqSection = () => {
                     <p className="text-sm font-semibold text-gray-500 mb-2">F.A.Q</p>
                     <h2 className="text-4xl text-center lg:text-start md:text-4xl font-bold mb-4">Perguntas Frequentes</h2>
                     <p className="text-gray-500 mb-8 lg:block hidden">Não achou o que procurava? Fale com a gente! Estamos prontos para te ajudar com todas as informações.</p>
-                    <button className="lg:flex hidden border border-gray-300 text-gray-600 px-6 py-3 rounded-lg items-center space-x-2 hover:bg-gray-100 transition-colors duration-300">
-                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.052 24l1.687-6.163c-1.041-1.804-1.598-3.825-1.598-5.918 0-5.418 4.381-9.8 9.8-9.8s9.8 4.382 9.8 9.8-4.381 9.8-9.8 9.8c-2.004 0-3.933-.578-5.588-1.631L.052 24zM8.381 4.542c4.102 0 7.424 3.322 7.424 7.424s-3.322 7.424-7.424 7.424-7.424-3.322-7.424-7.424c0-2.019.811-3.865 2.13-5.23l.119-.148-1.378 4.253 4.41-1.353.133-.082c1.325-.826 2.928-1.31 4.63-1.31l-.014.002z"></path></svg>
-                        <span className=''>Enviar mensagem no WhatsApp</span>
+                    <button className="lg:flex hidden border border-gray-300 text-gray-600  rounded-lg items-center space-x-2 hover:bg-gray-100 transition-colors duration-300">
+                    <Link  target='_blank' className='flex px-6 py-3 w-full' to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20do%20Dr.%20Eduardo%20Amui%20e%20tenho%20algumas%20d%C3%BAvidas%20espec%C3%ADficas%20sobre%20o%20meu%20caso.%20Poderia%C2%A0me%C2%A0ajudar%3F"}>
+                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.052 24l1.687-6.163c-1.041-1.804-1.598-3.825-1.598-5.918 0-5.418 4.381-9.8 9.8-9.8s9.8 4.382 9.8 9.8-4.381 9.8-9.8 9.8c-2.004 0-3.933-.578-5.588-1.631L.052 24zM8.381 4.542c4.102 0 7.424 3.322 7.424 7.424s-3.322 7.424-7.424 7.424-7.424-3.322-7.424-7.424c0-2.019.811-3.865 2.13-5.23l.119-.148-1.378 4.253 4.41-1.353.133-.082c1.325-.826 2.928-1.31 4.63-1.31l-.014.002z"></path></svg>
+                            <span className=''>Enviar mensagem no WhatsApp</span>
+                  </Link>
                     </button>
                 </div>
 
@@ -86,10 +89,14 @@ export const FaqSection = () => {
                 </div>
 
                 <p className="text-gray-500 lg:hidden block mt-5 mb-5">Não achou o que procurava? Fale com a gente! Estamos prontos para te ajudar com todas as informações.</p>
-                    <button className="lg:hidden flex border border-gray-300 text-gray-600 px-6 py-3 rounded-lg items-center space-x-2 hover:bg-gray-100 transition-colors duration-300">
-                        <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.052 24l1.687-6.163c-1.041-1.804-1.598-3.825-1.598-5.918 0-5.418 4.381-9.8 9.8-9.8s9.8 4.382 9.8 9.8-4.381 9.8-9.8 9.8c-2.004 0-3.933-.578-5.588-1.631L.052 24zM8.381 4.542c4.102 0 7.424 3.322 7.424 7.424s-3.322 7.424-7.424 7.424-7.424-3.322-7.424-7.424c0-2.019.811-3.865 2.13-5.23l.119-.148-1.378 4.253 4.41-1.353.133-.082c1.325-.826 2.928-1.31 4.63-1.31l-.014.002z"></path></svg>
-                        <span className=''>Enviar mensagem no WhatsApp</span>
-                    </button>
+                  <button className="lg:hidden flex border border-gray-300 text-gray-600   rounded-lg items-center space-x-2 hover:bg-gray-100 transition-colors duration-300">
+                <Link  target='_blank' className='flex px-6 py-3 w-full' to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20do%20Dr.%20Eduardo%20Amui%20e%20tenho%20algumas%20d%C3%BAvidas%20espec%C3%ADficas%20sobre%20o%20meu%20caso.%20Poderia%C2%A0me%C2%A0ajudar%3F"}>
+                          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.052 24l1.687-6.163c-1.041-1.804-1.598-3.825-1.598-5.918 0-5.418 4.381-9.8 9.8-9.8s9.8 4.382 9.8 9.8-4.381 9.8-9.8 9.8c-2.004 0-3.933-.578-5.588-1.631L.052 24zM8.381 4.542c4.102 0 7.424 3.322 7.424 7.424s-3.322 7.424-7.424 7.424-7.424-3.322-7.424-7.424c0-2.019.811-3.865 2.13-5.23l.119-.148-1.378 4.253 4.41-1.353.133-.082c1.325-.826 2.928-1.31 4.63-1.31l-.014.002z"></path></svg>
+                          <span className=''>Enviar mensagem no WhatsApp</span>
+                </Link>
+                      
+                      </button>
+
             </div>
         </section>
     );

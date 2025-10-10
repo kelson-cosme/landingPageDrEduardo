@@ -4,8 +4,15 @@ import { Link } from "react-router";
 import Ad2 from "../../assets/imagens/balao/ad2.svg"
 import Ad3 from "../../assets/imagens/balao/ad3.svg"
 import Seta2 from "../../assets/imagens/gastroplatia/array2.svg"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+import { useEffect } from "react";
 
 export const Beneficios = () => {
+        useEffect( () => {
+            AOS.init();
+        }, [])
+
     const cardBackgroundGradient2 = 'linear-gradient(0deg, rgba(70, 179, 60, 1) 23%, rgba(78, 234, 64, 1) 65%)'
 
     return (

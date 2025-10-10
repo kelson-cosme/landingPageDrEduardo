@@ -11,7 +11,7 @@ export const Benefits = () => {
 
     return (
         <section id="beneficios" className=" px-4 text-whit bg-[#F9FAFF] lg:pb-15" >
-            <div className="p-5 lg:p-17 rounded-2xl max-w-6xl mx-auto " style={{backgroundImage: sectionBgColor}}>
+            <div className="p-5 lg:p-17 rounded-2xl max-w-6xl mx-auto " style={{backgroundImage: sectionBgColor}} data-aos="zoom-in-up">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Benefícios do Balão Gástrico</h2>
                 <div className="grid md:grid-cols-3 gap-8">
                     {/* Benefício 1 */}

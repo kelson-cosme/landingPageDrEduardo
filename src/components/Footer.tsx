@@ -30,9 +30,9 @@ export const Footer = () => {
         <footer className="bg-[#2E3750] text-white pt-16">
             <div className="max-w-[1200px] mx-auto px-4">
                 {/* Seção Principal do Rodapé */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div className="flex flex-col lg:grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                     {/* Coluna 1: Mapa */}
-                    <div className="md:col-span-2 lg:col-span-1">
+                    <div className="md:col-span-2 lg:col-span-1 ">
                         <iframe
                             src="https://maps.google.com/maps?q=Edif%C3%ADcio%20SB%20Medical%20-%20Av.%20das%20Flores%2C%20945%20-%2015%C2%B0%20andar%2C%20Sala%201510&t=&z=15&ie=UTF8&iwloc=&output=embed"
                             width="100%"
@@ -43,7 +43,12 @@ export const Footer = () => {
                             referrerPolicy="no-referrer-when-downgrade"
                             className="rounded-lg"
                         ></iframe>
+
+                    <p className='text-2xl text-justify lg:text-[0.9em]'>Endereço: Edifício SB Medical - Av. das Flores, 945 - 15° andar, Sala 1510.</p>
+
                     </div>
+
+
 
                     {/* Coluna 2: Logo e Descrição */}
                     <div>
@@ -85,7 +90,7 @@ export const Footer = () => {
 
                     <p>
                         <Link target='_blank' to={"https://vivoxmarketing.com.br/"}>
-                            Desenvolvido por <span className='underline font-bold'>Invictus Web.</span>
+                            Desenvolvido por <span className='underline font-bold'>Vivox Web.</span>
                         </Link>
                     </p>
                 </div>
