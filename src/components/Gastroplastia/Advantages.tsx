@@ -35,7 +35,7 @@ export const Advantages = () => {
                     {/* Vantagem 3 */}
                     <div className="bg-white rounded-xl shadow-lg p-8 flex flex-col items-start text-left hover:shadow-2xl transition-shadow duration-300">
                         <img className="mb-2" src={Ind3} alt="Icone significando Reversível" />
-                        <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">RPacientes que não querem ter cortes no abdômen.</h3>
+                        <h3 className="font-bold text-lg text-gray-800 mb-3 leading-tight">Pacientes que não querem ter cortes no abdômen.</h3>
                         <p className="text-gray-600 text-sm">
                         Como é feita totalmente por endoscopia, não há incisões nem cicatrizes visíveis. Isso garante recuperação rápida e retorno mais ágil às atividades do dia a dia.</p>
                     </div>
