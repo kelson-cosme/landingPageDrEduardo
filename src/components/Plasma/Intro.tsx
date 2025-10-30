@@ -22,7 +22,7 @@ export const Intro = () => {
 
 
                     <div className=" text-center" >
-                        <Link target="_blank" to={"figma.com/exit?url=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5565999558558%26text%3DOl%25C3%25A1%252C%2520vim%2520pela%2520p%25C3%25A1gina%2520do%2520Dr.%2520Eduardo%2520Amui%2520e%2520quero%2520agendar%2520uma%2520consulta%2520para%2520avaliar%2520se%2520o%2520Plasma%2520de%2520Arg%25C3%25B4nio%2520%25C3%25A9%2520indicado%2520para%25C2%25A0o%25C2%25A0meu%25C2%25A0caso"}>
+                        <Link target="_blank" to={"https://api.whatsapp.com/send?phone=5565999558558&text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20do%20Dr.%20Eduardo%20Amui%20e%20quero%20agendar%20uma%20consulta%20para%20avaliar%20se%20o%20Plasma%20de%20Arg%C3%B4nio%20%C3%A9%20indicado%20para%C2%A0o%C2%A0meu%C2%A0caso"}>
                         <CtaButton className="cursor-pointer mt-8 self-start">
                         AGENDAR MINHA AVALIAÇÃO
                         </CtaButton>                        
