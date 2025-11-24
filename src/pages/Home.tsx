@@ -21,6 +21,7 @@ import Avatar2 from "../assets/imagens/av2.webp"
 import Avatar3 from "../assets/imagens/av3.webp"
 import Avatar4 from "../assets/imagens/av4.webp"
 import Avatar5 from "../assets/imagens/av5.webp"
+import {Apresentacao} from "../components/Apresentacao"
 
 import { CtaButton } from '../components/CtaButton'; // Importando o novo componente
 
@@ -236,6 +237,10 @@ function Home() {
             </div>
           ))}
         </div>
+
+        <section>
+          <Apresentacao/>
+        </section>
 
         {/* Seção Sobre Mim */}
         <div id="sobre" ref={sectionRefs.sobre} >

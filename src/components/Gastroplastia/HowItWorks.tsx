@@ -10,7 +10,7 @@ import { Link } from "react-router";
 
 export const HowItWorks = () => {
     const [isPlaying, setIsPlaying] = useState(false);
-    const videoId = "Rwv9EskEKWA"; // ID do vídeo do YouTube
+    const videoId = "PjfBNSbX_l4"; // ID do vídeo do YouTube
 
     const handlePlayClick = () => {
         setIsPlaying(true);

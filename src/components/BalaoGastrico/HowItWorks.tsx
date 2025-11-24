@@ -12,7 +12,7 @@ const Seta2 = () => (
 export const HowItWorks = () => {
     const cardBackgroundGradient2 = 'linear-gradient(0deg, rgba(70, 179, 60, 1) 23%, rgba(78, 234, 64, 1) 65%)';
     const [isPlaying, setIsPlaying] = useState(false);
-    const videoId = "hRQtubuEBaA"; // ID do vídeo do YouTube
+    const videoId = "1KU6d0tClIw"; // ID do vídeo do YouTube
 
     const handlePlayClick = () => {
         setIsPlaying(true);
